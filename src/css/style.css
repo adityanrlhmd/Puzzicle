@@ -64,4 +64,68 @@ main .jumbotron .container .illustration img {
   width: 1100px;
   overflow: hidden;
 }
+
+main .first .container {
+  padding-top: 125px;
+  padding-bottom: 40px;
+}
+
+main .first .container .title {
+  padding-left: 250px;
+  padding-right: 250px;
+  margin-bottom: 30px;
+}
+
+main .first .container .title h2 {
+  font-family: 'Baloo 2';
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 50px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+
+main .first .container .wrap-row .row-top {
+  padding-left: 90px;
+  padding-right: 90px;
+  margin-bottom: 25px;
+}
+
+main .first .container .wrap-row .row-top .col img {
+  width: 215px;
+}
+
+main .first .container .wrap-row .row-bottom {
+  padding-left: 210px;
+  padding-right: 210px;
+  margin-bottom: 20px;
+}
+
+main .first .container .wrap-row .row-bottom .col img {
+  width: 215px;
+}
+
+main .first .container .wrap-btn-google {
+  margin-bottom: 66px;
+}
+
+main .first .container .wrap-btn-google .btn-google {
+  padding: 0;
+}
+
+main .first .container .wrap-btn-google .btn-google img {
+  width: 175px;
+}
+
+main .first .container .trademark {
+  font-family: Baloo 2;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #18223A;
+}
 /*# sourceMappingURL=style.css.map */

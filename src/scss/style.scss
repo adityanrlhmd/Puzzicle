@@ -81,4 +81,77 @@ main {
             }
         }
     }
+
+    .first {
+        .container {
+            padding-top: 125px;
+            padding-bottom: 40px;
+
+            .title {
+                padding-left: 250px;
+                padding-right: 250px;
+                margin-bottom: 30px;
+
+                h2 {
+                    font-family: 'Baloo 2';
+                    font-size: 40px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: 50px;
+                    letter-spacing: 0em;
+                    text-align: center;
+
+                }
+            }
+
+            .wrap-row {
+                .row-top {
+                    padding-left: 90px;
+                    padding-right: 90px;
+                    margin-bottom: 25px;
+
+                    .col {
+                        img {
+                            width: 215px;
+                        }
+                    }
+                }
+
+                .row-bottom {
+                    padding-left: 210px;
+                    padding-right: 210px;
+                    margin-bottom: 20px;
+
+                    .col {
+                        img {
+                            width: 215px;
+                        }
+                    }
+                }
+            }
+
+            .wrap-btn-google {
+                margin-bottom: 66px;
+
+                .btn-google {
+                    padding: 0;
+
+                    img {
+                        width: 175px;
+                    }
+                }
+            }
+
+            .trademark {
+                font-family: Baloo 2;
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 24px;
+                letter-spacing: 0em;
+                text-align: left;
+                color: #18223A;
+            }
+        }
+    }
 }

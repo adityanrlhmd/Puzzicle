@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2&display=swap');
+
+header {
+    .wrap-nav {
+        background-color: #D3F1F3;
+
+        nav {
+            .container {
+                .navbar-brand {
+                    img {
+                        width: 112px;
+                    }
+                }
+
+                .navbar-collapse {
+                    .navbar-nav {
+                        .nav-item {
+                            margin-top: auto;
+                            margin-bottom: auto;
+                            margin-right: 30px;
+
+                            .nav-link {
+                                font-size: 16px;
+                                line-height: 18.75px;
+                                color: #18223A;
+
+                                img {
+                                    width: 190px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+main {
+    .jumbotron {
+        background-color: #D3F1F3;
+
+        .container {
+            padding-top: 40px;
+
+            .title {
+                width: 600px;
+                margin-left: auto;
+                margin-right: auto;
+                // background-image: url('./src/img/Vector45.png');
+
+                h1 {
+                    font-family: 'Baloo 2';
+                    font-size: 45px;
+                    line-height: 60px;
+                    text-align: center;
+                    font-weight: 700;
+
+                    .lessons {
+                        padding-left: 12px;
+                        padding-right: 12px;
+                    }
+                }
+
+                .title-img {
+                    position: absolute;
+                    top: 100px;
+                    right: 325px;
+
+                    img {
+                        width: 55px;
+                    }
+                }
+            }
+
+            .illustration {
+                img {
+                    width: 1100px;
+                    overflow: hidden;
+                }
+            }
+        }
+    }
+}

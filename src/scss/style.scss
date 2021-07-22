@@ -504,6 +504,12 @@ main {
                                         color: #FFFFFF;
                                     }
                                 }
+
+                                .wrap-btn-google-mobile {
+                                    .btn-google {
+                                        display: none;
+                                    }
+                                }
                             }
                         }
                     }
@@ -573,8 +579,12 @@ main {
             }
 
             .wrap-img {
-                img {
+                .people {
                     width: 680px;
+                }
+
+                .people-mobile {
+                    display: none;
                 }
             }
         }
@@ -923,6 +933,417 @@ main {
                 }
             }
         }
+
+        .fourth {
+            background: url('../img/Mobile/Section\ 4/patern.png') no-repeat;
+            background-size: cover;
+    
+            .container-fourth {
+                padding-top: 80px;
+                padding-bottom: 80px;
+    
+                .title {
+                    margin-bottom: 35px;
+    
+                    h2 {
+                        font-size: 25px;
+                        font-weight: 700;
+                        line-height: 36px;
+                        letter-spacing: 0.5%;
+                    }
+                }
+    
+                .wrap-row {
+                    padding-left: 20px;
+                    padding-right: 20px;
+    
+                    .col {
+                        padding: 0;
+                    }
+    
+                    .left {
+                        .card {
+                            border-radius: 30px;
+                            border: none;
+                            box-shadow: 0px 20px 39px 16px rgba(83, 99, 123, 0.08);
+    
+                            .card-top {
+                                padding: 40px;
+                                padding-bottom: 25px;
+                                border-bottom: 1px solid #E6EAF1;
+    
+                                h3 {
+                                    font-family: 'Baloo 2';
+                                    font-size: 24px;
+                                    font-style: normal;
+                                    font-weight: 600;
+                                    line-height: 27px;
+                                    letter-spacing: 0em;
+                                    text-align: left;
+                                    color: #18223A;
+                                }
+    
+                                p {
+                                    font-family: 'Baloo 2';
+                                    font-size: 16px;
+                                    font-style: normal;
+                                    font-weight: 400;
+                                    line-height: 17px;
+                                    letter-spacing: 0em;
+                                    text-align: left;
+                                    color: #858B9A;
+                                }
+                            }
+    
+                            .card-body {
+                                padding-top: 0;
+    
+                                .container {
+                                    .wrap-text {
+                                        border-bottom: 1px solid #E6EAF1;
+                                        padding: 15px 0;
+    
+                                        &:nth-child(3) {
+                                            border-bottom: none;
+                                        }
+    
+                                        p {
+                                            margin: 0;
+                                            font-family: 'Baloo 2';
+                                            font-size: 14px;
+                                            font-style: normal;
+                                            font-weight: 400;
+                                            line-height: 17px;
+                                            letter-spacing: 0em;
+                                            text-align: left;
+                                            color: #858B9A;
+                                        }
+    
+                                        h3 {
+                                            font-family: Baloo 2;
+                                            font-size: 18px;
+                                            font-style: normal;
+                                            font-weight: 600;
+                                            line-height: 20px;
+                                            letter-spacing: 0em;
+                                            text-align: left;
+                                            color: #18223A;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+    
+                    .right {
+                        .card {
+                            background: url('../img/Desktop/Section\ 4/background-patern.png') no-repeat;
+                            background-size: cover;
+                            border-radius: 30px;
+                            border: none;
+                            box-shadow: 0px 20px 39px 16px rgba(83, 99, 123, 0.08);
+    
+                            .card-top {
+                                padding: 40px;
+                                padding-bottom: 25px;
+                                border-bottom: 1px solid #E6EAF1;
+    
+                                h3 {
+                                    font-family: 'Baloo 2';
+                                    font-size: 24px;
+                                    font-style: normal;
+                                    font-weight: 600;
+                                    line-height: 27px;
+                                    letter-spacing: 0em;
+                                    text-align: left;
+                                    color: #FFFFFF;
+                                }
+    
+                                p {
+                                    font-family: 'Baloo 2';
+                                    font-size: 16px;
+                                    font-style: normal;
+                                    font-weight: 400;
+                                    line-height: 17px;
+                                    letter-spacing: 0em;
+                                    text-align: left;
+                                    color: #FFFFFF;
+                                }
+                            }
+    
+                            .card-body {
+                                padding-top: 0;
+    
+                                .container {
+                                    .wrap-text {
+                                        border-bottom: 1px solid #E6EAF1;
+                                        padding: 15px 0;
+    
+                                        &:nth-child(3) {
+                                            border-bottom: none;
+                                        }
+    
+                                        p {
+                                            margin: 0;
+                                            font-family: 'Baloo 2';
+                                            font-size: 14px;
+                                            font-style: normal;
+                                            font-weight: 400;
+                                            line-height: 17px;
+                                            letter-spacing: 0em;
+                                            text-align: left;
+                                            color: #FFFFFF;
+                                        }
+    
+                                        h3 {
+                                            font-family: Baloo 2;
+                                            font-size: 18px;
+                                            font-style: normal;
+                                            font-weight: 600;
+                                            line-height: 20px;
+                                            letter-spacing: 0em;
+                                            text-align: left;
+                                            color: #FFFFFF;
+                                        }
+                                    }
+
+                                    .wrap-btn-google-mobile {
+                                        margin-bottom: 10px;
+                    
+                                        .btn-google {
+                                            display: block;
+                                            padding: 0;
+                    
+                                            img {
+                                                width: 205px;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+    
+                    .wrap-vs {
+                        display: none;
+                    }
+    
+                    .wrap-btn-google {
+                        .btn-google {
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+
+        .fifth {
+            background: url('../img/Mobile/Section\ 5/PNG/patern.png') no-repeat;
+            background-size: cover;
+    
+            .container {
+                padding-top: 50px;
+                padding-bottom: 50px;
+    
+                .title {
+                    padding: 15px;
+                    margin-bottom: 40px;
+    
+                    h2 {
+                        font-size: 24px;
+                        font-style: normal;
+                        font-weight: 700;
+                        line-height: 36px;
+                        letter-spacing: 0.5%;
+                    }
+                }
+    
+                .wrap-img {
+                    .people {
+                        display: none;
+                    }
+
+                    .people-mobile {
+                        display: block;
+                        width: 330px;
+                    }
+                }
+            }
+        }
+
+        .sixth {
+            background: url('../img/Mobile/Section\ 6/patern.png') no-repeat;
+            background-size: cover;
+    
+            .container-sixth {
+                padding-top: 75px;
+                padding-bottom: 40px;
+    
+                .title {
+                    margin-bottom: 30px;
+    
+                    h2 {
+                        font-size: 24px;
+                        line-height: 36px;
+                        letter-spacing: 0.5%;
+    
+                        span {
+                            img {
+                                width: 24px;
+                            }
+                        }
+                    }
+                }
+    
+                .wrap-slick {
+                    margin-bottom: 35px;
+    
+                    .lazy {
+                        padding-left: 5px;
+                        padding-right: 5px;
+    
+                        .control-c {
+                            width: 45px;
+                            height: 45px;
+                        }
+    
+                        .wrap-card {
+                            margin-right: 15px;
+                            margin-left: 15px;
+    
+                            .card {
+                                border-radius: 20px;
+    
+                                .container {
+                                    padding: 40px;
+                                    padding-bottom: 0;
+    
+                                    .d-flex {
+                                        img {
+                                            width: 22px;
+                                            height: 22px;
+                                            margin-right: 7px;
+                                        }
+    
+                                        p {
+                                            font-family: 'Baloo 2';
+                                            font-size: 16px;
+                                            font-style: normal;
+                                            font-weight: 400;
+                                            line-height: 28px;
+                                            letter-spacing: 0em;
+                                            text-align: left;
+                                            color: #7B8397;
+                                        }
+                                    }
+                                }
+    
+                                .card-body {
+                                    padding: 0;
+    
+                                    .container {
+                                        padding: 40px;
+                                        padding-top: 0;
+                                        padding-bottom: 10px;
+    
+                                        p {
+                                            font-family: 'Baloo 2';
+                                            font-size: 16px;
+                                            font-style: normal;
+                                            font-weight: 400;
+                                            line-height: 28px;
+                                            letter-spacing: 0em;
+                                            text-align: left;
+                                            color: #7B8397;
+                                        }
+    
+                                        .people {
+                                            .d-flex {
+                                                img {
+                                                    border-radius: 100%;
+                                                    width: 45px;
+                                                    height: 45px;
+                                                    margin-right: 10px;
+                                                }
+    
+                                                .name {
+                                                    h6 {
+                                                        font-family: 'Baloo 2';
+                                                        font-size: 16px;
+                                                        font-style: normal;
+                                                        font-weight: 600;
+                                                        line-height: 17px;
+                                                        letter-spacing: 0em;
+                                                        text-align: left;
+                                                        color: #18223A;
+                                                    }
+    
+                                                    p {
+                                                        font-family: 'Baloo 2';
+                                                        font-size: 15px;
+                                                        font-style: normal;
+                                                        font-weight: 400;
+                                                        line-height: 16px;
+                                                        letter-spacing: 0em;
+                                                        text-align: left;
+                                                        color: #7B8397;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+    
+                .wrap-btn {
+                    .btn-feedback {
+                        padding: 10px 30px;
+                        border-radius: 10px;
+                        color: white;
+                        font-weight: 700;
+                        font-family: 15px;
+                        background-color: #00BAC7;
+                    }
+                }
+            }
+        }
+
+        .seventh {
+            background: url('../img/Mobile/Section\ 7/PNG/patern.png') no-repeat;
+            background-size: cover;
+    
+            .wrap-seventh {
+                background: url('../img/Mobile/Section\ 7/PNG/illustration.png') no-repeat;
+                background-size: contain;
+                background-position-y: 254.5px;
+    
+                .container {
+                    padding-top: 40px;
+                    padding-bottom: 200px;
+    
+                    .title {
+                        margin-bottom: 20px;
+    
+                        h1 {
+                            font-size: 28px;
+                            line-height: 40px;
+                            letter-spacing: 0.5%;
+                        }
+                    }
+    
+                    .wrap-btn {
+                        .btn-seventh {
+                            img {
+                                width: 180px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
 }
 
@@ -964,13 +1385,76 @@ footer {
                     color: #7B8397;
                 }
 
-                .d-flex {
-                    float: right;
-                    clear: right;
+                .d-grid {
+                    .d-flex {
+                        margin-left: auto;
+                        margin-right: 0;
+                        // float: right;
+                        // clear: right;
+    
+                        img {
+                            width: 32px;
+                            margin-left: 20px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
 
-                    img {
-                        width: 32px;
-                        margin-left: 20px;
+@media screen and (max-width: 675px) {
+    footer {
+        .container {
+            padding-top: 20px;
+            padding-bottom: 20px;
+    
+            .row {
+                .left {
+                    .wrap-img {
+                        img {
+                            margin: 0 auto;
+                            width: 102px;
+                            margin-bottom: 11px;
+                        }
+                    }
+    
+                    p {
+                        font-family: 'Baloo 2';
+                        font-size: 15px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 24px;
+                        text-align: center;
+                    }
+                }
+    
+                .right {
+                    padding-top: 25px;
+    
+                    p {
+                        font-family: 'Harabara Mais';
+                        font-size: 16px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 17px;
+                        letter-spacing: 0em;
+                        text-align: center;
+                        color: #7B8397;
+                    }
+    
+                    .d-grid {
+                        .d-flex {
+                            margin: 0 auto;
+                            float: none;
+                            clear: none;
+        
+                            img {
+                                width: 24px;
+                                margin-left: 5px;
+                                margin-right: 5px;
+                            }
+                        }
                     }
                 }
             }

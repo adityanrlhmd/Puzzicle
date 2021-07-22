@@ -54,9 +54,9 @@
             <div class="container">
                 <div class="title">
                     <h1>
-                        Videos from <span><img class="khan" src="src/img/khan-academy.png" alt=""></span> Khan Academy are now guided
-                        <span class="lessons"
-                            style="">Lessons</span>
+                        Videos from <span><img class="khan" src="src/img/khan-academy.png" alt=""></span> Khan Academy
+                        are now guided
+                        <span class="lessons" style="">Lessons</span>
                     </h1>
                     <span class="title-img"><img src="src/img/Vector13.png" alt=""></span>
                 </div>
@@ -122,7 +122,8 @@
                 </div>
                 <div class="d-grid wrap-img">
                     <img class="mx-auto feature" src="src/img/Desktop/Section 2/feature.png" alt="">
-                    <img class="mx-auto feature-mobile" src="src/img/Mobile/Section 2/PNG/icon illustration (2).png" alt="">
+                    <img class="mx-auto feature-mobile" src="src/img/Mobile/Section 2/PNG/icon illustration (2).png"
+                        alt="">
                     <img class="mx-auto laptop" src="src/img/Desktop/Section 2/Laptop.png" alt="">
                     <img class="mx-auto laptop-mobile" src="src/img/Mobile/Section 2/PNG/laptop.png" alt="">
                 </div>
@@ -187,7 +188,7 @@
                     </h2>
                 </div>
                 <div class="wrap-row">
-                    <div class="row">
+                    <div class="row row-cols-1 row-cols-md-2 g-4">
                         <div class="col left">
                             <div class="card">
                                 <div class="container card-top">
@@ -264,6 +265,10 @@
                                                 Internalization & Retention
                                             </h3>
                                         </div>
+                                        <div class="d-grid wrap-btn-google-mobile">
+                                            <button type="button" class="btn btn-google mx-auto"><img
+                                                    src="src/img/Desktop/Section 4/Button.png" alt=""></button>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -273,7 +278,7 @@
                                 VS
                             </h3>
                         </div>
-                        <div class="d-grid wrap-btn-google">
+                        <div class="d-grid wrap-btn-google mx-auto">
                             <button type="button" class="btn btn-google mx-auto"><img
                                     src="src/img/Desktop/Section 4/Button.png" alt=""></button>
                         </div>
@@ -290,7 +295,8 @@
                     </h2>
                 </div>
                 <div class="wrap-img d-grid">
-                    <img class="mx-auto" src="src/img/Desktop/Section 5/PNG/people illustration.png" alt="">
+                    <img class="mx-auto people" src="src/img/Desktop/Section 5/PNG/people illustration.png" alt="">
+                    <img class="mx-auto people-mobile" src="src/img/Mobile/Section 5/PNG/illustration.png" alt="">
                 </div>
             </div>
         </section>
@@ -452,7 +458,9 @@
         <div class="container">
             <div class="row row-cols-1 row-cols-md-2">
                 <div class="col left">
-                    <img src="src/img/Desktop/Section 8/logo.png" alt="">
+                    <div class="d-grid wrap-img">
+                        <img src="src/img/Desktop/Section 8/logo.png" alt="">
+                    </div>
                     <p>
                         Trademark Disclaimer: All product and company names including but not limited to Khan Academy,
                         YouTube, Crash Course are trademarks™️ of their respective holders. The Puzzicle website or
@@ -464,11 +472,13 @@
                     <p>
                         © 2021 Puzzicle. All rights reserved.
                     </p>
-                    <div class="d-flex">
-                        <img src="src/img/Desktop/Section 8/Facebook.png" alt="">
-                        <img src="src/img/Desktop/Section 8/Instagram.png" alt="">
-                        <img src="src/img/Desktop/Section 8/Twitter.png" alt="">
-                        <img src="src/img/Desktop/Section 8/Youtube.png" alt="">
+                    <div class="d-grid">
+                        <div class="d-flex">
+                            <img src="src/img/Desktop/Section 8/Facebook.png" alt="">
+                            <img src="src/img/Desktop/Section 8/Instagram.png" alt="">
+                            <img src="src/img/Desktop/Section 8/Twitter.png" alt="">
+                            <img src="src/img/Desktop/Section 8/Youtube.png" alt="">
+                        </div>
                     </div>
                 </div>
             </div>
@@ -497,7 +507,18 @@
             slidesToShow: 2,
             slidesToScroll: 1,
             prevArrow: "<img class='a-left control-c prev slick-prev' src='src/img/Desktop/Section-6/arrow-left.png'>",
-            nextArrow: "<img class='a-right control-c next slick-next' src='src/img/Desktop/Section-6/arrow-right.png'>"
+            nextArrow: "<img class='a-right control-c next slick-next' src='src/img/Desktop/Section-6/arrow-right.png'>",
+            responsive: [{
+                breakpoint: 675,
+                settings: {
+                    slidesToShow: 1,
+                    autoplay: true,
+                    autoplaySpeed: 2000,
+                    arrows: false,
+                    dots: false,
+                    pauseOnHover: false,
+                }
+            }]
         });
     </script>
 </body>

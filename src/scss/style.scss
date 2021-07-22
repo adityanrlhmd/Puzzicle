@@ -45,7 +45,9 @@ header {
             // padding-top: 40px;
 
             .title {
-                width: 600px;
+                // width: 600px;
+                padding-left: 250px;
+                padding-right: 250px;
                 margin-left: auto;
                 margin-right: auto;
                 // background-image: url('./src/img/Vector45.png');
@@ -58,19 +60,15 @@ header {
                     font-weight: 700;
 
                     .lessons {
+                        background: url('../img/Vector45.png') no-repeat;
+                        background-size: 128px;
                         padding-left: 12px;
                         padding-right: 12px;
                     }
                 }
 
                 .title-img {
-                    position: absolute;
-                    top: 100px;
-                    right: 325px;
-
-                    img {
-                        width: 55px;
-                    }
+                    display: none;
                 }
             }
 
@@ -78,6 +76,57 @@ header {
                 img {
                     width: 1100px;
                     overflow: hidden;
+                }
+            }
+
+            .illustration-mobile {
+                display: none;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 675px) {
+    header {
+        background: url('../img/Mobile/Header/PNG/background.png') no-repeat;
+        background-size: cover;
+
+        .jumbotron {
+            .container {
+                .title {
+                    padding-left: 20px;
+                    padding-right: 20px;
+
+                    h1 {
+                        font-size: 30px;
+                        line-height: 40px;
+
+                        .khan {
+                            width: 23px;
+                        }
+
+                        .lessons {
+                            padding-left: 12px;
+                            padding-right: 12px;
+
+                        }
+                    }
+
+                    .title-img {
+                        display: none;
+                    }
+                }
+
+                .illustration {
+                    display: none;
+                }
+
+                .illustration-mobile {
+                    display: block;
+
+                    img {
+                        width: 100%;
+                    }
                 }
             }
         }
@@ -146,7 +195,7 @@ main {
             }
 
             .trademark {
-                font-family: Baloo 2;
+                font-family: 'Baloo 2';
                 font-size: 20px;
                 font-style: normal;
                 font-weight: 400;
@@ -171,7 +220,7 @@ main {
                 margin-bottom: 60px;
 
                 h2 {
-                    // font-family: Harabara Mais Demo;
+                    font-family: 'Harabara Mais Demo';
                     font-size: 40px;
                     font-style: normal;
                     font-weight: 400;
@@ -182,6 +231,10 @@ main {
             }
 
             .wrap-img {
+                .feature-mobile {
+                    display: none;
+                }
+
                 img {
                     width: 700px;
                 }
@@ -189,6 +242,10 @@ main {
                 .laptop {
                     margin-top: 50px;
                     width: 100%;
+                }
+
+                .laptop-mobile {
+                    display: none;
                 }
             }
 
@@ -518,6 +575,403 @@ main {
             .wrap-img {
                 img {
                     width: 680px;
+                }
+            }
+        }
+    }
+
+    .sixth {
+        background: url('../img/Desktop/Section-6/patern.png') no-repeat;
+        background-size: cover;
+
+        .container-sixth {
+            padding-top: 125px;
+            padding-bottom: 105px;
+
+            .title {
+                margin-bottom: 30px;
+
+                h2 {
+                    font-family: 'Baloo 2';
+                    font-size: 40px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: 50px;
+                    letter-spacing: 0em;
+                    text-align: center;
+                    color: #18223A;
+
+                    span {
+                        img {
+                            width: 35px;
+                        }
+                    }
+                }
+            }
+
+            .wrap-slick {
+                margin-bottom: 35px;
+
+                .lazy {
+                    padding-left: 40px;
+                    padding-right: 40px;
+
+                    .control-c {
+                        width: 45px;
+                        height: 45px;
+                    }
+
+                    .wrap-card {
+                        margin-right: 15px;
+                        margin-left: 15px;
+
+                        .card {
+                            border-radius: 20px;
+
+                            .container {
+                                padding: 40px;
+                                padding-bottom: 0;
+
+                                .d-flex {
+                                    img {
+                                        width: 22px;
+                                        height: 22px;
+                                        margin-right: 7px;
+                                    }
+
+                                    p {
+                                        font-family: 'Baloo 2';
+                                        font-size: 16px;
+                                        font-style: normal;
+                                        font-weight: 400;
+                                        line-height: 28px;
+                                        letter-spacing: 0em;
+                                        text-align: left;
+                                        color: #7B8397;
+                                    }
+                                }
+                            }
+
+                            .card-body {
+                                padding: 0;
+
+                                .container {
+                                    padding: 40px;
+                                    padding-top: 0;
+                                    padding-bottom: 10px;
+
+                                    p {
+                                        font-family: 'Baloo 2';
+                                        font-size: 16px;
+                                        font-style: normal;
+                                        font-weight: 400;
+                                        line-height: 28px;
+                                        letter-spacing: 0em;
+                                        text-align: left;
+                                        color: #7B8397;
+                                    }
+
+                                    .people {
+                                        .d-flex {
+                                            img {
+                                                border-radius: 100%;
+                                                width: 45px;
+                                                height: 45px;
+                                                margin-right: 10px;
+                                            }
+
+                                            .name {
+                                                h6 {
+                                                    font-family: 'Baloo 2';
+                                                    font-size: 16px;
+                                                    font-style: normal;
+                                                    font-weight: 600;
+                                                    line-height: 17px;
+                                                    letter-spacing: 0em;
+                                                    text-align: left;
+                                                    color: #18223A;
+                                                }
+
+                                                p {
+                                                    font-family: 'Baloo 2';
+                                                    font-size: 15px;
+                                                    font-style: normal;
+                                                    font-weight: 400;
+                                                    line-height: 16px;
+                                                    letter-spacing: 0em;
+                                                    text-align: left;
+                                                    color: #7B8397;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .wrap-btn {
+                .btn-feedback {
+                    padding: 10px 30px;
+                    border-radius: 10px;
+                    color: white;
+                    font-weight: 700;
+                    font-family: 15px;
+                    background-color: #00BAC7;
+                }
+            }
+        }
+    }
+
+    .seventh {
+        background: url('../img/Desktop/Section\ 7/PNG/patern.png') no-repeat;
+        background-size: cover;
+
+        .wrap-seventh {
+            background: url('../img/Desktop/Section\ 7/PNG/illustration.png') no-repeat;
+            background-size: contain;
+            background-position-y: 167px;
+
+            .container {
+                padding: 110px 0;
+
+                .title {
+                    margin-bottom: 30px;
+
+                    h1 {
+                        font-family: 'Baloo 2';
+                        font-size: 50px;
+                        font-style: normal;
+                        font-weight: 700;
+                        line-height: 60px;
+                        letter-spacing: 0em;
+                        text-align: center;
+                        color: white;
+                    }
+                }
+
+                .wrap-btn {
+                    .btn-seventh {
+                        img {
+                            width: 180px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 675px) {
+    main {
+        .first {
+            .container {
+                padding-top: 80px;
+                padding-bottom: 40px;
+
+                .title {
+                    padding-left: 25px;
+                    padding-right: 25px;
+                    margin-bottom: 30px;
+
+                    h2 {
+                        font-size: 24px;
+                        line-height: 33px;
+                        letter-spacing: 0.5%;
+
+                    }
+                }
+
+                .wrap-row {
+                    .row-top {
+                        padding-left: 12px;
+                        padding-right: 12px;
+                        margin-bottom: 25px;
+
+                        .col {
+                            img {
+                                width: 150px;
+                            }
+                        }
+                    }
+
+                    .row-bottom {
+                        padding-left: 12px;
+                        padding-right: 12px;
+                        margin-bottom: 25px;
+
+                        .col {
+                            img {
+                                width: 150px;
+                            }
+                        }
+                    }
+                }
+
+                .wrap-btn-google {
+                    margin-bottom: 40px;
+
+                    .btn-google {
+                        padding: 0;
+
+                        img {
+                            width: 175px;
+                        }
+                    }
+                }
+
+                .trademark {
+                    font-size: 16px;
+                    text-align: center;
+                }
+            }
+        }
+
+        .second {
+            background: url('../img/Mobile/Section\ 2/PNG/patern.png') no-repeat;
+            background-size: cover;
+            // background-attachment: fixed;
+
+            .container {
+                padding-top: 70px;
+                padding-bottom: 70px;
+
+                .title {
+                    padding-left: 20px;
+                    margin-bottom: 35px;
+
+                    h2 {
+                        font-family: 'Baloo 2';
+                        font-size: 24px;
+                        font-style: normal;
+                        font-weight: 700;
+                        line-height: 36px;
+                        letter-spacing: -0.005em;
+                        text-align: left;
+                        color: #18223A;
+                    }
+                }
+
+                .wrap-img {
+                    .feature {
+                        display: none;
+                    }
+
+                    .feature-mobile {
+                        display: block;
+                        width: 350px;
+                        margin-bottom: 70px;
+                    }
+
+                    .laptop {
+                        display: none;
+                    }
+
+                    .laptop-mobile {
+                        display: block;
+                        width: 95%;
+                    }
+                }
+
+            }
+        }
+
+        .third {
+            background: url('../img/Mobile/Section\ 3/patern.png') no-repeat;
+            background-size: cover;
+    
+            .container-third {
+                padding-top: 85px;
+                padding-bottom: 100px;
+    
+                .title {
+                    margin-bottom: 30px;
+    
+                    h2 {
+                        font-size: 24px;
+                        line-height: 36px;
+                        letter-spacing: 0.5%;
+                    }
+                }
+    
+                .wrap-row {
+                    padding: 0 10px;
+    
+                    .row {
+                        .col {
+                            .card {
+                                border: none;
+                                border-radius: 20px;
+    
+                                .container {    
+                                    h2 {
+                                        font-size: 28px;
+                                        font-weight: 700;
+                                        line-height: 30px;
+                                    }
+    
+                                    p {
+                                        margin-bottom: 0;
+                                        font-size: 16px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+footer {
+    .container {
+        padding-top: 20px;
+        padding-bottom: 40px;
+
+        .row {
+            .left {
+                img {
+                    width: 112px;
+                    margin-bottom: 11px;
+                }
+
+                p {
+                    font-family: 'Baloo 2';
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 24px;
+                    letter-spacing: 0em;
+                    text-align: left;
+                    color: #777F94;
+                }
+            }
+
+            .right {
+                padding-top: 25px;
+
+                p {
+                    font-family: H'arabara Mais';
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 17px;
+                    letter-spacing: 0em;
+                    text-align: right;
+                    color: #7B8397;
+                }
+
+                .d-flex {
+                    float: right;
+                    clear: right;
+
+                    img {
+                        width: 32px;
+                        margin-left: 20px;
+                    }
                 }
             }
         }

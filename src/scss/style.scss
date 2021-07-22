@@ -1,8 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Baloo+2&display=swap');
 
 header {
+    background: url('../img/Desktop/Header/PNG/pattern.png') no-repeat;
+    background-size: cover;
+
     .wrap-nav {
-        background-color: #D3F1F3;
+        // background-color: #D3F1F3;
 
         nav {
             .container {
@@ -34,14 +37,12 @@ header {
             }
         }
     }
-}
 
-main {
     .jumbotron {
-        background-color: #D3F1F3;
+        padding-top: 40px;
 
         .container {
-            padding-top: 40px;
+            // padding-top: 40px;
 
             .title {
                 width: 600px;
@@ -81,7 +82,9 @@ main {
             }
         }
     }
+}
 
+main {
     .first {
         .container {
             padding-top: 125px;
@@ -151,6 +154,339 @@ main {
                 letter-spacing: 0em;
                 text-align: left;
                 color: #18223A;
+            }
+        }
+    }
+
+    .second {
+        background: url('../img/Desktop/Section\ 2/patern.png') no-repeat;
+        background-size: cover;
+        // background-attachment: fixed;
+
+        .container {
+            padding-top: 100px;
+            padding-bottom: 70px;
+
+            .title {
+                margin-bottom: 60px;
+
+                h2 {
+                    // font-family: Harabara Mais Demo;
+                    font-size: 40px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 44px;
+                    letter-spacing: 0em;
+                    text-align: center;
+                }
+            }
+
+            .wrap-img {
+                img {
+                    width: 700px;
+                }
+
+                .laptop {
+                    margin-top: 50px;
+                    width: 100%;
+                }
+            }
+
+        }
+    }
+
+    .third {
+        background: url('../img/Desktop/Section\ 3/patern.png') no-repeat;
+        background-size: cover;
+
+        .container-third {
+            padding-top: 140px;
+            padding-bottom: 140px;
+
+            .title {
+                margin-bottom: 50px;
+
+                h2 {
+                    font-family: 'Baloo 2';
+                    font-size: 40px;
+                    font-weight: 700;
+                    line-height: 50px;
+                    letter-spacing: 0em;
+                    text-align: center;
+                    color: #18223A;
+                }
+            }
+
+            .wrap-row {
+                padding: 0 60px;
+
+                .row {
+                    .col {
+                        .card {
+                            border: none;
+                            border-radius: 20px;
+
+                            .container {
+                                padding: 25px;
+
+                                h2 {
+                                    color: white;
+                                    font-family: 'Baloo 2';
+                                    font-size: 40px;
+                                    font-style: normal;
+                                    font-weight: 700;
+                                    line-height: 50px;
+                                    letter-spacing: 0em;
+                                    text-align: left;
+                                }
+
+                                p {
+                                    margin-bottom: 0;
+                                    font-family: 'Baloo 2';
+                                    font-size: 15px;
+                                    font-style: normal;
+                                    font-weight: 400;
+                                    line-height: 28px;
+                                    letter-spacing: 0em;
+                                    text-align: left;
+                                    color: white;
+                                }
+                            }
+                        }
+
+                        .card-left {
+                            background-color: #F53C8E;
+                        }
+
+                        .card-center {
+                            background-color: #FEB61C;
+                        }
+
+                        .card-right {
+                            background-color: #00BAC7;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .fifth {
+        background: url('../img/Desktop/Section\ 4/patern.png') no-repeat;
+        background-size: cover;
+
+        .container-fifth {
+            padding-top: 140px;
+            padding-bottom: 140px;
+
+            .title {
+                margin-bottom: 50px;
+
+                h2 {
+                    font-family: 'Baloo 2';
+                    font-size: 40px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: 50px;
+                    letter-spacing: 0em;
+                    text-align: center;
+                    color: #18223A;
+                }
+            }
+
+            .wrap-row {
+                padding-left: 200px;
+                padding-right: 200px;
+
+                .col {
+                    padding: 0;
+                }
+
+                .left {
+                    .card {
+                        border-radius: 30px;
+                        border: none;
+                        box-shadow: 0px 20px 39px 16px rgba(83, 99, 123, 0.08);
+
+                        .card-top {
+                            padding: 40px;
+                            padding-bottom: 25px;
+                            border-bottom: 1px solid #E6EAF1;
+
+                            h3 {
+                                font-family: 'Baloo 2';
+                                font-size: 24px;
+                                font-style: normal;
+                                font-weight: 600;
+                                line-height: 27px;
+                                letter-spacing: 0em;
+                                text-align: left;
+                                color: #18223A;
+                            }
+
+                            p {
+                                font-family: 'Baloo 2';
+                                font-size: 16px;
+                                font-style: normal;
+                                font-weight: 400;
+                                line-height: 17px;
+                                letter-spacing: 0em;
+                                text-align: left;
+                                color: #858B9A;
+                            }
+                        }
+
+                        .card-body {
+                            padding-top: 0;
+
+                            .container {
+                                .wrap-text {
+                                    border-bottom: 1px solid #E6EAF1;
+                                    padding: 15px 0;
+
+                                    &:nth-child(3) {
+                                        border-bottom: none;
+                                    }
+
+                                    p {
+                                        margin: 0;
+                                        font-family: 'Baloo 2';
+                                        font-size: 14px;
+                                        font-style: normal;
+                                        font-weight: 400;
+                                        line-height: 17px;
+                                        letter-spacing: 0em;
+                                        text-align: left;
+                                        color: #858B9A;
+                                    }
+
+                                    h3 {
+                                        font-family: Baloo 2;
+                                        font-size: 18px;
+                                        font-style: normal;
+                                        font-weight: 600;
+                                        line-height: 20px;
+                                        letter-spacing: 0em;
+                                        text-align: left;
+                                        color: #18223A;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .right {
+                    .card {
+                        background: url('../img/Desktop/Section\ 4/background-patern.png') no-repeat;
+                        background-size: cover;
+                        border-radius: 30px;
+                        border: none;
+                        box-shadow: 0px 20px 39px 16px rgba(83, 99, 123, 0.08);
+
+                        .card-top {
+                            padding: 40px;
+                            padding-bottom: 25px;
+                            border-bottom: 1px solid #E6EAF1;
+
+                            h3 {
+                                font-family: 'Baloo 2';
+                                font-size: 24px;
+                                font-style: normal;
+                                font-weight: 600;
+                                line-height: 27px;
+                                letter-spacing: 0em;
+                                text-align: left;
+                                color: #FFFFFF;
+                            }
+
+                            p {
+                                font-family: 'Baloo 2';
+                                font-size: 16px;
+                                font-style: normal;
+                                font-weight: 400;
+                                line-height: 17px;
+                                letter-spacing: 0em;
+                                text-align: left;
+                                color: #FFFFFF;
+                            }
+                        }
+
+                        .card-body {
+                            padding-top: 0;
+
+                            .container {
+                                .wrap-text {
+                                    border-bottom: 1px solid #E6EAF1;
+                                    padding: 15px 0;
+
+                                    &:nth-child(3) {
+                                        border-bottom: none;
+                                    }
+
+                                    p {
+                                        margin: 0;
+                                        font-family: 'Baloo 2';
+                                        font-size: 14px;
+                                        font-style: normal;
+                                        font-weight: 400;
+                                        line-height: 17px;
+                                        letter-spacing: 0em;
+                                        text-align: left;
+                                        color: #FFFFFF;
+                                    }
+
+                                    h3 {
+                                        font-family: Baloo 2;
+                                        font-size: 18px;
+                                        font-style: normal;
+                                        font-weight: 600;
+                                        line-height: 20px;
+                                        letter-spacing: 0em;
+                                        text-align: left;
+                                        color: #FFFFFF;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .wrap-vs {
+                    background: #F9AE0F;
+                    position: absolute;
+                    border-radius: 100%;
+                    width: 60px;
+                    height: 60px;
+                    padding-top: 17px;
+                    padding-left: 17px;
+                    margin-top: 170px;
+                    margin-left: 340px;
+
+                    h3 {
+                        margin: 0;
+                        font-family: 'Baloo 2';
+                        font-size: 22px;
+                        font-style: normal;
+                        font-weight: 600;
+                        line-height: 27px;
+                        letter-spacing: 0em;
+                        text-align: left;
+                        color: #5C3F00;
+                    }
+                }
+
+                .wrap-btn-google {
+                    margin-top: 40px;
+    
+                    .btn-google {
+                        padding: 0;
+    
+                        img {
+                            width: 205px;
+                        }
+                    }
+                }
             }
         }
     }

@@ -230,21 +230,21 @@ main .third .container-third .wrap-row .row .col .card-right {
   background-color: #00BAC7;
 }
 
-main .fifth {
+main .fourth {
   background: url("../img/Desktop/Section 4/patern.png") no-repeat;
   background-size: cover;
 }
 
-main .fifth .container-fifth {
+main .fourth .container-fourth {
   padding-top: 140px;
   padding-bottom: 140px;
 }
 
-main .fifth .container-fifth .title {
+main .fourth .container-fourth .title {
   margin-bottom: 50px;
 }
 
-main .fifth .container-fifth .title h2 {
+main .fourth .container-fourth .title h2 {
   font-family: 'Baloo 2';
   font-size: 40px;
   font-style: normal;
@@ -255,29 +255,29 @@ main .fifth .container-fifth .title h2 {
   color: #18223A;
 }
 
-main .fifth .container-fifth .wrap-row {
+main .fourth .container-fourth .wrap-row {
   padding-left: 200px;
   padding-right: 200px;
 }
 
-main .fifth .container-fifth .wrap-row .col {
+main .fourth .container-fourth .wrap-row .col {
   padding: 0;
 }
 
-main .fifth .container-fifth .wrap-row .left .card {
+main .fourth .container-fourth .wrap-row .left .card {
   border-radius: 30px;
   border: none;
   -webkit-box-shadow: 0px 20px 39px 16px rgba(83, 99, 123, 0.08);
           box-shadow: 0px 20px 39px 16px rgba(83, 99, 123, 0.08);
 }
 
-main .fifth .container-fifth .wrap-row .left .card .card-top {
+main .fourth .container-fourth .wrap-row .left .card .card-top {
   padding: 40px;
   padding-bottom: 25px;
   border-bottom: 1px solid #E6EAF1;
 }
 
-main .fifth .container-fifth .wrap-row .left .card .card-top h3 {
+main .fourth .container-fourth .wrap-row .left .card .card-top h3 {
   font-family: 'Baloo 2';
   font-size: 24px;
   font-style: normal;
@@ -288,7 +288,7 @@ main .fifth .container-fifth .wrap-row .left .card .card-top h3 {
   color: #18223A;
 }
 
-main .fifth .container-fifth .wrap-row .left .card .card-top p {
+main .fourth .container-fourth .wrap-row .left .card .card-top p {
   font-family: 'Baloo 2';
   font-size: 16px;
   font-style: normal;
@@ -299,20 +299,20 @@ main .fifth .container-fifth .wrap-row .left .card .card-top p {
   color: #858B9A;
 }
 
-main .fifth .container-fifth .wrap-row .left .card .card-body {
+main .fourth .container-fourth .wrap-row .left .card .card-body {
   padding-top: 0;
 }
 
-main .fifth .container-fifth .wrap-row .left .card .card-body .container .wrap-text {
+main .fourth .container-fourth .wrap-row .left .card .card-body .container .wrap-text {
   border-bottom: 1px solid #E6EAF1;
   padding: 15px 0;
 }
 
-main .fifth .container-fifth .wrap-row .left .card .card-body .container .wrap-text:nth-child(3) {
+main .fourth .container-fourth .wrap-row .left .card .card-body .container .wrap-text:nth-child(3) {
   border-bottom: none;
 }
 
-main .fifth .container-fifth .wrap-row .left .card .card-body .container .wrap-text p {
+main .fourth .container-fourth .wrap-row .left .card .card-body .container .wrap-text p {
   margin: 0;
   font-family: 'Baloo 2';
   font-size: 14px;
@@ -324,7 +324,7 @@ main .fifth .container-fifth .wrap-row .left .card .card-body .container .wrap-t
   color: #858B9A;
 }
 
-main .fifth .container-fifth .wrap-row .left .card .card-body .container .wrap-text h3 {
+main .fourth .container-fourth .wrap-row .left .card .card-body .container .wrap-text h3 {
   font-family: Baloo 2;
   font-size: 18px;
   font-style: normal;
@@ -335,7 +335,7 @@ main .fifth .container-fifth .wrap-row .left .card .card-body .container .wrap-t
   color: #18223A;
 }
 
-main .fifth .container-fifth .wrap-row .right .card {
+main .fourth .container-fourth .wrap-row .right .card {
   background: url("../img/Desktop/Section 4/background-patern.png") no-repeat;
   background-size: cover;
   border-radius: 30px;
@@ -344,13 +344,13 @@ main .fifth .container-fifth .wrap-row .right .card {
           box-shadow: 0px 20px 39px 16px rgba(83, 99, 123, 0.08);
 }
 
-main .fifth .container-fifth .wrap-row .right .card .card-top {
+main .fourth .container-fourth .wrap-row .right .card .card-top {
   padding: 40px;
   padding-bottom: 25px;
   border-bottom: 1px solid #E6EAF1;
 }
 
-main .fifth .container-fifth .wrap-row .right .card .card-top h3 {
+main .fourth .container-fourth .wrap-row .right .card .card-top h3 {
   font-family: 'Baloo 2';
   font-size: 24px;
   font-style: normal;
@@ -361,7 +361,7 @@ main .fifth .container-fifth .wrap-row .right .card .card-top h3 {
   color: #FFFFFF;
 }
 
-main .fifth .container-fifth .wrap-row .right .card .card-top p {
+main .fourth .container-fourth .wrap-row .right .card .card-top p {
   font-family: 'Baloo 2';
   font-size: 16px;
   font-style: normal;
@@ -372,20 +372,20 @@ main .fifth .container-fifth .wrap-row .right .card .card-top p {
   color: #FFFFFF;
 }
 
-main .fifth .container-fifth .wrap-row .right .card .card-body {
+main .fourth .container-fourth .wrap-row .right .card .card-body {
   padding-top: 0;
 }
 
-main .fifth .container-fifth .wrap-row .right .card .card-body .container .wrap-text {
+main .fourth .container-fourth .wrap-row .right .card .card-body .container .wrap-text {
   border-bottom: 1px solid #E6EAF1;
   padding: 15px 0;
 }
 
-main .fifth .container-fifth .wrap-row .right .card .card-body .container .wrap-text:nth-child(3) {
+main .fourth .container-fourth .wrap-row .right .card .card-body .container .wrap-text:nth-child(3) {
   border-bottom: none;
 }
 
-main .fifth .container-fifth .wrap-row .right .card .card-body .container .wrap-text p {
+main .fourth .container-fourth .wrap-row .right .card .card-body .container .wrap-text p {
   margin: 0;
   font-family: 'Baloo 2';
   font-size: 14px;
@@ -397,7 +397,7 @@ main .fifth .container-fifth .wrap-row .right .card .card-body .container .wrap-
   color: #FFFFFF;
 }
 
-main .fifth .container-fifth .wrap-row .right .card .card-body .container .wrap-text h3 {
+main .fourth .container-fourth .wrap-row .right .card .card-body .container .wrap-text h3 {
   font-family: Baloo 2;
   font-size: 18px;
   font-style: normal;
@@ -408,7 +408,7 @@ main .fifth .container-fifth .wrap-row .right .card .card-body .container .wrap-
   color: #FFFFFF;
 }
 
-main .fifth .container-fifth .wrap-row .wrap-vs {
+main .fourth .container-fourth .wrap-row .wrap-vs {
   background: #F9AE0F;
   position: absolute;
   border-radius: 100%;
@@ -420,7 +420,7 @@ main .fifth .container-fifth .wrap-row .wrap-vs {
   margin-left: 340px;
 }
 
-main .fifth .container-fifth .wrap-row .wrap-vs h3 {
+main .fourth .container-fourth .wrap-row .wrap-vs h3 {
   margin: 0;
   font-family: 'Baloo 2';
   font-size: 22px;
@@ -432,15 +432,45 @@ main .fifth .container-fifth .wrap-row .wrap-vs h3 {
   color: #5C3F00;
 }
 
-main .fifth .container-fifth .wrap-row .wrap-btn-google {
+main .fourth .container-fourth .wrap-row .wrap-btn-google {
   margin-top: 40px;
 }
 
-main .fifth .container-fifth .wrap-row .wrap-btn-google .btn-google {
+main .fourth .container-fourth .wrap-row .wrap-btn-google .btn-google {
   padding: 0;
 }
 
-main .fifth .container-fifth .wrap-row .wrap-btn-google .btn-google img {
+main .fourth .container-fourth .wrap-row .wrap-btn-google .btn-google img {
   width: 205px;
+}
+
+main .fifth {
+  background: url("../img/Desktop/Section 5/PNG/patern-illustration.png") no-repeat;
+  background-size: cover;
+}
+
+main .fifth .container {
+  padding-top: 140px;
+  padding-bottom: 50px;
+}
+
+main .fifth .container .title {
+  padding: 0 150px;
+  margin-bottom: 65px;
+}
+
+main .fifth .container .title h2 {
+  font-family: 'Baloo 2';
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 50px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #18223A;
+}
+
+main .fifth .container .wrap-img img {
+  width: 680px;
 }
 /*# sourceMappingURL=style.css.map */

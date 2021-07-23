@@ -8,5 +8,5 @@ const closeSideNav = () => mainNavigation.classList.remove("active");
 toggler.addEventListener("click", openSideNav);
 overlay.addEventListener("click", closeSideNav);
 
-document.addEventListener("swiped-right", openSideNav);
+// document.addEventListener("swiped-right", openSideNav);
 document.addEventListener("swiped-left", closeSideNav);

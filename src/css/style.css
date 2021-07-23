@@ -45,7 +45,7 @@ header .jumbotron .container .title h1 {
 
 header .jumbotron .container .title h1 .lessons {
   background: url("../img/Vector45.png") no-repeat;
-  background-size: 128px;
+  background-size: 189px;
   padding-left: 12px;
   padding-right: 12px;
 }
@@ -1796,7 +1796,126 @@ main .seventh .wrap-seventh .container .wrap-btn .btn-seventh img {
   }
 }
 
-@media screen and (max-width: 675px) {
+@media screen and (max-width: 700px) {
+  main .first .container {
+    padding-top: 80px;
+    padding-bottom: 40px;
+  }
+  main .first .container .title {
+    padding-left: 25px;
+    padding-right: 25px;
+    margin-bottom: 30px;
+  }
+  main .first .container .title h2 {
+    font-size: 24px;
+    line-height: 33px;
+    letter-spacing: 0.5%;
+  }
+  main .first .container .wrap-row .row-top {
+    padding-left: 12px;
+    padding-right: 12px;
+    margin-bottom: 25px;
+  }
+  main .first .container .wrap-row .row-top .col img {
+    width: 170px;
+  }
+  main .first .container .wrap-row .row-bottom {
+    padding-left: 12px;
+    padding-right: 12px;
+    margin-bottom: 25px;
+  }
+  main .first .container .wrap-row .row-bottom .col img {
+    width: 170px;
+  }
+  main .first .container .wrap-btn-google {
+    margin-bottom: 40px;
+  }
+  main .first .container .wrap-btn-google .btn-google {
+    padding: 0;
+  }
+  main .first .container .wrap-btn-google .btn-google img {
+    width: 195px;
+  }
+  main .first .container .trademark {
+    font-size: 16px;
+    text-align: center;
+  }
+  main .second {
+    background: url("../img/Mobile/Section 2/PNG/patern.png") no-repeat;
+    background-size: cover;
+  }
+  main .second .container {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+  main .second .container .title {
+    padding-left: 20px;
+    margin-bottom: 35px;
+  }
+  main .second .container .title h2 {
+    font-family: 'Baloo 2';
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 36px;
+    letter-spacing: -0.005em;
+    text-align: left;
+    color: #18223A;
+  }
+  main .second .container .wrap-img .feature {
+    display: none;
+  }
+  main .second .container .wrap-img .feature-mobile {
+    display: block;
+    width: 350px;
+    margin-bottom: 70px;
+  }
+  main .second .container .wrap-img .laptop {
+    display: none;
+  }
+  main .second .container .wrap-img .laptop-mobile {
+    display: block;
+    width: 95%;
+  }
+  main .second .container .wrap-img .wrap-btn .btn {
+    position: absolute;
+    margin-top: 60px;
+    margin-left: 150px;
+  }
+  main .second .container .wrap-img .wrap-btn .btn:focus {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  main .second .container .wrap-img .wrap-btn .btn .play {
+    width: 70px;
+  }
+  main .second .container .wrap-img .wrap-btn .modal .modal-dialog {
+    width: 95%;
+  }
+  main .second .container .wrap-img .wrap-btn .modal .modal-dialog .modal-content {
+    border: none;
+    width: 100%;
+  }
+  main .second .container .wrap-img .wrap-btn .modal .modal-dialog .modal-content .pop-up {
+    border-radius: 10px;
+    width: 100%;
+  }
+  main .second .container .wrap-img .wrap-btn .modal .modal-dialog .modal-content .wrap-btn .btn-pop-up {
+    position: absolute;
+    bottom: 80px;
+    right: 150px;
+    z-index: 99;
+  }
+  main .second .container .wrap-img .wrap-btn .modal .modal-dialog .modal-content .wrap-btn .btn-pop-up:focus {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  main .second .container .wrap-img .wrap-btn .modal .modal-dialog .modal-content .wrap-btn .btn-pop-up .play-pop-up {
+    width: 64px;
+  }
+}
+
+@media screen and (max-width: 375px) {
   main .first .container {
     padding-top: 80px;
     padding-bottom: 40px;

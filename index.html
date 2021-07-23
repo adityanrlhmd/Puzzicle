@@ -124,6 +124,25 @@
                     <img class="mx-auto feature" src="src/img/Desktop/Section 2/feature.png" alt="">
                     <img class="mx-auto feature-mobile" src="src/img/Mobile/Section 2/PNG/icon illustration (2).png"
                         alt="">
+                    <div class="wrap-btn">
+                        <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            <img class="play" src="src/img/Desktop/Section 2/Play Button.png" alt="">
+                        </button>
+                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog modal-lg modal-dialog-centered">
+                                <div class="modal-content">
+                                    <div class="wrap-btn">
+                                        <button type="button" class="btn btn-pop-up">
+                                            <img src="src/img/Desktop/Section 2/Play Button.png" alt=""
+                                                class="play-pop-up">
+                                        </button>
+                                    </div>
+                                    <img class="pop-up" src="src/img/pop-up.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     <img class="mx-auto laptop" src="src/img/Desktop/Section 2/Laptop.png" alt="">
                     <img class="mx-auto laptop-mobile" src="src/img/Mobile/Section 2/PNG/laptop.png" alt="">
                 </div>
@@ -138,7 +157,7 @@
                     </h2>
                 </div>
                 <div class="wrap-row">
-                    <div class="row row-cols-1 row-cols-md-3 g-4">
+                    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
                         <div class="col">
                             <div class="card card-left">
                                 <div class="container">
@@ -163,7 +182,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col">
+                        <div class="col mx-auto">
                             <div class="card card-right">
                                 <div class="container">
                                     <h2>
@@ -509,16 +528,28 @@
             prevArrow: "<img class='a-left control-c prev slick-prev' src='src/img/Desktop/Section-6/arrow-left.png'>",
             nextArrow: "<img class='a-right control-c next slick-next' src='src/img/Desktop/Section-6/arrow-right.png'>",
             responsive: [{
-                breakpoint: 675,
-                settings: {
-                    slidesToShow: 1,
-                    autoplay: true,
-                    autoplaySpeed: 2000,
-                    arrows: false,
-                    dots: false,
-                    pauseOnHover: false,
+                    breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 1,
+                        autoplay: true,
+                        autoplaySpeed: 2500,
+                        // arrows: false,
+                        // dots: false,
+                        // pauseOnHover: false,
+                    }
+                },
+                {
+                    breakpoint: 675,
+                    settings: {
+                        slidesToShow: 1,
+                        autoplay: true,
+                        autoplaySpeed: 2000,
+                        arrows: false,
+                        dots: false,
+                        pauseOnHover: false,
+                    },
                 }
-            }]
+            ]
         });
     </script>
 </body>

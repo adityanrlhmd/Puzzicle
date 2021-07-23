@@ -3,6 +3,7 @@
 header {
     background: url('../img/Desktop/Header/PNG/pattern.png') no-repeat;
     background-size: cover;
+    // padding-bottom: -50px;
 
     .wrap-nav {
         // background-color: #D3F1F3;
@@ -15,6 +16,53 @@ header {
                     }
                 }
 
+                .sidebar,
+                .overlay {
+                    position: fixed;
+                    top: 0;
+                    bottom: 0;
+                }
+
+
+                .overlay {
+                    left: 0;
+                    right: 0;
+                    height: 100%;
+                    width: 100%;
+                    background-color: rgba(0, 0, 0, 0.75);
+                    visibility: hidden;
+                }
+
+                .sidebar {
+                    background: url('../img/Mobile/Header/PNG/background.png') no-repeat;
+                    background-size: cover;
+                    left: -100%;
+                    max-width: 300px;
+                    // padding: 20px;
+                    transition: all ease 0.25s;
+
+
+                    .navbar-nav {
+                        .nav-item {
+                            margin-top: auto;
+                            margin-bottom: auto;
+                            margin-right: 30px;
+
+                            .nav-link {
+                                font-family: 'Baloo 2';
+                                font-weight: 700;
+                                font-size: 16px;
+                                line-height: 18.75px;
+                                color: #18223A;
+
+                                img {
+                                    width: 100%;
+                                }
+                            }
+                        }
+                    }
+                }
+
                 .navbar-collapse {
                     .navbar-nav {
                         .nav-item {
@@ -23,6 +71,8 @@ header {
                             margin-right: 30px;
 
                             .nav-link {
+                                font-family: 'Baloo 2';
+                                font-weight: 700;
                                 font-size: 16px;
                                 line-height: 18.75px;
                                 color: #18223A;
@@ -35,6 +85,14 @@ header {
                     }
                 }
             }
+        }
+
+        .main-navigation.active .sidebar {
+            left: 0;
+        }
+
+        .main-navigation.active .overlay {
+            visibility: visible;
         }
     }
 
@@ -74,15 +132,18 @@ header {
                 }
             }
 
-            .illustration {
-                img {
-                    width: 100%;
-                    overflow: hidden;
-                }
-            }
-
             .illustration-mobile {
                 display: none;
+            }
+        }
+
+        .illustration {
+            // margin-top: -70px;
+            // margin-bottom: -50px;
+
+            svg {
+                width: 100%;
+                overflow: hidden;
             }
         }
     }
@@ -204,16 +265,18 @@ header {
                     }
                 }
 
-                .illustration {
-                    display: none;
-                }
-
                 .illustration-mobile {
                     display: block;
 
                     img {
                         width: 100%;
                     }
+                }
+            }
+
+            .illustration {
+                svg {
+                    display: none;
                 }
             }
         }
@@ -224,6 +287,23 @@ header {
     header {
         background: url('../img/Mobile/Header/PNG/background.png') no-repeat;
         background-size: cover;
+
+        .wrap-nav {
+            nav {
+                .container {
+                    .sidebar {
+                        max-width: 280px;
+
+                        .navbar-nav {
+                            .nav-link {
+                                padding-left: 30px;
+                                padding-right: 30px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
 
         .jumbotron {
             .container {
@@ -253,15 +333,38 @@ header {
                     }
                 }
 
-                .illustration {
-                    display: none;
-                }
-
                 .illustration-mobile {
                     display: block;
 
                     img {
                         width: 100%;
+                    }
+                }
+            }
+
+            .illustration {
+                svg {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 350px) {
+    header {
+        .wrap-nav {
+            nav {
+                .container {
+                    .sidebar {
+                        max-width: 220px;
+
+                        .navbar-nav {
+                            .nav-link {
+                                padding-left: 15px;
+                                padding-right: 15px;
+                            }
+                        }
                     }
                 }
             }
@@ -273,6 +376,23 @@ header {
     header {
         background: url('../img/Mobile/Header/PNG/background.png') no-repeat;
         background-size: cover;
+
+        .wrap-nav {
+            nav {
+                .container {
+                    .sidebar {
+                        max-width: 200px;
+
+                        .navbar-nav {
+                            .nav-link {
+                                padding-left: 10px;
+                                padding-right: 10px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
 
         .jumbotron {
             padding-top: 20px;
@@ -407,10 +527,10 @@ main {
                 margin-bottom: 60px;
 
                 h2 {
-                    font-family: 'Harabara Mais Demo';
+                    font-family: 'Baloo 2';
                     font-size: 40px;
                     font-style: normal;
-                    font-weight: 400;
+                    font-weight: 700;
                     line-height: 44px;
                     letter-spacing: 0em;
                     text-align: center;
@@ -469,7 +589,7 @@ main {
                                         bottom: 180px;
                                         right: 320px;
                                         z-index: 99;
-                                        
+
                                         &:focus {
                                             box-shadow: none;
                                         }
@@ -867,6 +987,10 @@ main {
                         height: 45px;
                     }
 
+                    .slick-list {
+                        // padding-top: 40px;
+                    }
+
                     .wrap-card {
                         margin-right: 15px;
                         margin-left: 15px;
@@ -876,8 +1000,8 @@ main {
 
                             .container {
                                 padding: 40px;
-                                padding-bottom: 0;
 
+                                // padding-bottom: 10px;
                                 .d-flex {
                                     img {
                                         width: 22px;
@@ -896,58 +1020,48 @@ main {
                                         color: #7B8397;
                                     }
                                 }
-                            }
 
-                            .card-body {
-                                padding: 0;
+                                p {
+                                    font-family: 'Baloo 2';
+                                    font-size: 16px;
+                                    font-style: normal;
+                                    font-weight: 400;
+                                    line-height: 28px;
+                                    letter-spacing: 0em;
+                                    text-align: left;
+                                    color: #7B8397;
+                                }
 
-                                .container {
-                                    padding: 40px;
-                                    padding-top: 0;
-                                    padding-bottom: 10px;
+                                .people {
+                                    .d-flex {
+                                        img {
+                                            border-radius: 100%;
+                                            width: 45px;
+                                            height: 45px;
+                                            margin-right: 10px;
+                                        }
 
-                                    p {
-                                        font-family: 'Baloo 2';
-                                        font-size: 16px;
-                                        font-style: normal;
-                                        font-weight: 400;
-                                        line-height: 28px;
-                                        letter-spacing: 0em;
-                                        text-align: left;
-                                        color: #7B8397;
-                                    }
-
-                                    .people {
-                                        .d-flex {
-                                            img {
-                                                border-radius: 100%;
-                                                width: 45px;
-                                                height: 45px;
-                                                margin-right: 10px;
+                                        .name {
+                                            h6 {
+                                                font-family: 'Baloo 2';
+                                                font-size: 16px;
+                                                font-style: normal;
+                                                font-weight: 600;
+                                                line-height: 17px;
+                                                letter-spacing: 0em;
+                                                text-align: left;
+                                                color: #18223A;
                                             }
 
-                                            .name {
-                                                h6 {
-                                                    font-family: 'Baloo 2';
-                                                    font-size: 16px;
-                                                    font-style: normal;
-                                                    font-weight: 600;
-                                                    line-height: 17px;
-                                                    letter-spacing: 0em;
-                                                    text-align: left;
-                                                    color: #18223A;
-                                                }
-
-                                                p {
-                                                    font-family: 'Baloo 2';
-                                                    font-size: 15px;
-                                                    font-style: normal;
-                                                    font-weight: 400;
-                                                    line-height: 16px;
-                                                    letter-spacing: 0em;
-                                                    text-align: left;
-                                                    color: #7B8397;
-                                                }
+                                            p {
+                                                font-family: 'Baloo 2';
+                                                font-size: 15px;
+                                                font-style: normal;
+                                                font-weight: 400;
+                                                line-height: 16px;
+                                                letter-spacing: 0em;
+                                                text-align: left;
+                                                color: #7B8397;
                                             }
                                         }
                                     }
@@ -1127,40 +1241,40 @@ main {
                             position: absolute;
                             margin-top: 180px;
                             margin-left: 405px;
-                            
+
                             &:focus {
                                 box-shadow: none;
                             }
-    
+
                             .play {
                                 width: 114px;
                             }
                         }
-    
+
                         .modal {
                             .modal-dialog {
                                 width: 100%;
-    
+
                                 .modal-content {
                                     border: none;
                                     width: 100%;
-    
+
                                     .pop-up {
                                         border-radius: 20px;
                                         width: 100%;
                                     }
-    
+
                                     .wrap-btn {
                                         .btn-pop-up {
                                             position: absolute;
                                             bottom: 180px;
                                             right: 325px;
                                             z-index: 99;
-                            
+
                                             &:focus {
                                                 box-shadow: none;
                                             }
-    
+
                                             .play-pop-up {
                                                 width: 114px;
                                             }
@@ -1497,39 +1611,28 @@ main {
 
                             .card {
                                 border-radius: 20px;
-
-                                .container {
-                                    padding: 40px;
-                                    padding-bottom: 0;
-
-                                    .d-flex {
-                                        img {
-                                            width: 22px;
-                                            height: 22px;
-                                            margin-right: 7px;
-                                        }
-
-                                        p {
-                                            font-family: 'Baloo 2';
-                                            font-size: 16px;
-                                            font-style: normal;
-                                            font-weight: 400;
-                                            line-height: 28px;
-                                            letter-spacing: 0em;
-                                            text-align: left;
-                                            color: #7B8397;
-                                        }
-                                    }
-                                }
-
-                                .card-body {
-                                    padding: 0;
-
+                                    
                                     .container {
                                         padding: 40px;
-                                        padding-top: 0;
-                                        padding-bottom: 10px;
-
+                                        
+                                        .d-flex {
+                                            img {
+                                                width: 22px;
+                                                height: 22px;
+                                                margin-right: 7px;
+                                            }
+        
+                                            p {
+                                                font-family: 'Baloo 2';
+                                                font-size: 16px;
+                                                font-style: normal;
+                                                font-weight: 400;
+                                                line-height: 28px;
+                                                letter-spacing: 0em;
+                                                text-align: left;
+                                                color: #7B8397;
+                                            }
+                                        }
                                         p {
                                             font-family: 'Baloo 2';
                                             font-size: 16px;
@@ -1576,7 +1679,6 @@ main {
                                             }
                                         }
                                     }
-                                }
                             }
                         }
                     }
@@ -1748,40 +1850,40 @@ main {
                             position: absolute;
                             margin-top: 140px;
                             margin-left: 300.5px;
-                            
+
                             &:focus {
                                 box-shadow: none;
                             }
-    
+
                             .play {
                                 width: 72.44px;
                             }
                         }
-    
+
                         .modal {
                             .modal-dialog {
                                 width: 100%;
-    
+
                                 .modal-content {
                                     border: none;
                                     width: 100%;
-    
+
                                     .pop-up {
                                         border-radius: 20px;
                                         width: 100%;
                                     }
-    
+
                                     .wrap-btn {
                                         .btn-pop-up {
                                             position: absolute;
                                             bottom: 110px;
                                             right: 200px;
                                             z-index: 99;
-                            
+
                                             &:focus {
                                                 box-shadow: none;
                                             }
-    
+
                                             .play-pop-up {
                                                 width: 64px;
                                             }
@@ -2120,7 +2222,6 @@ main {
 
                                 .container {
                                     padding: 40px;
-                                    padding-bottom: 0;
 
                                     .d-flex {
                                         img {
@@ -2140,58 +2241,49 @@ main {
                                             color: #7B8397;
                                         }
                                     }
-                                }
 
-                                .card-body {
-                                    padding: 0;
+                                    
+                                    p {
+                                        font-family: 'Baloo 2';
+                                        font-size: 16px;
+                                        font-style: normal;
+                                        font-weight: 400;
+                                        line-height: 28px;
+                                        letter-spacing: 0em;
+                                        text-align: left;
+                                        color: #7B8397;
+                                    }
 
-                                    .container {
-                                        padding: 40px;
-                                        padding-top: 0;
-                                        padding-bottom: 10px;
+                                    .people {
+                                        .d-flex {
+                                            img {
+                                                border-radius: 100%;
+                                                width: 45px;
+                                                height: 45px;
+                                                margin-right: 10px;
+                                            }
 
-                                        p {
-                                            font-family: 'Baloo 2';
-                                            font-size: 16px;
-                                            font-style: normal;
-                                            font-weight: 400;
-                                            line-height: 28px;
-                                            letter-spacing: 0em;
-                                            text-align: left;
-                                            color: #7B8397;
-                                        }
-
-                                        .people {
-                                            .d-flex {
-                                                img {
-                                                    border-radius: 100%;
-                                                    width: 45px;
-                                                    height: 45px;
-                                                    margin-right: 10px;
+                                            .name {
+                                                h6 {
+                                                    font-family: 'Baloo 2';
+                                                    font-size: 16px;
+                                                    font-style: normal;
+                                                    font-weight: 600;
+                                                    line-height: 17px;
+                                                    letter-spacing: 0em;
+                                                    text-align: left;
+                                                    color: #18223A;
                                                 }
 
-                                                .name {
-                                                    h6 {
-                                                        font-family: 'Baloo 2';
-                                                        font-size: 16px;
-                                                        font-style: normal;
-                                                        font-weight: 600;
-                                                        line-height: 17px;
-                                                        letter-spacing: 0em;
-                                                        text-align: left;
-                                                        color: #18223A;
-                                                    }
-
-                                                    p {
-                                                        font-family: 'Baloo 2';
-                                                        font-size: 15px;
-                                                        font-style: normal;
-                                                        font-weight: 400;
-                                                        line-height: 16px;
-                                                        letter-spacing: 0em;
-                                                        text-align: left;
-                                                        color: #7B8397;
-                                                    }
+                                                p {
+                                                    font-family: 'Baloo 2';
+                                                    font-size: 15px;
+                                                    font-style: normal;
+                                                    font-weight: 400;
+                                                    line-height: 16px;
+                                                    letter-spacing: 0em;
+                                                    text-align: left;
+                                                    color: #7B8397;
                                                 }
                                             }
                                         }
@@ -2368,40 +2460,40 @@ main {
                             margin-left: 150px;
                             // margin-top: 15%;
                             // margin-left: 35%;
-                            
+
                             &:focus {
                                 box-shadow: none;
                             }
-    
+
                             .play {
                                 width: 70px;
                             }
                         }
-    
+
                         .modal {
                             .modal-dialog {
                                 width: 95%;
-    
+
                                 .modal-content {
                                     border: none;
                                     width: 100%;
-    
+
                                     .pop-up {
                                         border-radius: 10px;
                                         width: 100%;
                                     }
-    
+
                                     .wrap-btn {
                                         .btn-pop-up {
                                             position: absolute;
                                             bottom: 80px;
                                             right: 150px;
                                             z-index: 99;
-                            
+
                                             &:focus {
                                                 box-shadow: none;
                                             }
-    
+
                                             .play-pop-up {
                                                 width: 64px;
                                             }
@@ -2659,7 +2751,6 @@ main {
 
                                 .container {
                                     padding: 40px;
-                                    padding-bottom: 0;
 
                                     .d-flex {
                                         img {
@@ -2679,58 +2770,49 @@ main {
                                             color: #7B8397;
                                         }
                                     }
-                                }
 
-                                .card-body {
-                                    padding: 0;
+                                    
+                                    p {
+                                        font-family: 'Baloo 2';
+                                        font-size: 16px;
+                                        font-style: normal;
+                                        font-weight: 400;
+                                        line-height: 28px;
+                                        letter-spacing: 0em;
+                                        text-align: left;
+                                        color: #7B8397;
+                                    }
 
-                                    .container {
-                                        padding: 40px;
-                                        padding-top: 0;
-                                        padding-bottom: 10px;
+                                    .people {
+                                        .d-flex {
+                                            img {
+                                                border-radius: 100%;
+                                                width: 45px;
+                                                height: 45px;
+                                                margin-right: 10px;
+                                            }
 
-                                        p {
-                                            font-family: 'Baloo 2';
-                                            font-size: 16px;
-                                            font-style: normal;
-                                            font-weight: 400;
-                                            line-height: 28px;
-                                            letter-spacing: 0em;
-                                            text-align: left;
-                                            color: #7B8397;
-                                        }
-
-                                        .people {
-                                            .d-flex {
-                                                img {
-                                                    border-radius: 100%;
-                                                    width: 45px;
-                                                    height: 45px;
-                                                    margin-right: 10px;
+                                            .name {
+                                                h6 {
+                                                    font-family: 'Baloo 2';
+                                                    font-size: 16px;
+                                                    font-style: normal;
+                                                    font-weight: 600;
+                                                    line-height: 17px;
+                                                    letter-spacing: 0em;
+                                                    text-align: left;
+                                                    color: #18223A;
                                                 }
 
-                                                .name {
-                                                    h6 {
-                                                        font-family: 'Baloo 2';
-                                                        font-size: 16px;
-                                                        font-style: normal;
-                                                        font-weight: 600;
-                                                        line-height: 17px;
-                                                        letter-spacing: 0em;
-                                                        text-align: left;
-                                                        color: #18223A;
-                                                    }
-
-                                                    p {
-                                                        font-family: 'Baloo 2';
-                                                        font-size: 15px;
-                                                        font-style: normal;
-                                                        font-weight: 400;
-                                                        line-height: 16px;
-                                                        letter-spacing: 0em;
-                                                        text-align: left;
-                                                        color: #7B8397;
-                                                    }
+                                                p {
+                                                    font-family: 'Baloo 2';
+                                                    font-size: 15px;
+                                                    font-style: normal;
+                                                    font-weight: 400;
+                                                    line-height: 16px;
+                                                    letter-spacing: 0em;
+                                                    text-align: left;
+                                                    color: #7B8397;
                                                 }
                                             }
                                         }
@@ -2751,6 +2833,214 @@ main {
                         background-color: #00BAC7;
                     }
                 }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    main {
+        .second {
+            background: url('../img/Mobile/Section\ 2/PNG/patern.png') no-repeat;
+            background-size: cover;
+            // background-attachment: fixed;
+
+            .container {
+                padding-top: 70px;
+                padding-bottom: 70px;
+
+                .title {
+                    padding-left: 20px;
+                    margin-bottom: 35px;
+
+                    h2 {
+                        font-family: 'Baloo 2';
+                        font-size: 24px;
+                        font-style: normal;
+                        font-weight: 700;
+                        line-height: 36px;
+                        letter-spacing: -0.005em;
+                        text-align: left;
+                        color: #18223A;
+                    }
+                }
+
+                .wrap-img {
+                    .feature {
+                        display: none;
+                    }
+
+                    .feature-mobile {
+                        display: block;
+                        width: 350px;
+                        margin-bottom: 70px;
+                    }
+
+                    .laptop {
+                        display: none;
+                    }
+
+                    .laptop-mobile {
+                        display: block;
+                        width: 95%;
+                    }
+
+                    .wrap-btn {
+                        .btn {
+                            position: absolute;
+                            margin-top: 70px;
+                            margin-left: 180px;
+                            // margin-top: 15%;
+                            // margin-left: 35%;
+
+                            &:focus {
+                                box-shadow: none;
+                            }
+
+                            .play {
+                                width: 70px;
+                            }
+                        }
+
+                        .modal {
+                            .modal-dialog {
+                                width: 95%;
+
+                                .modal-content {
+                                    border: none;
+                                    width: 100%;
+
+                                    .pop-up {
+                                        border-radius: 10px;
+                                        width: 100%;
+                                    }
+
+                                    .wrap-btn {
+                                        .btn-pop-up {
+                                            position: absolute;
+                                            bottom: 110px;
+                                            right: 190px;
+                                            z-index: 99;
+
+                                            &:focus {
+                                                box-shadow: none;
+                                            }
+
+                                            .play-pop-up {
+                                                width: 64px;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 414px) {
+    main {
+        .second {
+            background: url('../img/Mobile/Section\ 2/PNG/patern.png') no-repeat;
+            background-size: cover;
+            // background-attachment: fixed;
+
+            .container {
+                padding-top: 70px;
+                padding-bottom: 70px;
+
+                .title {
+                    padding-left: 20px;
+                    margin-bottom: 35px;
+
+                    h2 {
+                        font-family: 'Baloo 2';
+                        font-size: 24px;
+                        font-style: normal;
+                        font-weight: 700;
+                        line-height: 36px;
+                        letter-spacing: -0.005em;
+                        text-align: left;
+                        color: #18223A;
+                    }
+                }
+
+                .wrap-img {
+                    .feature {
+                        display: none;
+                    }
+
+                    .feature-mobile {
+                        display: block;
+                        width: 350px;
+                        margin-bottom: 70px;
+                    }
+
+                    .laptop {
+                        display: none;
+                    }
+
+                    .laptop-mobile {
+                        display: block;
+                        width: 95%;
+                    }
+
+                    .wrap-btn {
+                        .btn {
+                            position: absolute;
+                            margin-top: 50px;
+                            margin-left: 150px;
+                            // margin-top: 15%;
+                            // margin-left: 35%;
+
+                            &:focus {
+                                box-shadow: none;
+                            }
+
+                            .play {
+                                width: 70px;
+                            }
+                        }
+
+                        .modal {
+                            .modal-dialog {
+                                width: 95%;
+
+                                .modal-content {
+                                    border: none;
+                                    width: 100%;
+
+                                    .pop-up {
+                                        border-radius: 10px;
+                                        width: 100%;
+                                    }
+
+                                    .wrap-btn {
+                                        .btn-pop-up {
+                                            position: absolute;
+                                            bottom: 80px;
+                                            right: 150px;
+                                            z-index: 99;
+
+                                            &:focus {
+                                                box-shadow: none;
+                                            }
+
+                                            .play-pop-up {
+                                                width: 64px;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
             }
         }
     }
@@ -2873,40 +3163,40 @@ main {
                             margin-left: 130px;
                             // margin-top: 15%;
                             // margin-left: 35%;
-                            
+
                             &:focus {
                                 box-shadow: none;
                             }
-    
+
                             .play {
                                 width: 70px;
                             }
                         }
-    
+
                         .modal {
                             .modal-dialog {
                                 width: 95%;
-    
+
                                 .modal-content {
                                     border: none;
                                     width: 100%;
-    
+
                                     .pop-up {
                                         border-radius: 10px;
                                         width: 100%;
                                     }
-    
+
                                     .wrap-btn {
                                         .btn-pop-up {
                                             position: absolute;
                                             bottom: 70px;
                                             right: 130px;
                                             z-index: 99;
-                            
+
                                             &:focus {
                                                 box-shadow: none;
                                             }
-    
+
                                             .play-pop-up {
                                                 width: 64px;
                                             }
@@ -3249,7 +3539,6 @@ main {
 
                                 .container {
                                     padding: 40px;
-                                    padding-bottom: 0;
 
                                     .d-flex {
                                         img {
@@ -3269,58 +3558,48 @@ main {
                                             color: #7B8397;
                                         }
                                     }
-                                }
 
-                                .card-body {
-                                    padding: 0;
+                                    p {
+                                        font-family: 'Baloo 2';
+                                        font-size: 16px;
+                                        font-style: normal;
+                                        font-weight: 400;
+                                        line-height: 28px;
+                                        letter-spacing: 0em;
+                                        text-align: left;
+                                        color: #7B8397;
+                                    }
 
-                                    .container {
-                                        padding: 40px;
-                                        padding-top: 0;
-                                        padding-bottom: 10px;
+                                    .people {
+                                        .d-flex {
+                                            img {
+                                                border-radius: 100%;
+                                                width: 45px;
+                                                height: 45px;
+                                                margin-right: 10px;
+                                            }
 
-                                        p {
-                                            font-family: 'Baloo 2';
-                                            font-size: 16px;
-                                            font-style: normal;
-                                            font-weight: 400;
-                                            line-height: 28px;
-                                            letter-spacing: 0em;
-                                            text-align: left;
-                                            color: #7B8397;
-                                        }
-
-                                        .people {
-                                            .d-flex {
-                                                img {
-                                                    border-radius: 100%;
-                                                    width: 45px;
-                                                    height: 45px;
-                                                    margin-right: 10px;
+                                            .name {
+                                                h6 {
+                                                    font-family: 'Baloo 2';
+                                                    font-size: 16px;
+                                                    font-style: normal;
+                                                    font-weight: 600;
+                                                    line-height: 17px;
+                                                    letter-spacing: 0em;
+                                                    text-align: left;
+                                                    color: #18223A;
                                                 }
 
-                                                .name {
-                                                    h6 {
-                                                        font-family: 'Baloo 2';
-                                                        font-size: 16px;
-                                                        font-style: normal;
-                                                        font-weight: 600;
-                                                        line-height: 17px;
-                                                        letter-spacing: 0em;
-                                                        text-align: left;
-                                                        color: #18223A;
-                                                    }
-
-                                                    p {
-                                                        font-family: 'Baloo 2';
-                                                        font-size: 15px;
-                                                        font-style: normal;
-                                                        font-weight: 400;
-                                                        line-height: 16px;
-                                                        letter-spacing: 0em;
-                                                        text-align: left;
-                                                        color: #7B8397;
-                                                    }
+                                                p {
+                                                    font-family: 'Baloo 2';
+                                                    font-size: 15px;
+                                                    font-style: normal;
+                                                    font-weight: 400;
+                                                    line-height: 16px;
+                                                    letter-spacing: 0em;
+                                                    text-align: left;
+                                                    color: #7B8397;
                                                 }
                                             }
                                         }
@@ -3495,40 +3774,40 @@ main {
                             position: absolute;
                             margin-top: 35px;
                             margin-left: 105px;
-                            
+
                             &:focus {
                                 box-shadow: none;
                             }
-    
+
                             .play {
                                 width: 65px;
                             }
                         }
-    
+
                         .modal {
                             .modal-dialog {
                                 width: 95%;
-    
+
                                 .modal-content {
                                     border: none;
                                     width: 100%;
-    
+
                                     .pop-up {
                                         border-radius: 10px;
                                         width: 100%;
                                     }
-    
+
                                     .wrap-btn {
                                         .btn-pop-up {
                                             position: absolute;
                                             bottom: 50px;
                                             right: 105px;
                                             z-index: 99;
-                            
+
                                             &:focus {
                                                 box-shadow: none;
                                             }
-    
+
                                             .play-pop-up {
                                                 width: 64px;
                                             }
@@ -3870,8 +4149,7 @@ main {
                                 border-radius: 20px;
 
                                 .container {
-                                    padding: 40px;
-                                    padding-bottom: 0;
+                                    padding: 30px;
 
                                     .d-flex {
                                         img {
@@ -3891,58 +4169,48 @@ main {
                                             color: #7B8397;
                                         }
                                     }
-                                }
+                                    
+                                    p {
+                                        font-family: 'Baloo 2';
+                                        font-size: 16px;
+                                        font-style: normal;
+                                        font-weight: 400;
+                                        line-height: 28px;
+                                        letter-spacing: 0em;
+                                        text-align: left;
+                                        color: #7B8397;
+                                    }
 
-                                .card-body {
-                                    padding: 0;
+                                    .people {
+                                        .d-flex {
+                                            img {
+                                                border-radius: 100%;
+                                                width: 45px;
+                                                height: 45px;
+                                                margin-right: 10px;
+                                            }
 
-                                    .container {
-                                        padding: 40px;
-                                        padding-top: 0;
-                                        padding-bottom: 10px;
-
-                                        p {
-                                            font-family: 'Baloo 2';
-                                            font-size: 16px;
-                                            font-style: normal;
-                                            font-weight: 400;
-                                            line-height: 28px;
-                                            letter-spacing: 0em;
-                                            text-align: left;
-                                            color: #7B8397;
-                                        }
-
-                                        .people {
-                                            .d-flex {
-                                                img {
-                                                    border-radius: 100%;
-                                                    width: 45px;
-                                                    height: 45px;
-                                                    margin-right: 10px;
+                                            .name {
+                                                h6 {
+                                                    font-family: 'Baloo 2';
+                                                    font-size: 16px;
+                                                    font-style: normal;
+                                                    font-weight: 600;
+                                                    line-height: 17px;
+                                                    letter-spacing: 0em;
+                                                    text-align: left;
+                                                    color: #18223A;
                                                 }
 
-                                                .name {
-                                                    h6 {
-                                                        font-family: 'Baloo 2';
-                                                        font-size: 16px;
-                                                        font-style: normal;
-                                                        font-weight: 600;
-                                                        line-height: 17px;
-                                                        letter-spacing: 0em;
-                                                        text-align: left;
-                                                        color: #18223A;
-                                                    }
-
-                                                    p {
-                                                        font-family: 'Baloo 2';
-                                                        font-size: 15px;
-                                                        font-style: normal;
-                                                        font-weight: 400;
-                                                        line-height: 16px;
-                                                        letter-spacing: 0em;
-                                                        text-align: left;
-                                                        color: #7B8397;
-                                                    }
+                                                p {
+                                                    font-family: 'Baloo 2';
+                                                    font-size: 15px;
+                                                    font-style: normal;
+                                                    font-weight: 400;
+                                                    line-height: 16px;
+                                                    letter-spacing: 0em;
+                                                    text-align: left;
+                                                    color: #7B8397;
                                                 }
                                             }
                                         }
@@ -4117,40 +4385,40 @@ main {
                             position: absolute;
                             margin-top: 25px;
                             margin-left: 85px;
-                            
+
                             &:focus {
                                 box-shadow: none;
                             }
-    
+
                             .play {
                                 width: 64px;
                             }
                         }
-    
+
                         .modal {
                             .modal-dialog {
                                 width: 95%;
-    
+
                                 .modal-content {
                                     border: none;
                                     width: 100%;
-    
+
                                     .pop-up {
                                         border-radius: 10px;
                                         width: 100%;
                                     }
-    
+
                                     .wrap-btn {
                                         .btn-pop-up {
                                             position: absolute;
                                             bottom: 40px;
                                             right: 85px;
                                             z-index: 99;
-                            
+
                                             &:focus {
                                                 box-shadow: none;
                                             }
-    
+
                                             .play-pop-up {
                                                 width: 64px;
                                             }
@@ -4493,7 +4761,6 @@ main {
 
                                 .container {
                                     padding: 20px;
-                                    padding-bottom: 0;
 
                                     .d-flex {
                                         img {
@@ -4513,58 +4780,48 @@ main {
                                             color: #7B8397;
                                         }
                                     }
-                                }
+                                    
+                                    p {
+                                        font-family: 'Baloo 2';
+                                        font-size: 16px;
+                                        font-style: normal;
+                                        font-weight: 400;
+                                        line-height: 28px;
+                                        letter-spacing: 0em;
+                                        text-align: left;
+                                        color: #7B8397;
+                                    }
 
-                                .card-body {
-                                    padding: 0;
+                                    .people {
+                                        .d-flex {
+                                            img {
+                                                border-radius: 100%;
+                                                width: 45px;
+                                                height: 45px;
+                                                margin-right: 10px;
+                                            }
 
-                                    .container {
-                                        padding: 20px;
-                                        padding-top: 0;
-                                        padding-bottom: 10px;
-
-                                        p {
-                                            font-family: 'Baloo 2';
-                                            font-size: 16px;
-                                            font-style: normal;
-                                            font-weight: 400;
-                                            line-height: 28px;
-                                            letter-spacing: 0em;
-                                            text-align: left;
-                                            color: #7B8397;
-                                        }
-
-                                        .people {
-                                            .d-flex {
-                                                img {
-                                                    border-radius: 100%;
-                                                    width: 45px;
-                                                    height: 45px;
-                                                    margin-right: 10px;
+                                            .name {
+                                                h6 {
+                                                    font-family: 'Baloo 2';
+                                                    font-size: 16px;
+                                                    font-style: normal;
+                                                    font-weight: 600;
+                                                    line-height: 17px;
+                                                    letter-spacing: 0em;
+                                                    text-align: left;
+                                                    color: #18223A;
                                                 }
 
-                                                .name {
-                                                    h6 {
-                                                        font-family: 'Baloo 2';
-                                                        font-size: 16px;
-                                                        font-style: normal;
-                                                        font-weight: 600;
-                                                        line-height: 17px;
-                                                        letter-spacing: 0em;
-                                                        text-align: left;
-                                                        color: #18223A;
-                                                    }
-
-                                                    p {
-                                                        font-family: 'Baloo 2';
-                                                        font-size: 15px;
-                                                        font-style: normal;
-                                                        font-weight: 400;
-                                                        line-height: 16px;
-                                                        letter-spacing: 0em;
-                                                        text-align: left;
-                                                        color: #7B8397;
-                                                    }
+                                                p {
+                                                    font-family: 'Baloo 2';
+                                                    font-size: 15px;
+                                                    font-style: normal;
+                                                    font-weight: 400;
+                                                    line-height: 16px;
+                                                    letter-spacing: 0em;
+                                                    text-align: left;
+                                                    color: #7B8397;
                                                 }
                                             }
                                         }

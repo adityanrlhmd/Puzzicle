@@ -8,6 +8,49 @@ header .wrap-nav nav .container .navbar-brand img {
   width: 112px;
 }
 
+header .wrap-nav nav .container .sidebar,
+header .wrap-nav nav .container .overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+}
+
+header .wrap-nav nav .container .overlay {
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.75);
+  visibility: hidden;
+}
+
+header .wrap-nav nav .container .sidebar {
+  background: url("../img/Mobile/Header/PNG/background.png") no-repeat;
+  background-size: cover;
+  left: -100%;
+  max-width: 300px;
+  -webkit-transition: all ease 0.25s;
+  transition: all ease 0.25s;
+}
+
+header .wrap-nav nav .container .sidebar .navbar-nav .nav-item {
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-right: 30px;
+}
+
+header .wrap-nav nav .container .sidebar .navbar-nav .nav-item .nav-link {
+  font-family: 'Baloo 2';
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 18.75px;
+  color: #18223A;
+}
+
+header .wrap-nav nav .container .sidebar .navbar-nav .nav-item .nav-link img {
+  width: 100%;
+}
+
 header .wrap-nav nav .container .navbar-collapse .navbar-nav .nav-item {
   margin-top: auto;
   margin-bottom: auto;
@@ -15,6 +58,8 @@ header .wrap-nav nav .container .navbar-collapse .navbar-nav .nav-item {
 }
 
 header .wrap-nav nav .container .navbar-collapse .navbar-nav .nav-item .nav-link {
+  font-family: 'Baloo 2';
+  font-weight: 700;
   font-size: 16px;
   line-height: 18.75px;
   color: #18223A;
@@ -22,6 +67,14 @@ header .wrap-nav nav .container .navbar-collapse .navbar-nav .nav-item .nav-link
 
 header .wrap-nav nav .container .navbar-collapse .navbar-nav .nav-item .nav-link img {
   width: 190px;
+}
+
+header .wrap-nav .main-navigation.active .sidebar {
+  left: 0;
+}
+
+header .wrap-nav .main-navigation.active .overlay {
+  visibility: visible;
 }
 
 header .jumbotron {
@@ -56,13 +109,13 @@ header .jumbotron .container .title .title-img {
   right: 310px;
 }
 
-header .jumbotron .container .illustration img {
-  width: 100%;
-  overflow: hidden;
-}
-
 header .jumbotron .container .illustration-mobile {
   display: none;
+}
+
+header .jumbotron .illustration svg {
+  width: 100%;
+  overflow: hidden;
 }
 
 @media screen and (max-width: 1200px) {
@@ -143,14 +196,14 @@ header .jumbotron .container .illustration-mobile {
   header .jumbotron .container .title .title-img {
     display: none;
   }
-  header .jumbotron .container .illustration {
-    display: none;
-  }
   header .jumbotron .container .illustration-mobile {
     display: block;
   }
   header .jumbotron .container .illustration-mobile img {
     width: 100%;
+  }
+  header .jumbotron .illustration svg {
+    display: none;
   }
 }
 
@@ -158,6 +211,13 @@ header .jumbotron .container .illustration-mobile {
   header {
     background: url("../img/Mobile/Header/PNG/background.png") no-repeat;
     background-size: cover;
+  }
+  header .wrap-nav nav .container .sidebar {
+    max-width: 280px;
+  }
+  header .wrap-nav nav .container .sidebar .navbar-nav .nav-link {
+    padding-left: 30px;
+    padding-right: 30px;
   }
   header .jumbotron .container {
     margin-left: 0;
@@ -180,14 +240,24 @@ header .jumbotron .container .illustration-mobile {
   header .jumbotron .container .title .title-img {
     display: none;
   }
-  header .jumbotron .container .illustration {
-    display: none;
-  }
   header .jumbotron .container .illustration-mobile {
     display: block;
   }
   header .jumbotron .container .illustration-mobile img {
     width: 100%;
+  }
+  header .jumbotron .illustration svg {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  header .wrap-nav nav .container .sidebar {
+    max-width: 220px;
+  }
+  header .wrap-nav nav .container .sidebar .navbar-nav .nav-link {
+    padding-left: 15px;
+    padding-right: 15px;
   }
 }
 
@@ -195,6 +265,13 @@ header .jumbotron .container .illustration-mobile {
   header {
     background: url("../img/Mobile/Header/PNG/background.png") no-repeat;
     background-size: cover;
+  }
+  header .wrap-nav nav .container .sidebar {
+    max-width: 200px;
+  }
+  header .wrap-nav nav .container .sidebar .navbar-nav .nav-link {
+    padding-left: 10px;
+    padding-right: 10px;
   }
   header .jumbotron {
     padding-top: 20px;
@@ -310,10 +387,10 @@ main .second .container .title {
 }
 
 main .second .container .title h2 {
-  font-family: 'Harabara Mais Demo';
+  font-family: 'Baloo 2';
   font-size: 40px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 700;
   line-height: 44px;
   letter-spacing: 0em;
   text-align: center;
@@ -759,7 +836,6 @@ main .sixth .container-sixth .wrap-slick .lazy .wrap-card .card {
 
 main .sixth .container-sixth .wrap-slick .lazy .wrap-card .card .container {
   padding: 40px;
-  padding-bottom: 0;
 }
 
 main .sixth .container-sixth .wrap-slick .lazy .wrap-card .card .container .d-flex img {
@@ -779,17 +855,7 @@ main .sixth .container-sixth .wrap-slick .lazy .wrap-card .card .container .d-fl
   color: #7B8397;
 }
 
-main .sixth .container-sixth .wrap-slick .lazy .wrap-card .card .card-body {
-  padding: 0;
-}
-
-main .sixth .container-sixth .wrap-slick .lazy .wrap-card .card .card-body .container {
-  padding: 40px;
-  padding-top: 0;
-  padding-bottom: 10px;
-}
-
-main .sixth .container-sixth .wrap-slick .lazy .wrap-card .card .card-body .container p {
+main .sixth .container-sixth .wrap-slick .lazy .wrap-card .card .container p {
   font-family: 'Baloo 2';
   font-size: 16px;
   font-style: normal;
@@ -800,14 +866,14 @@ main .sixth .container-sixth .wrap-slick .lazy .wrap-card .card .card-body .cont
   color: #7B8397;
 }
 
-main .sixth .container-sixth .wrap-slick .lazy .wrap-card .card .card-body .container .people .d-flex img {
+main .sixth .container-sixth .wrap-slick .lazy .wrap-card .card .container .people .d-flex img {
   border-radius: 100%;
   width: 45px;
   height: 45px;
   margin-right: 10px;
 }
 
-main .sixth .container-sixth .wrap-slick .lazy .wrap-card .card .card-body .container .people .d-flex .name h6 {
+main .sixth .container-sixth .wrap-slick .lazy .wrap-card .card .container .people .d-flex .name h6 {
   font-family: 'Baloo 2';
   font-size: 16px;
   font-style: normal;
@@ -818,7 +884,7 @@ main .sixth .container-sixth .wrap-slick .lazy .wrap-card .card .card-body .cont
   color: #18223A;
 }
 
-main .sixth .container-sixth .wrap-slick .lazy .wrap-card .card .card-body .container .people .d-flex .name p {
+main .sixth .container-sixth .wrap-slick .lazy .wrap-card .card .container .people .d-flex .name p {
   font-family: 'Baloo 2';
   font-size: 15px;
   font-style: normal;
@@ -1240,7 +1306,6 @@ main .seventh .wrap-seventh .container .wrap-btn .btn-seventh img {
   }
   main .sixth .container-sixth .wrap-slick .lazy .wrap-card .card .container {
     padding: 40px;
-    padding-bottom: 0;
   }
   main .sixth .container-sixth .wrap-slick .lazy .wrap-card .card .container .d-flex img {
     width: 22px;
@@ -1257,15 +1322,7 @@ main .seventh .wrap-seventh .container .wrap-btn .btn-seventh img {
     text-align: left;
     color: #7B8397;
   }
-  main .sixth .container-sixth .wrap-slick .lazy .wrap-card .card .card-body {
-    padding: 0;
-  }
-  main .sixth .container-sixth .wrap-slick .lazy .wrap-card .card .card-body .container {
-    padding: 40px;
-    padding-top: 0;
-    padding-bottom: 10px;
-  }
-  main .sixth .container-sixth .wrap-slick .lazy .wrap-card .card .card-body .container p {
+  main .sixth .container-sixth .wrap-slick .lazy .wrap-card .card .container p {
     font-family: 'Baloo 2';
     font-size: 16px;
     font-style: normal;
@@ -1275,13 +1332,13 @@ main .seventh .wrap-seventh .container .wrap-btn .btn-seventh img {
     text-align: left;
     color: #7B8397;
   }
-  main .sixth .container-sixth .wrap-slick .lazy .wrap-card .card .card-body .container .people .d-flex img {
+  main .sixth .container-sixth .wrap-slick .lazy .wrap-card .card .container .people .d-flex img {
     border-radius: 100%;
     width: 45px;
     height: 45px;
     margin-right: 10px;
   }
-  main .sixth .container-sixth .wrap-slick .lazy .wrap-card .card .card-body .container .people .d-flex .name h6 {
+  main .sixth .container-sixth .wrap-slick .lazy .wrap-card .card .container .people .d-flex .name h6 {
     font-family: 'Baloo 2';
     font-size: 16px;
     font-style: normal;
@@ -1291,7 +1348,7 @@ main .seventh .wrap-seventh .container .wrap-btn .btn-seventh img {
     text-align: left;
     color: #18223A;
   }
-  main .sixth .container-sixth .wrap-slick .lazy .wrap-card .card .card-body .container .people .d-flex .name p {
+  main .sixth .container-sixth .wrap-slick .lazy .wrap-card .card .container .people .d-flex .name p {
     font-family: 'Baloo 2';
     font-size: 15px;
     font-style: normal;
@@ -1702,7 +1759,6 @@ main .seventh .wrap-seventh .container .wrap-btn .btn-seventh img {
   }
   main .sixth .container-sixth .wrap-slick .lazy .wrap-card .card .container {
     padding: 40px;
-    padding-bottom: 0;
   }
   main .sixth .container-sixth .wrap-slick .lazy .wrap-card .card .container .d-flex img {
     width: 22px;
@@ -1719,15 +1775,7 @@ main .seventh .wrap-seventh .container .wrap-btn .btn-seventh img {
     text-align: left;
     color: #7B8397;
   }
-  main .sixth .container-sixth .wrap-slick .lazy .wrap-card .card .card-body {
-    padding: 0;
-  }
-  main .sixth .container-sixth .wrap-slick .lazy .wrap-card .card .card-body .container {
-    padding: 40px;
-    padding-top: 0;
-    padding-bottom: 10px;
-  }
-  main .sixth .container-sixth .wrap-slick .lazy .wrap-card .card .card-body .container p {
+  main .sixth .container-sixth .wrap-slick .lazy .wrap-card .card .container p {
     font-family: 'Baloo 2';
     font-size: 16px;
     font-style: normal;
@@ -1737,13 +1785,13 @@ main .seventh .wrap-seventh .container .wrap-btn .btn-seventh img {
     text-align: left;
     color: #7B8397;
   }
-  main .sixth .container-sixth .wrap-slick .lazy .wrap-card .card .card-body .container .people .d-flex img {
+  main .sixth .container-sixth .wrap-slick .lazy .wrap-card .card .container .people .d-flex img {
     border-radius: 100%;
     width: 45px;
     height: 45px;
     margin-right: 10px;
   }
-  main .sixth .container-sixth .wrap-slick .lazy .wrap-card .card .card-body .container .people .d-flex .name h6 {
+  main .sixth .container-sixth .wrap-slick .lazy .wrap-card .card .container .people .d-flex .name h6 {
     font-family: 'Baloo 2';
     font-size: 16px;
     font-style: normal;
@@ -1753,7 +1801,7 @@ main .seventh .wrap-seventh .container .wrap-btn .btn-seventh img {
     text-align: left;
     color: #18223A;
   }
-  main .sixth .container-sixth .wrap-slick .lazy .wrap-card .card .card-body .container .people .d-flex .name p {
+  main .sixth .container-sixth .wrap-slick .lazy .wrap-card .card .container .people .d-flex .name p {
     font-family: 'Baloo 2';
     font-size: 15px;
     font-style: normal;
@@ -2109,7 +2157,6 @@ main .seventh .wrap-seventh .container .wrap-btn .btn-seventh img {
   }
   main .sixth .container-sixth .wrap-slick .lazy .wrap-card .card .container {
     padding: 40px;
-    padding-bottom: 0;
   }
   main .sixth .container-sixth .wrap-slick .lazy .wrap-card .card .container .d-flex img {
     width: 22px;
@@ -2126,15 +2173,7 @@ main .seventh .wrap-seventh .container .wrap-btn .btn-seventh img {
     text-align: left;
     color: #7B8397;
   }
-  main .sixth .container-sixth .wrap-slick .lazy .wrap-card .card .card-body {
-    padding: 0;
-  }
-  main .sixth .container-sixth .wrap-slick .lazy .wrap-card .card .card-body .container {
-    padding: 40px;
-    padding-top: 0;
-    padding-bottom: 10px;
-  }
-  main .sixth .container-sixth .wrap-slick .lazy .wrap-card .card .card-body .container p {
+  main .sixth .container-sixth .wrap-slick .lazy .wrap-card .card .container p {
     font-family: 'Baloo 2';
     font-size: 16px;
     font-style: normal;
@@ -2144,13 +2183,13 @@ main .seventh .wrap-seventh .container .wrap-btn .btn-seventh img {
     text-align: left;
     color: #7B8397;
   }
-  main .sixth .container-sixth .wrap-slick .lazy .wrap-card .card .card-body .container .people .d-flex img {
+  main .sixth .container-sixth .wrap-slick .lazy .wrap-card .card .container .people .d-flex img {
     border-radius: 100%;
     width: 45px;
     height: 45px;
     margin-right: 10px;
   }
-  main .sixth .container-sixth .wrap-slick .lazy .wrap-card .card .card-body .container .people .d-flex .name h6 {
+  main .sixth .container-sixth .wrap-slick .lazy .wrap-card .card .container .people .d-flex .name h6 {
     font-family: 'Baloo 2';
     font-size: 16px;
     font-style: normal;
@@ -2160,7 +2199,7 @@ main .seventh .wrap-seventh .container .wrap-btn .btn-seventh img {
     text-align: left;
     color: #18223A;
   }
-  main .sixth .container-sixth .wrap-slick .lazy .wrap-card .card .card-body .container .people .d-flex .name p {
+  main .sixth .container-sixth .wrap-slick .lazy .wrap-card .card .container .people .d-flex .name p {
     font-family: 'Baloo 2';
     font-size: 15px;
     font-style: normal;
@@ -2177,6 +2216,158 @@ main .seventh .wrap-seventh .container .wrap-btn .btn-seventh img {
     font-weight: 700;
     font-family: 15px;
     background-color: #00BAC7;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  main .second {
+    background: url("../img/Mobile/Section 2/PNG/patern.png") no-repeat;
+    background-size: cover;
+  }
+  main .second .container {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+  main .second .container .title {
+    padding-left: 20px;
+    margin-bottom: 35px;
+  }
+  main .second .container .title h2 {
+    font-family: 'Baloo 2';
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 36px;
+    letter-spacing: -0.005em;
+    text-align: left;
+    color: #18223A;
+  }
+  main .second .container .wrap-img .feature {
+    display: none;
+  }
+  main .second .container .wrap-img .feature-mobile {
+    display: block;
+    width: 350px;
+    margin-bottom: 70px;
+  }
+  main .second .container .wrap-img .laptop {
+    display: none;
+  }
+  main .second .container .wrap-img .laptop-mobile {
+    display: block;
+    width: 95%;
+  }
+  main .second .container .wrap-img .wrap-btn .btn {
+    position: absolute;
+    margin-top: 70px;
+    margin-left: 180px;
+  }
+  main .second .container .wrap-img .wrap-btn .btn:focus {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  main .second .container .wrap-img .wrap-btn .btn .play {
+    width: 70px;
+  }
+  main .second .container .wrap-img .wrap-btn .modal .modal-dialog {
+    width: 95%;
+  }
+  main .second .container .wrap-img .wrap-btn .modal .modal-dialog .modal-content {
+    border: none;
+    width: 100%;
+  }
+  main .second .container .wrap-img .wrap-btn .modal .modal-dialog .modal-content .pop-up {
+    border-radius: 10px;
+    width: 100%;
+  }
+  main .second .container .wrap-img .wrap-btn .modal .modal-dialog .modal-content .wrap-btn .btn-pop-up {
+    position: absolute;
+    bottom: 110px;
+    right: 190px;
+    z-index: 99;
+  }
+  main .second .container .wrap-img .wrap-btn .modal .modal-dialog .modal-content .wrap-btn .btn-pop-up:focus {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  main .second .container .wrap-img .wrap-btn .modal .modal-dialog .modal-content .wrap-btn .btn-pop-up .play-pop-up {
+    width: 64px;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  main .second {
+    background: url("../img/Mobile/Section 2/PNG/patern.png") no-repeat;
+    background-size: cover;
+  }
+  main .second .container {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+  main .second .container .title {
+    padding-left: 20px;
+    margin-bottom: 35px;
+  }
+  main .second .container .title h2 {
+    font-family: 'Baloo 2';
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 36px;
+    letter-spacing: -0.005em;
+    text-align: left;
+    color: #18223A;
+  }
+  main .second .container .wrap-img .feature {
+    display: none;
+  }
+  main .second .container .wrap-img .feature-mobile {
+    display: block;
+    width: 350px;
+    margin-bottom: 70px;
+  }
+  main .second .container .wrap-img .laptop {
+    display: none;
+  }
+  main .second .container .wrap-img .laptop-mobile {
+    display: block;
+    width: 95%;
+  }
+  main .second .container .wrap-img .wrap-btn .btn {
+    position: absolute;
+    margin-top: 50px;
+    margin-left: 150px;
+  }
+  main .second .container .wrap-img .wrap-btn .btn:focus {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  main .second .container .wrap-img .wrap-btn .btn .play {
+    width: 70px;
+  }
+  main .second .container .wrap-img .wrap-btn .modal .modal-dialog {
+    width: 95%;
+  }
+  main .second .container .wrap-img .wrap-btn .modal .modal-dialog .modal-content {
+    border: none;
+    width: 100%;
+  }
+  main .second .container .wrap-img .wrap-btn .modal .modal-dialog .modal-content .pop-up {
+    border-radius: 10px;
+    width: 100%;
+  }
+  main .second .container .wrap-img .wrap-btn .modal .modal-dialog .modal-content .wrap-btn .btn-pop-up {
+    position: absolute;
+    bottom: 80px;
+    right: 150px;
+    z-index: 99;
+  }
+  main .second .container .wrap-img .wrap-btn .modal .modal-dialog .modal-content .wrap-btn .btn-pop-up:focus {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  main .second .container .wrap-img .wrap-btn .modal .modal-dialog .modal-content .wrap-btn .btn-pop-up .play-pop-up {
+    width: 64px;
   }
 }
 
@@ -2560,7 +2751,6 @@ main .seventh .wrap-seventh .container .wrap-btn .btn-seventh img {
   }
   main .sixth .container-sixth .wrap-slick .lazy .wrap-card .card .container {
     padding: 40px;
-    padding-bottom: 0;
   }
   main .sixth .container-sixth .wrap-slick .lazy .wrap-card .card .container .d-flex img {
     width: 22px;
@@ -2577,15 +2767,7 @@ main .seventh .wrap-seventh .container .wrap-btn .btn-seventh img {
     text-align: left;
     color: #7B8397;
   }
-  main .sixth .container-sixth .wrap-slick .lazy .wrap-card .card .card-body {
-    padding: 0;
-  }
-  main .sixth .container-sixth .wrap-slick .lazy .wrap-card .card .card-body .container {
-    padding: 40px;
-    padding-top: 0;
-    padding-bottom: 10px;
-  }
-  main .sixth .container-sixth .wrap-slick .lazy .wrap-card .card .card-body .container p {
+  main .sixth .container-sixth .wrap-slick .lazy .wrap-card .card .container p {
     font-family: 'Baloo 2';
     font-size: 16px;
     font-style: normal;
@@ -2595,13 +2777,13 @@ main .seventh .wrap-seventh .container .wrap-btn .btn-seventh img {
     text-align: left;
     color: #7B8397;
   }
-  main .sixth .container-sixth .wrap-slick .lazy .wrap-card .card .card-body .container .people .d-flex img {
+  main .sixth .container-sixth .wrap-slick .lazy .wrap-card .card .container .people .d-flex img {
     border-radius: 100%;
     width: 45px;
     height: 45px;
     margin-right: 10px;
   }
-  main .sixth .container-sixth .wrap-slick .lazy .wrap-card .card .card-body .container .people .d-flex .name h6 {
+  main .sixth .container-sixth .wrap-slick .lazy .wrap-card .card .container .people .d-flex .name h6 {
     font-family: 'Baloo 2';
     font-size: 16px;
     font-style: normal;
@@ -2611,7 +2793,7 @@ main .seventh .wrap-seventh .container .wrap-btn .btn-seventh img {
     text-align: left;
     color: #18223A;
   }
-  main .sixth .container-sixth .wrap-slick .lazy .wrap-card .card .card-body .container .people .d-flex .name p {
+  main .sixth .container-sixth .wrap-slick .lazy .wrap-card .card .container .people .d-flex .name p {
     font-family: 'Baloo 2';
     font-size: 15px;
     font-style: normal;
@@ -3034,8 +3216,7 @@ main .seventh .wrap-seventh .container .wrap-btn .btn-seventh img {
     border-radius: 20px;
   }
   main .sixth .container-sixth .wrap-slick .lazy .wrap-card .card .container {
-    padding: 40px;
-    padding-bottom: 0;
+    padding: 30px;
   }
   main .sixth .container-sixth .wrap-slick .lazy .wrap-card .card .container .d-flex img {
     width: 22px;
@@ -3052,15 +3233,7 @@ main .seventh .wrap-seventh .container .wrap-btn .btn-seventh img {
     text-align: left;
     color: #7B8397;
   }
-  main .sixth .container-sixth .wrap-slick .lazy .wrap-card .card .card-body {
-    padding: 0;
-  }
-  main .sixth .container-sixth .wrap-slick .lazy .wrap-card .card .card-body .container {
-    padding: 40px;
-    padding-top: 0;
-    padding-bottom: 10px;
-  }
-  main .sixth .container-sixth .wrap-slick .lazy .wrap-card .card .card-body .container p {
+  main .sixth .container-sixth .wrap-slick .lazy .wrap-card .card .container p {
     font-family: 'Baloo 2';
     font-size: 16px;
     font-style: normal;
@@ -3070,13 +3243,13 @@ main .seventh .wrap-seventh .container .wrap-btn .btn-seventh img {
     text-align: left;
     color: #7B8397;
   }
-  main .sixth .container-sixth .wrap-slick .lazy .wrap-card .card .card-body .container .people .d-flex img {
+  main .sixth .container-sixth .wrap-slick .lazy .wrap-card .card .container .people .d-flex img {
     border-radius: 100%;
     width: 45px;
     height: 45px;
     margin-right: 10px;
   }
-  main .sixth .container-sixth .wrap-slick .lazy .wrap-card .card .card-body .container .people .d-flex .name h6 {
+  main .sixth .container-sixth .wrap-slick .lazy .wrap-card .card .container .people .d-flex .name h6 {
     font-family: 'Baloo 2';
     font-size: 16px;
     font-style: normal;
@@ -3086,7 +3259,7 @@ main .seventh .wrap-seventh .container .wrap-btn .btn-seventh img {
     text-align: left;
     color: #18223A;
   }
-  main .sixth .container-sixth .wrap-slick .lazy .wrap-card .card .card-body .container .people .d-flex .name p {
+  main .sixth .container-sixth .wrap-slick .lazy .wrap-card .card .container .people .d-flex .name p {
     font-family: 'Baloo 2';
     font-size: 15px;
     font-style: normal;
@@ -3510,7 +3683,6 @@ main .seventh .wrap-seventh .container .wrap-btn .btn-seventh img {
   }
   main .sixth .container-sixth .wrap-slick .lazy .wrap-card .card .container {
     padding: 20px;
-    padding-bottom: 0;
   }
   main .sixth .container-sixth .wrap-slick .lazy .wrap-card .card .container .d-flex img {
     width: 22px;
@@ -3527,15 +3699,7 @@ main .seventh .wrap-seventh .container .wrap-btn .btn-seventh img {
     text-align: left;
     color: #7B8397;
   }
-  main .sixth .container-sixth .wrap-slick .lazy .wrap-card .card .card-body {
-    padding: 0;
-  }
-  main .sixth .container-sixth .wrap-slick .lazy .wrap-card .card .card-body .container {
-    padding: 20px;
-    padding-top: 0;
-    padding-bottom: 10px;
-  }
-  main .sixth .container-sixth .wrap-slick .lazy .wrap-card .card .card-body .container p {
+  main .sixth .container-sixth .wrap-slick .lazy .wrap-card .card .container p {
     font-family: 'Baloo 2';
     font-size: 16px;
     font-style: normal;
@@ -3545,13 +3709,13 @@ main .seventh .wrap-seventh .container .wrap-btn .btn-seventh img {
     text-align: left;
     color: #7B8397;
   }
-  main .sixth .container-sixth .wrap-slick .lazy .wrap-card .card .card-body .container .people .d-flex img {
+  main .sixth .container-sixth .wrap-slick .lazy .wrap-card .card .container .people .d-flex img {
     border-radius: 100%;
     width: 45px;
     height: 45px;
     margin-right: 10px;
   }
-  main .sixth .container-sixth .wrap-slick .lazy .wrap-card .card .card-body .container .people .d-flex .name h6 {
+  main .sixth .container-sixth .wrap-slick .lazy .wrap-card .card .container .people .d-flex .name h6 {
     font-family: 'Baloo 2';
     font-size: 16px;
     font-style: normal;
@@ -3561,7 +3725,7 @@ main .seventh .wrap-seventh .container .wrap-btn .btn-seventh img {
     text-align: left;
     color: #18223A;
   }
-  main .sixth .container-sixth .wrap-slick .lazy .wrap-card .card .card-body .container .people .d-flex .name p {
+  main .sixth .container-sixth .wrap-slick .lazy .wrap-card .card .container .people .d-flex .name p {
     font-family: 'Baloo 2';
     font-size: 15px;
     font-style: normal;

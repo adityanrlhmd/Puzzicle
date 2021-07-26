@@ -573,16 +573,21 @@ main .fourth .container-fourth .title h2 {
 }
 
 main .fourth .container-fourth .wrap-row {
-  padding-left: 200px;
-  padding-right: 200px;
+  padding-left: 160px;
+  padding-right: 160px;
 }
 
 main .fourth .container-fourth .wrap-row .col {
   padding: 0;
 }
 
+main .fourth .container-fourth .wrap-row .left {
+  padding: 0;
+}
+
 main .fourth .container-fourth .wrap-row .left .card {
-  border-radius: 30px;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
   border: none;
   -webkit-box-shadow: 0px 20px 39px 16px rgba(83, 99, 123, 0.08);
           box-shadow: 0px 20px 39px 16px rgba(83, 99, 123, 0.08);
@@ -601,7 +606,7 @@ main .fourth .container-fourth .wrap-row .left .card .card-top h3 {
   font-weight: 600;
   line-height: 27px;
   letter-spacing: 0em;
-  text-align: left;
+  text-align: center;
   color: #18223A;
 }
 
@@ -612,7 +617,7 @@ main .fourth .container-fourth .wrap-row .left .card .card-top p {
   font-weight: 400;
   line-height: 17px;
   letter-spacing: 0em;
-  text-align: left;
+  text-align: center;
   color: #858B9A;
 }
 
@@ -622,7 +627,7 @@ main .fourth .container-fourth .wrap-row .left .card .card-body {
 
 main .fourth .container-fourth .wrap-row .left .card .card-body .container .wrap-text {
   border-bottom: 1px solid #E6EAF1;
-  padding: 15px 0;
+  padding: 24px 0;
 }
 
 main .fourth .container-fourth .wrap-row .left .card .card-body .container .wrap-text:nth-child(3) {
@@ -630,6 +635,7 @@ main .fourth .container-fourth .wrap-row .left .card .card-body .container .wrap
 }
 
 main .fourth .container-fourth .wrap-row .left .card .card-body .container .wrap-text p {
+  display: none;
   margin: 0;
   font-family: 'Baloo 2';
   font-size: 14px;
@@ -642,20 +648,89 @@ main .fourth .container-fourth .wrap-row .left .card .card-body .container .wrap
 }
 
 main .fourth .container-fourth .wrap-row .left .card .card-body .container .wrap-text h3 {
-  font-family: Baloo 2;
+  margin: 0;
+  font-family: 'Baloo 2';
   font-size: 18px;
   font-style: normal;
   font-weight: 600;
   line-height: 20px;
   letter-spacing: 0em;
-  text-align: left;
+  text-align: center;
   color: #18223A;
+}
+
+main .fourth .container-fourth .wrap-row .center {
+  padding: 0;
+}
+
+main .fourth .container-fourth .wrap-row .center .card {
+  background-color: #F9AE0F;
+  -webkit-box-shadow: 0px 20px 39px 16px rgba(83, 99, 123, 0.08);
+          box-shadow: 0px 20px 39px 16px rgba(83, 99, 123, 0.08);
+  border: none;
+  border-radius: 0px;
+}
+
+main .fourth .container-fourth .wrap-row .center .card .card-top {
+  padding: 40px;
+  padding-bottom: 32px;
+}
+
+main .fourth .container-fourth .wrap-row .center .card .card-top .wrap-circle {
+  background-color: white;
+  border-radius: 100%;
+  width: 62px;
+  height: 62px;
+  padding-top: 19px;
+}
+
+main .fourth .container-fourth .wrap-row .center .card .card-top .wrap-circle h3 {
+  margin: 0;
+  font-family: 'Baloo 2';
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 27px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #5C3F00;
+}
+
+main .fourth .container-fourth .wrap-row .center .card .card-body {
+  padding-top: 0;
+  padding-bottom: 1.25rem;
+}
+
+main .fourth .container-fourth .wrap-row .center .card .card-body .container {
+  padding-right: 5px;
+  padding-left: 5px;
+}
+
+main .fourth .container-fourth .wrap-row .center .card .card-body .container .wrap-text {
+  padding: 25.2px 0px;
+}
+
+main .fourth .container-fourth .wrap-row .center .card .card-body .container .wrap-text h3 {
+  margin: 0;
+  font-family: 'Baloo 2';
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 17px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: black;
+}
+
+main .fourth .container-fourth .wrap-row .right {
+  padding: 0;
 }
 
 main .fourth .container-fourth .wrap-row .right .card {
   background: url("../img/Desktop/Section 4/background-patern.png") no-repeat;
   background-size: cover;
-  border-radius: 30px;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
   border: none;
   -webkit-box-shadow: 0px 20px 39px 16px rgba(83, 99, 123, 0.08);
           box-shadow: 0px 20px 39px 16px rgba(83, 99, 123, 0.08);
@@ -674,7 +749,7 @@ main .fourth .container-fourth .wrap-row .right .card .card-top h3 {
   font-weight: 600;
   line-height: 27px;
   letter-spacing: 0em;
-  text-align: left;
+  text-align: center;
   color: #FFFFFF;
 }
 
@@ -685,7 +760,7 @@ main .fourth .container-fourth .wrap-row .right .card .card-top p {
   font-weight: 400;
   line-height: 17px;
   letter-spacing: 0em;
-  text-align: left;
+  text-align: center;
   color: #FFFFFF;
 }
 
@@ -695,7 +770,7 @@ main .fourth .container-fourth .wrap-row .right .card .card-body {
 
 main .fourth .container-fourth .wrap-row .right .card .card-body .container .wrap-text {
   border-bottom: 1px solid #E6EAF1;
-  padding: 15px 0;
+  padding: 24px 0;
 }
 
 main .fourth .container-fourth .wrap-row .right .card .card-body .container .wrap-text:nth-child(3) {
@@ -703,6 +778,7 @@ main .fourth .container-fourth .wrap-row .right .card .card-body .container .wra
 }
 
 main .fourth .container-fourth .wrap-row .right .card .card-body .container .wrap-text p {
+  display: none;
   margin: 0;
   font-family: 'Baloo 2';
   font-size: 14px;
@@ -715,13 +791,14 @@ main .fourth .container-fourth .wrap-row .right .card .card-body .container .wra
 }
 
 main .fourth .container-fourth .wrap-row .right .card .card-body .container .wrap-text h3 {
-  font-family: Baloo 2;
+  margin: 0;
+  font-family: 'Baloo 2';
   font-size: 18px;
   font-style: normal;
   font-weight: 600;
   line-height: 20px;
   letter-spacing: 0em;
-  text-align: left;
+  text-align: center;
   color: #FFFFFF;
 }
 
@@ -730,6 +807,7 @@ main .fourth .container-fourth .wrap-row .right .card .card-body .container .wra
 }
 
 main .fourth .container-fourth .wrap-row .wrap-vs {
+  display: none;
   background: #F9AE0F;
   position: absolute;
   border-radius: 100%;
@@ -1148,7 +1226,6 @@ main .seventh .wrap-seventh .container .wrap-btn .btn-seventh img {
     padding: 0;
   }
   main .fourth .container-fourth .wrap-row .left .card {
-    border-radius: 30px;
     border: none;
     -webkit-box-shadow: 0px 20px 39px 16px rgba(83, 99, 123, 0.08);
             box-shadow: 0px 20px 39px 16px rgba(83, 99, 123, 0.08);
@@ -1165,7 +1242,6 @@ main .seventh .wrap-seventh .container .wrap-btn .btn-seventh img {
     font-weight: 600;
     line-height: 27px;
     letter-spacing: 0em;
-    text-align: left;
     color: #18223A;
   }
   main .fourth .container-fourth .wrap-row .left .card .card-top p {
@@ -1175,7 +1251,6 @@ main .seventh .wrap-seventh .container .wrap-btn .btn-seventh img {
     font-weight: 400;
     line-height: 17px;
     letter-spacing: 0em;
-    text-align: left;
     color: #858B9A;
   }
   main .fourth .container-fourth .wrap-row .left .card .card-body {
@@ -1183,7 +1258,7 @@ main .seventh .wrap-seventh .container .wrap-btn .btn-seventh img {
   }
   main .fourth .container-fourth .wrap-row .left .card .card-body .container .wrap-text {
     border-bottom: 1px solid #E6EAF1;
-    padding: 15px 0;
+    padding: 24px 0;
   }
   main .fourth .container-fourth .wrap-row .left .card .card-body .container .wrap-text:nth-child(3) {
     border-bottom: none;
@@ -1196,7 +1271,6 @@ main .seventh .wrap-seventh .container .wrap-btn .btn-seventh img {
     font-weight: 400;
     line-height: 17px;
     letter-spacing: 0em;
-    text-align: left;
     color: #858B9A;
   }
   main .fourth .container-fourth .wrap-row .left .card .card-body .container .wrap-text h3 {
@@ -1206,13 +1280,14 @@ main .seventh .wrap-seventh .container .wrap-btn .btn-seventh img {
     font-weight: 600;
     line-height: 20px;
     letter-spacing: 0em;
-    text-align: left;
     color: #18223A;
+  }
+  main .fourth .container-fourth .wrap-row .center .card .card-body .container {
+    padding: 0;
   }
   main .fourth .container-fourth .wrap-row .right .card {
     background: url("../img/Desktop/Section 4/background-patern.png") no-repeat;
     background-size: cover;
-    border-radius: 30px;
     border: none;
     -webkit-box-shadow: 0px 20px 39px 16px rgba(83, 99, 123, 0.08);
             box-shadow: 0px 20px 39px 16px rgba(83, 99, 123, 0.08);
@@ -1229,7 +1304,6 @@ main .seventh .wrap-seventh .container .wrap-btn .btn-seventh img {
     font-weight: 600;
     line-height: 27px;
     letter-spacing: 0em;
-    text-align: left;
     color: #FFFFFF;
   }
   main .fourth .container-fourth .wrap-row .right .card .card-top p {
@@ -1239,7 +1313,6 @@ main .seventh .wrap-seventh .container .wrap-btn .btn-seventh img {
     font-weight: 400;
     line-height: 17px;
     letter-spacing: 0em;
-    text-align: left;
     color: #FFFFFF;
   }
   main .fourth .container-fourth .wrap-row .right .card .card-body {
@@ -1247,7 +1320,7 @@ main .seventh .wrap-seventh .container .wrap-btn .btn-seventh img {
   }
   main .fourth .container-fourth .wrap-row .right .card .card-body .container .wrap-text {
     border-bottom: 1px solid #E6EAF1;
-    padding: 15px 0;
+    padding: 24px 0;
   }
   main .fourth .container-fourth .wrap-row .right .card .card-body .container .wrap-text:nth-child(3) {
     border-bottom: none;
@@ -1260,7 +1333,6 @@ main .seventh .wrap-seventh .container .wrap-btn .btn-seventh img {
     font-weight: 400;
     line-height: 17px;
     letter-spacing: 0em;
-    text-align: left;
     color: #FFFFFF;
   }
   main .fourth .container-fourth .wrap-row .right .card .card-body .container .wrap-text h3 {
@@ -1270,13 +1342,13 @@ main .seventh .wrap-seventh .container .wrap-btn .btn-seventh img {
     font-weight: 600;
     line-height: 20px;
     letter-spacing: 0em;
-    text-align: left;
     color: #FFFFFF;
   }
   main .fourth .container-fourth .wrap-row .right .card .card-body .container .wrap-btn-google-mobile .btn-google {
     display: none;
   }
   main .fourth .container-fourth .wrap-row .wrap-vs {
+    display: none;
     margin-top: 180px;
     margin-left: 360px;
   }
@@ -1646,6 +1718,7 @@ main .seventh .wrap-seventh .container .wrap-btn .btn-seventh img {
     border-bottom: none;
   }
   main .fourth .container-fourth .wrap-row .left .card .card-body .container .wrap-text p {
+    display: block;
     margin: 0;
     font-family: 'Baloo 2';
     font-size: 14px;
@@ -1657,7 +1730,7 @@ main .seventh .wrap-seventh .container .wrap-btn .btn-seventh img {
     color: #858B9A;
   }
   main .fourth .container-fourth .wrap-row .left .card .card-body .container .wrap-text h3 {
-    font-family: Baloo 2;
+    font-family: 'Baloo 2';
     font-size: 18px;
     font-style: normal;
     font-weight: 600;
@@ -1665,6 +1738,9 @@ main .seventh .wrap-seventh .container .wrap-btn .btn-seventh img {
     letter-spacing: 0em;
     text-align: left;
     color: #18223A;
+  }
+  main .fourth .container-fourth .wrap-row .center {
+    display: none;
   }
   main .fourth .container-fourth .wrap-row .right .card {
     background: url("../img/Desktop/Section 4/background-patern.png") no-repeat;
@@ -1710,6 +1786,7 @@ main .seventh .wrap-seventh .container .wrap-btn .btn-seventh img {
     border-bottom: none;
   }
   main .fourth .container-fourth .wrap-row .right .card .card-body .container .wrap-text p {
+    display: block;
     margin: 0;
     font-family: 'Baloo 2';
     font-size: 14px;
@@ -1721,7 +1798,7 @@ main .seventh .wrap-seventh .container .wrap-btn .btn-seventh img {
     color: #FFFFFF;
   }
   main .fourth .container-fourth .wrap-row .right .card .card-body .container .wrap-text h3 {
-    font-family: Baloo 2;
+    font-family: 'Baloo 2';
     font-size: 18px;
     font-style: normal;
     font-weight: 600;
@@ -1734,6 +1811,7 @@ main .seventh .wrap-seventh .container .wrap-btn .btn-seventh img {
     display: none;
   }
   main .fourth .container-fourth .wrap-row .wrap-vs {
+    display: block;
     margin-top: 180px;
     margin-left: 310px;
   }
@@ -2305,8 +2383,8 @@ main .seventh .wrap-seventh .container .wrap-btn .btn-seventh img {
   }
   main .second .container .wrap-img .wrap-btn .btn {
     position: absolute;
-    margin-top: 70px;
-    margin-left: 180px;
+    margin-top: 90px;
+    margin-left: 210px;
   }
   main .second .container .wrap-img .wrap-btn .btn:focus {
     -webkit-box-shadow: none;
@@ -2329,7 +2407,7 @@ main .seventh .wrap-seventh .container .wrap-btn .btn-seventh img {
   main .second .container .wrap-img .wrap-btn .modal .modal-dialog .modal-content .wrap-btn .btn-pop-up {
     position: absolute;
     bottom: 110px;
-    right: 190px;
+    right: 205px;
     z-index: 99;
   }
   main .second .container .wrap-img .wrap-btn .modal .modal-dialog .modal-content .wrap-btn .btn-pop-up:focus {
@@ -2337,7 +2415,169 @@ main .seventh .wrap-seventh .container .wrap-btn .btn-seventh img {
             box-shadow: none;
   }
   main .second .container .wrap-img .wrap-btn .modal .modal-dialog .modal-content .wrap-btn .btn-pop-up .play-pop-up {
-    width: 64px;
+    width: 70px;
+  }
+  main .fourth {
+    background: url("../img/Mobile/Section 4/patern.png") no-repeat;
+    background-size: cover;
+  }
+  main .fourth .container-fourth {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+  main .fourth .container-fourth .title {
+    margin-bottom: 35px;
+  }
+  main .fourth .container-fourth .title h2 {
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 36px;
+    letter-spacing: 0.5%;
+  }
+  main .fourth .container-fourth .wrap-row {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  main .fourth .container-fourth .wrap-row .col {
+    padding: 0;
+  }
+  main .fourth .container-fourth .wrap-row .left .card {
+    border-radius: 30px;
+    border: none;
+    -webkit-box-shadow: 0px 20px 39px 16px rgba(83, 99, 123, 0.08);
+            box-shadow: 0px 20px 39px 16px rgba(83, 99, 123, 0.08);
+  }
+  main .fourth .container-fourth .wrap-row .left .card .card-top {
+    padding: 40px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #E6EAF1;
+  }
+  main .fourth .container-fourth .wrap-row .left .card .card-top h3 {
+    font-family: 'Baloo 2';
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 27px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #18223A;
+  }
+  main .fourth .container-fourth .wrap-row .left .card .card-top p {
+    font-family: 'Baloo 2';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 17px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #858B9A;
+  }
+  main .fourth .container-fourth .wrap-row .left .card .card-body {
+    padding-top: 0;
+  }
+  main .fourth .container-fourth .wrap-row .left .card .card-body .container .wrap-text {
+    border-bottom: 1px solid #E6EAF1;
+    padding: 15px 0;
+  }
+  main .fourth .container-fourth .wrap-row .left .card .card-body .container .wrap-text:nth-child(3) {
+    border-bottom: none;
+  }
+  main .fourth .container-fourth .wrap-row .left .card .card-body .container .wrap-text p {
+    margin: 0;
+    font-family: 'Baloo 2';
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 17px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #858B9A;
+  }
+  main .fourth .container-fourth .wrap-row .left .card .card-body .container .wrap-text h3 {
+    font-family: Baloo 2;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #18223A;
+  }
+  main .fourth .container-fourth .wrap-row .right .card {
+    background: url("../img/Desktop/Section 4/background-patern.png") no-repeat;
+    background-size: cover;
+    border-radius: 30px;
+    border: none;
+    -webkit-box-shadow: 0px 20px 39px 16px rgba(83, 99, 123, 0.08);
+            box-shadow: 0px 20px 39px 16px rgba(83, 99, 123, 0.08);
+  }
+  main .fourth .container-fourth .wrap-row .right .card .card-top {
+    padding: 40px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #E6EAF1;
+  }
+  main .fourth .container-fourth .wrap-row .right .card .card-top h3 {
+    font-family: 'Baloo 2';
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 27px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #FFFFFF;
+  }
+  main .fourth .container-fourth .wrap-row .right .card .card-top p {
+    font-family: 'Baloo 2';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 17px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #FFFFFF;
+  }
+  main .fourth .container-fourth .wrap-row .right .card .card-body {
+    padding-top: 0;
+  }
+  main .fourth .container-fourth .wrap-row .right .card .card-body .container .wrap-text {
+    border-bottom: 1px solid #E6EAF1;
+    padding: 15px 0;
+  }
+  main .fourth .container-fourth .wrap-row .right .card .card-body .container .wrap-text:nth-child(3) {
+    border-bottom: none;
+  }
+  main .fourth .container-fourth .wrap-row .right .card .card-body .container .wrap-text p {
+    margin: 0;
+    font-family: 'Baloo 2';
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 17px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #FFFFFF;
+  }
+  main .fourth .container-fourth .wrap-row .right .card .card-body .container .wrap-text h3 {
+    font-family: Baloo 2;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #FFFFFF;
+  }
+  main .fourth .container-fourth .wrap-row .right .card .card-body .container .wrap-btn-google-mobile .btn-google {
+    display: block;
+  }
+  main .fourth .container-fourth .wrap-row .right .card .card-body .container .wrap-btn-google-mobile .btn-google img {
+    width: 230px;
+  }
+  main .fourth .container-fourth .wrap-row .wrap-vs {
+    display: none;
+  }
+  main .fourth .container-fourth .wrap-row .wrap-btn-google .btn-google {
+    display: none;
   }
 }
 

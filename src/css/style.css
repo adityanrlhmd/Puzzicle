@@ -856,7 +856,7 @@ main .fourth .container-fourth .wrap-row .wrap-btn-google .btn-google img {
 }
 
 main .fifth {
-  background: url("../img/desktop/section-5/png/patern-illustration.png") no-repeat;
+  background: url("../img/desktop/section-5/svg/patern-illustration.svg") no-repeat;
   background-size: cover;
 }
 
@@ -1040,7 +1040,7 @@ main .seventh {
 }
 
 main .seventh .wrap-seventh {
-  background: url("../img/desktop/section-7/png/illustration.png") no-repeat;
+  background: url("../img/desktop/section-7/svg/illustration.svg") no-repeat;
   background-size: contain;
   background-position-y: 167px;
 }
@@ -1365,7 +1365,7 @@ main .seventh .wrap-seventh .container .wrap-btn .btn-seventh img {
     margin-left: 360px;
   }
   main .fifth {
-    background: url("../img/desktop/section-5/png/patern-illustration.png") no-repeat;
+    background: url("../img/desktop/section-5/svg/patern-illustration.svg") no-repeat;
     background-size: cover;
   }
   main .fifth .container {
@@ -1498,7 +1498,7 @@ main .seventh .wrap-seventh .container .wrap-btn .btn-seventh img {
     background-size: cover;
   }
   main .seventh .wrap-seventh {
-    background: url("../img/desktop/section-7/png/illustration.png") no-repeat;
+    background: url("../img/desktop/section-7/svg/illustration.svg") no-repeat;
     background-size: contain;
     background-position-y: 185px;
   }
@@ -1828,7 +1828,7 @@ main .seventh .wrap-seventh .container .wrap-btn .btn-seventh img {
     margin-left: 310px;
   }
   main .fifth {
-    background: url("../img/desktop/section-5/png/patern-illustration.png") no-repeat;
+    background: url("../img/desktop/section-5/svg/patern-illustration.svg") no-repeat;
     background-size: cover;
   }
   main .fifth .container {
@@ -1957,7 +1957,7 @@ main .seventh .wrap-seventh .container .wrap-btn .btn-seventh img {
     background-size: cover;
   }
   main .seventh .wrap-seventh {
-    background: url("../img/mobile/section-7/png/illustration.png") no-repeat;
+    background: url("../img/mobile/section-7/svg/illustration.svg") no-repeat;
     background-size: contain;
     background-position-y: 100px;
   }
@@ -2962,7 +2962,7 @@ main .seventh .wrap-seventh .container .wrap-btn .btn-seventh img {
     background-size: cover;
   }
   main .seventh .wrap-seventh {
-    background: url("../img/mobile/section-7/png/illustration.png") no-repeat;
+    background: url("../img/mobile/section-7/svg/illustration.svg") no-repeat;
     background-size: contain;
     background-position-y: 254.5px;
   }
@@ -3420,7 +3420,7 @@ main .seventh .wrap-seventh .container .wrap-btn .btn-seventh img {
     background-size: cover;
   }
   main .seventh .wrap-seventh {
-    background: url("../img/mobile/section-7/png/illustration.png") no-repeat;
+    background: url("../img/mobile/section-7/svg/illustration.svg") no-repeat;
     background-size: contain;
     background-position-y: 254.5px;
   }
@@ -3902,7 +3902,7 @@ main .seventh .wrap-seventh .container .wrap-btn .btn-seventh img {
     background-size: cover;
   }
   main .seventh .wrap-seventh {
-    background: url("../img/mobile/section-7/png/illustration.png") no-repeat;
+    background: url("../img/mobile/section-7/svg/illustration.svg") no-repeat;
     background-size: contain;
     background-position-y: 257px;
   }
@@ -4383,7 +4383,7 @@ main .seventh .wrap-seventh .container .wrap-btn .btn-seventh img {
     background-size: cover;
   }
   main .seventh .wrap-seventh {
-    background: url("../img/mobile/section-7/png/illustration.png") no-repeat;
+    background: url("../img/mobile/section-7/svg/illustration.svg") no-repeat;
     background-size: contain;
     background-position-y: 234.5px;
   }

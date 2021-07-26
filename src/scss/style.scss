@@ -3300,6 +3300,40 @@ main {
                 }
             }
         }
+
+        .seventh {
+            background: url('../img/mobile/section-7/png/patern.png') no-repeat;
+            background-size: cover;
+
+            .wrap-seventh {
+                background: url('../img/mobile/section-7/svg/illustration.svg') no-repeat;
+                background-size: contain;
+                background-position-y: 195px;
+
+                .container {
+                    padding-top: 80px;
+                    padding-bottom: 160px;
+
+                    .title {
+                        margin-bottom: 20px;
+
+                        h1 {
+                            font-size: 28px;
+                            line-height: 40px;
+                            letter-spacing: 0.5%;
+                        }
+                    }
+
+                    .wrap-btn {
+                        .btn-seventh {
+                            img {
+                                width: 180px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
 }
 
@@ -3404,7 +3438,6 @@ main {
 
             }
         }
-
         
         .fourth {
             background: url('../img/mobile/section-4/patern.png') no-repeat;

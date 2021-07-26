@@ -2591,6 +2591,30 @@ main .seventh .wrap-seventh .container .wrap-btn .btn-seventh img {
   main .fourth .container-fourth .wrap-row .wrap-btn-google .btn-google {
     display: none;
   }
+  main .seventh {
+    background: url("../img/mobile/section-7/png/patern.png") no-repeat;
+    background-size: cover;
+  }
+  main .seventh .wrap-seventh {
+    background: url("../img/mobile/section-7/svg/illustration.svg") no-repeat;
+    background-size: contain;
+    background-position-y: 195px;
+  }
+  main .seventh .wrap-seventh .container {
+    padding-top: 80px;
+    padding-bottom: 160px;
+  }
+  main .seventh .wrap-seventh .container .title {
+    margin-bottom: 20px;
+  }
+  main .seventh .wrap-seventh .container .title h1 {
+    font-size: 28px;
+    line-height: 40px;
+    letter-spacing: 0.5%;
+  }
+  main .seventh .wrap-seventh .container .wrap-btn .btn-seventh img {
+    width: 180px;
+  }
 }
 
 @media screen and (max-width: 414px) {

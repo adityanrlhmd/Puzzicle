@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;700&display=swap");
 header {
-  background: url("../img/Desktop/Header/PNG/pattern.png") no-repeat;
+  background: url("../img/desktop/header/png/pattern.png") no-repeat;
   background-size: cover;
 }
 
@@ -26,7 +26,7 @@ header .wrap-nav nav .container .overlay {
 }
 
 header .wrap-nav nav .container .sidebar {
-  background: url("../img/Mobile/Header/PNG/background.png") no-repeat;
+  background: url("../img/mobile/header/png/background.png") no-repeat;
   background-size: cover;
   left: -100%;
   max-width: 300px;
@@ -98,7 +98,7 @@ header .jumbotron .container .title h1 {
 }
 
 header .jumbotron .container .title h1 .lessons {
-  background: url("../img/Vector45.png") no-repeat;
+  background: url("../img/vector-45.png") no-repeat;
   background-size: 189px;
   padding-left: 12px;
   padding-right: 12px;
@@ -108,6 +108,15 @@ header .jumbotron .container .title .title-img {
   position: absolute;
   top: 100px;
   right: 310px;
+}
+
+header .jumbotron .container .wrap-btn .btn-chrome {
+  display: none;
+  padding: 0;
+}
+
+header .jumbotron .container .wrap-btn .btn-chrome img {
+  width: 175px;
 }
 
 header .jumbotron .container .illustration-mobile {
@@ -121,7 +130,7 @@ header .jumbotron .illustration svg {
 
 @media screen and (max-width: 1200px) {
   header {
-    background: url("../img/Desktop/Header/PNG/pattern.png") no-repeat;
+    background: url("../img/desktop/header/png/pattern.png") no-repeat;
     background-size: cover;
   }
   header .wrap-nav nav .container .navbar-brand img {
@@ -176,11 +185,11 @@ header .jumbotron .illustration svg {
 
 @media screen and (max-width: 1023px) {
   header {
-    background: url("../img/Mobile/Header/PNG/background.png") no-repeat;
+    background: url("../img/mobile/header/png/background.png") no-repeat;
     background-size: cover;
   }
   header .wrap-nav nav .container .sidebar {
-    background: url("../img/Mobile/Header/PNG/background.png") no-repeat;
+    background: url("../img/mobile/header/png/background.png") no-repeat;
     background-size: cover;
     left: -100%;
     max-width: 350px;
@@ -213,6 +222,9 @@ header .jumbotron .illustration svg {
   header .jumbotron .container .title .title-img {
     display: none;
   }
+  header .jumbotron .container .wrap-btn .btn-chrome {
+    display: block;
+  }
   header .jumbotron .container .illustration-mobile {
     display: block;
   }
@@ -226,7 +238,7 @@ header .jumbotron .illustration svg {
 
 @media screen and (max-width: 675px) {
   header {
-    background: url("../img/Mobile/Header/PNG/background.png") no-repeat;
+    background: url("../img/mobile/header/png/background.png") no-repeat;
     background-size: cover;
   }
   header .wrap-nav nav .container .sidebar {
@@ -280,7 +292,7 @@ header .jumbotron .illustration svg {
 
 @media screen and (max-width: 280px) {
   header {
-    background: url("../img/Mobile/Header/PNG/background.png") no-repeat;
+    background: url("../img/mobile/header/png/background.png") no-repeat;
     background-size: cover;
   }
   header .wrap-nav nav .container .sidebar {
@@ -390,7 +402,7 @@ main .first .container .trademark {
 }
 
 main .second {
-  background: url("../img/Desktop/Section 2/patern.png") no-repeat;
+  background: url("../img/desktop/section-2/patern.png") no-repeat;
   background-size: cover;
 }
 
@@ -476,7 +488,7 @@ main .second .container .wrap-img .wrap-btn .modal .modal-dialog .modal-content 
 }
 
 main .third {
-  background: url("../img/Desktop/Section 3/patern.png") no-repeat;
+  background: url("../img/desktop/section-3/patern.png") no-repeat;
   background-size: cover;
 }
 
@@ -548,7 +560,7 @@ main .third .container-third .wrap-row .row .col .card-right {
 }
 
 main .fourth {
-  background: url("../img/Desktop/Section 4/patern.png") no-repeat;
+  background: url("../img/desktop/section-4/patern.png") no-repeat;
   background-size: cover;
 }
 
@@ -727,7 +739,7 @@ main .fourth .container-fourth .wrap-row .right {
 }
 
 main .fourth .container-fourth .wrap-row .right .card {
-  background: url("../img/Desktop/Section 4/background-patern.png") no-repeat;
+  background: url("../img/desktop/section-4/background-patern.png") no-repeat;
   background-size: cover;
   border-top-right-radius: 30px;
   border-bottom-right-radius: 30px;
@@ -844,7 +856,7 @@ main .fourth .container-fourth .wrap-row .wrap-btn-google .btn-google img {
 }
 
 main .fifth {
-  background: url("../img/Desktop/Section 5/PNG/patern-illustration.png") no-repeat;
+  background: url("../img/desktop/section-5/png/patern-illustration.png") no-repeat;
   background-size: cover;
 }
 
@@ -878,7 +890,7 @@ main .fifth .container .wrap-img .people-mobile {
 }
 
 main .sixth {
-  background: url("../img/Desktop/Section-6/patern.png") no-repeat;
+  background: url("../img/desktop/section-6/patern.png") no-repeat;
   background-size: cover;
 }
 
@@ -1023,12 +1035,12 @@ main .sixth .container-sixth .wrap-btn .btn-feedback {
 }
 
 main .seventh {
-  background: url("../img/Desktop/Section 7/PNG/patern.png") no-repeat;
+  background: url("../img/desktop/section-7/png/patern.png") no-repeat;
   background-size: cover;
 }
 
 main .seventh .wrap-seventh {
-  background: url("../img/Desktop/Section 7/PNG/illustration.png") no-repeat;
+  background: url("../img/desktop/section-7/png/illustration.png") no-repeat;
   background-size: contain;
   background-position-y: 167px;
 }
@@ -1101,7 +1113,7 @@ main .seventh .wrap-seventh .container .wrap-btn .btn-seventh img {
     text-align: center;
   }
   main .second {
-    background: url("../img/Desktop/Section 2/patern.png") no-repeat;
+    background: url("../img/desktop/section-2/patern.png") no-repeat;
     background-size: cover;
   }
   main .second .container {
@@ -1170,7 +1182,7 @@ main .seventh .wrap-seventh .container .wrap-btn .btn-seventh img {
     width: 114px;
   }
   main .third {
-    background: url("../img/Mobile/Section 3/patern.png") no-repeat;
+    background: url("../img/mobile/section-3/patern.png") no-repeat;
     background-size: cover;
   }
   main .third .container-third {
@@ -1202,7 +1214,7 @@ main .seventh .wrap-seventh .container .wrap-btn .btn-seventh img {
     font-size: 16px;
   }
   main .fourth {
-    background: url("../img/Mobile/Section 4/patern.png") no-repeat;
+    background: url("../img/mobile/section-4/patern.png") no-repeat;
     background-size: cover;
   }
   main .fourth .container-fourth {
@@ -1286,7 +1298,7 @@ main .seventh .wrap-seventh .container .wrap-btn .btn-seventh img {
     padding: 0;
   }
   main .fourth .container-fourth .wrap-row .right .card {
-    background: url("../img/Desktop/Section 4/background-patern.png") no-repeat;
+    background: url("../img/desktop/section-4/background-patern.png") no-repeat;
     background-size: cover;
     border: none;
     -webkit-box-shadow: 0px 20px 39px 16px rgba(83, 99, 123, 0.08);
@@ -1353,7 +1365,7 @@ main .seventh .wrap-seventh .container .wrap-btn .btn-seventh img {
     margin-left: 360px;
   }
   main .fifth {
-    background: url("../img/Desktop/Section 5/PNG/patern-illustration.png") no-repeat;
+    background: url("../img/desktop/section-5/png/patern-illustration.png") no-repeat;
     background-size: cover;
   }
   main .fifth .container {
@@ -1380,7 +1392,7 @@ main .seventh .wrap-seventh .container .wrap-btn .btn-seventh img {
     width: 360px;
   }
   main .sixth {
-    background: url("../img/Mobile/Section 6/patern.png") no-repeat;
+    background: url("../img/mobile/section-6/patern.png") no-repeat;
     background-size: cover;
   }
   main .sixth .container-sixth {
@@ -1482,11 +1494,11 @@ main .seventh .wrap-seventh .container .wrap-btn .btn-seventh img {
     background-color: #00BAC7;
   }
   main .seventh {
-    background: url("../img/Mobile/Section 7/PNG/patern.png") no-repeat;
+    background: url("../img/mobile/section-7/png/patern.png") no-repeat;
     background-size: cover;
   }
   main .seventh .wrap-seventh {
-    background: url("../img/Desktop/Section 7/PNG/illustration.png") no-repeat;
+    background: url("../img/desktop/section-7/png/illustration.png") no-repeat;
     background-size: contain;
     background-position-y: 185px;
   }
@@ -1552,7 +1564,7 @@ main .seventh .wrap-seventh .container .wrap-btn .btn-seventh img {
     text-align: center;
   }
   main .second {
-    background: url("../img/Desktop/Section 2/patern.png") no-repeat;
+    background: url("../img/desktop/section-2/patern.png") no-repeat;
     background-size: cover;
   }
   main .second .container {
@@ -1621,7 +1633,7 @@ main .seventh .wrap-seventh .container .wrap-btn .btn-seventh img {
     width: 64px;
   }
   main .third {
-    background: url("../img/Mobile/Section 3/patern.png") no-repeat;
+    background: url("../img/mobile/section-3/patern.png") no-repeat;
     background-size: cover;
   }
   main .third .container-third {
@@ -1653,7 +1665,7 @@ main .seventh .wrap-seventh .container .wrap-btn .btn-seventh img {
     font-size: 16px;
   }
   main .fourth {
-    background: url("../img/Mobile/Section 4/patern.png") no-repeat;
+    background: url("../img/mobile/section-4/patern.png") no-repeat;
     background-size: cover;
   }
   main .fourth .container-fourth {
@@ -1743,7 +1755,7 @@ main .seventh .wrap-seventh .container .wrap-btn .btn-seventh img {
     display: none;
   }
   main .fourth .container-fourth .wrap-row .right .card {
-    background: url("../img/Desktop/Section 4/background-patern.png") no-repeat;
+    background: url("../img/desktop/section-4/background-patern.png") no-repeat;
     background-size: cover;
     border-radius: 30px;
     border: none;
@@ -1816,7 +1828,7 @@ main .seventh .wrap-seventh .container .wrap-btn .btn-seventh img {
     margin-left: 310px;
   }
   main .fifth {
-    background: url("../img/Desktop/Section 5/PNG/patern-illustration.png") no-repeat;
+    background: url("../img/desktop/section-5/png/patern-illustration.png") no-repeat;
     background-size: cover;
   }
   main .fifth .container {
@@ -1842,7 +1854,7 @@ main .seventh .wrap-seventh .container .wrap-btn .btn-seventh img {
     width: 330px;
   }
   main .sixth {
-    background: url("../img/Mobile/Section 6/patern.png") no-repeat;
+    background: url("../img/mobile/section-6/patern.png") no-repeat;
     background-size: cover;
   }
   main .sixth .container-sixth {
@@ -1941,11 +1953,11 @@ main .seventh .wrap-seventh .container .wrap-btn .btn-seventh img {
     background-color: #00BAC7;
   }
   main .seventh {
-    background: url("../img/Mobile/Section 7/PNG/patern.png") no-repeat;
+    background: url("../img/mobile/section-7/png/patern.png") no-repeat;
     background-size: cover;
   }
   main .seventh .wrap-seventh {
-    background: url("../img/Mobile/Section 7/PNG/illustration.png") no-repeat;
+    background: url("../img/mobile/section-7/png/illustration.png") no-repeat;
     background-size: contain;
     background-position-y: 100px;
   }
@@ -2011,7 +2023,7 @@ main .seventh .wrap-seventh .container .wrap-btn .btn-seventh img {
     text-align: center;
   }
   main .second {
-    background: url("../img/Mobile/Section 2/PNG/patern.png") no-repeat;
+    background: url("../img/mobile/section-2/png/patern.png") no-repeat;
     background-size: cover;
   }
   main .second .container {
@@ -2084,7 +2096,7 @@ main .seventh .wrap-seventh .container .wrap-btn .btn-seventh img {
     width: 64px;
   }
   main .fourth {
-    background: url("../img/Mobile/Section 4/patern.png") no-repeat;
+    background: url("../img/mobile/section-4/patern.png") no-repeat;
     background-size: cover;
   }
   main .fourth .container-fourth {
@@ -2170,7 +2182,7 @@ main .seventh .wrap-seventh .container .wrap-btn .btn-seventh img {
     color: #18223A;
   }
   main .fourth .container-fourth .wrap-row .right .card {
-    background: url("../img/Desktop/Section 4/background-patern.png") no-repeat;
+    background: url("../img/desktop/section-4/background-patern.png") no-repeat;
     background-size: cover;
     border-radius: 30px;
     border: none;
@@ -2240,7 +2252,7 @@ main .seventh .wrap-seventh .container .wrap-btn .btn-seventh img {
     display: none;
   }
   main .sixth {
-    background: url("../img/Mobile/Section 6/patern.png") no-repeat;
+    background: url("../img/mobile/section-6/patern.png") no-repeat;
     background-size: cover;
   }
   main .sixth .container-sixth {
@@ -2345,7 +2357,7 @@ main .seventh .wrap-seventh .container .wrap-btn .btn-seventh img {
 
 @media screen and (max-width: 600px) {
   main .second {
-    background: url("../img/Mobile/Section 2/PNG/patern.png") no-repeat;
+    background: url("../img/mobile/section-2/png/patern.png") no-repeat;
     background-size: cover;
   }
   main .second .container {
@@ -2418,7 +2430,7 @@ main .seventh .wrap-seventh .container .wrap-btn .btn-seventh img {
     width: 70px;
   }
   main .fourth {
-    background: url("../img/Mobile/Section 4/patern.png") no-repeat;
+    background: url("../img/mobile/section-4/patern.png") no-repeat;
     background-size: cover;
   }
   main .fourth .container-fourth {
@@ -2504,7 +2516,7 @@ main .seventh .wrap-seventh .container .wrap-btn .btn-seventh img {
     color: #18223A;
   }
   main .fourth .container-fourth .wrap-row .right .card {
-    background: url("../img/Desktop/Section 4/background-patern.png") no-repeat;
+    background: url("../img/desktop/section-4/background-patern.png") no-repeat;
     background-size: cover;
     border-radius: 30px;
     border: none;
@@ -2583,7 +2595,7 @@ main .seventh .wrap-seventh .container .wrap-btn .btn-seventh img {
 
 @media screen and (max-width: 414px) {
   main .second {
-    background: url("../img/Mobile/Section 2/PNG/patern.png") no-repeat;
+    background: url("../img/mobile/section-2/png/patern.png") no-repeat;
     background-size: cover;
   }
   main .second .container {
@@ -2656,7 +2668,7 @@ main .seventh .wrap-seventh .container .wrap-btn .btn-seventh img {
     width: 64px;
   }
   main .fourth {
-    background: url("../img/Mobile/Section 4/patern.png") no-repeat;
+    background: url("../img/mobile/section-4/patern.png") no-repeat;
     background-size: cover;
   }
   main .fourth .container-fourth {
@@ -2742,7 +2754,7 @@ main .seventh .wrap-seventh .container .wrap-btn .btn-seventh img {
     color: #18223A;
   }
   main .fourth .container-fourth .wrap-row .right .card {
-    background: url("../img/Desktop/Section 4/background-patern.png") no-repeat;
+    background: url("../img/desktop/section-4/background-patern.png") no-repeat;
     background-size: cover;
     border-radius: 30px;
     border: none;
@@ -2822,7 +2834,7 @@ main .seventh .wrap-seventh .container .wrap-btn .btn-seventh img {
     display: none;
   }
   main .fifth {
-    background: url("../img/Mobile/Section 5/PNG/patern.png") no-repeat;
+    background: url("../img/mobile/section-5/png/patern.png") no-repeat;
     background-size: cover;
   }
   main .fifth .container {
@@ -2848,7 +2860,7 @@ main .seventh .wrap-seventh .container .wrap-btn .btn-seventh img {
     width: 330px;
   }
   main .sixth {
-    background: url("../img/Mobile/Section 6/patern.png") no-repeat;
+    background: url("../img/mobile/section-6/patern.png") no-repeat;
     background-size: cover;
   }
   main .sixth .container-sixth {
@@ -2946,11 +2958,11 @@ main .seventh .wrap-seventh .container .wrap-btn .btn-seventh img {
     background-color: #00BAC7;
   }
   main .seventh {
-    background: url("../img/Mobile/Section 7/PNG/patern.png") no-repeat;
+    background: url("../img/mobile/section-7/png/patern.png") no-repeat;
     background-size: cover;
   }
   main .seventh .wrap-seventh {
-    background: url("../img/Mobile/Section 7/PNG/illustration.png") no-repeat;
+    background: url("../img/mobile/section-7/png/illustration.png") no-repeat;
     background-size: contain;
     background-position-y: 254.5px;
   }
@@ -3016,7 +3028,7 @@ main .seventh .wrap-seventh .container .wrap-btn .btn-seventh img {
     text-align: center;
   }
   main .second {
-    background: url("../img/Mobile/Section 2/PNG/patern.png") no-repeat;
+    background: url("../img/mobile/section-2/png/patern.png") no-repeat;
     background-size: cover;
   }
   main .second .container {
@@ -3089,7 +3101,7 @@ main .seventh .wrap-seventh .container .wrap-btn .btn-seventh img {
     width: 64px;
   }
   main .third {
-    background: url("../img/Mobile/Section 3/patern.png") no-repeat;
+    background: url("../img/mobile/section-3/patern.png") no-repeat;
     background-size: cover;
   }
   main .third .container-third {
@@ -3121,7 +3133,7 @@ main .seventh .wrap-seventh .container .wrap-btn .btn-seventh img {
     font-size: 16px;
   }
   main .fourth {
-    background: url("../img/Mobile/Section 4/patern.png") no-repeat;
+    background: url("../img/mobile/section-4/patern.png") no-repeat;
     background-size: cover;
   }
   main .fourth .container-fourth {
@@ -3207,7 +3219,7 @@ main .seventh .wrap-seventh .container .wrap-btn .btn-seventh img {
     color: #18223A;
   }
   main .fourth .container-fourth .wrap-row .right .card {
-    background: url("../img/Desktop/Section 4/background-patern.png") no-repeat;
+    background: url("../img/desktop/section-4/background-patern.png") no-repeat;
     background-size: cover;
     border-radius: 30px;
     border: none;
@@ -3287,7 +3299,7 @@ main .seventh .wrap-seventh .container .wrap-btn .btn-seventh img {
     display: none;
   }
   main .fifth {
-    background: url("../img/Mobile/Section 5/PNG/patern.png") no-repeat;
+    background: url("../img/mobile/section-5/png/patern.png") no-repeat;
     background-size: cover;
   }
   main .fifth .container {
@@ -3313,7 +3325,7 @@ main .seventh .wrap-seventh .container .wrap-btn .btn-seventh img {
     width: 330px;
   }
   main .sixth {
-    background: url("../img/Mobile/Section 6/patern.png") no-repeat;
+    background: url("../img/mobile/section-6/patern.png") no-repeat;
     background-size: cover;
   }
   main .sixth .container-sixth {
@@ -3404,11 +3416,11 @@ main .seventh .wrap-seventh .container .wrap-btn .btn-seventh img {
     background-color: #00BAC7;
   }
   main .seventh {
-    background: url("../img/Mobile/Section 7/PNG/patern.png") no-repeat;
+    background: url("../img/mobile/section-7/png/patern.png") no-repeat;
     background-size: cover;
   }
   main .seventh .wrap-seventh {
-    background: url("../img/Mobile/Section 7/PNG/illustration.png") no-repeat;
+    background: url("../img/mobile/section-7/png/illustration.png") no-repeat;
     background-size: contain;
     background-position-y: 254.5px;
   }
@@ -3474,7 +3486,7 @@ main .seventh .wrap-seventh .container .wrap-btn .btn-seventh img {
     text-align: center;
   }
   main .second {
-    background: url("../img/Mobile/Section 2/PNG/patern.png") no-repeat;
+    background: url("../img/mobile/section-2/png/patern.png") no-repeat;
     background-size: cover;
   }
   main .second .container {
@@ -3547,7 +3559,7 @@ main .seventh .wrap-seventh .container .wrap-btn .btn-seventh img {
     width: 64px;
   }
   main .third {
-    background: url("../img/Mobile/Section 3/patern.png") no-repeat;
+    background: url("../img/mobile/section-3/patern.png") no-repeat;
     background-size: cover;
   }
   main .third .container-third {
@@ -3579,7 +3591,7 @@ main .seventh .wrap-seventh .container .wrap-btn .btn-seventh img {
     font-size: 16px;
   }
   main .fourth {
-    background: url("../img/Mobile/Section 4/patern.png") no-repeat;
+    background: url("../img/mobile/section-4/patern.png") no-repeat;
     background-size: cover;
   }
   main .fourth .container-fourth {
@@ -3665,7 +3677,7 @@ main .seventh .wrap-seventh .container .wrap-btn .btn-seventh img {
     color: #18223A;
   }
   main .fourth .container-fourth .wrap-row .right .card {
-    background: url("../img/Desktop/Section 4/background-patern.png") no-repeat;
+    background: url("../img/desktop/section-4/background-patern.png") no-repeat;
     background-size: cover;
     border-radius: 30px;
     border: none;
@@ -3745,7 +3757,7 @@ main .seventh .wrap-seventh .container .wrap-btn .btn-seventh img {
     display: none;
   }
   main .fifth {
-    background: url("../img/Mobile/Section 5/PNG/patern.png") no-repeat;
+    background: url("../img/mobile/section-5/png/patern.png") no-repeat;
     background-size: cover;
   }
   main .fifth .container {
@@ -3771,7 +3783,7 @@ main .seventh .wrap-seventh .container .wrap-btn .btn-seventh img {
     width: 100%;
   }
   main .sixth {
-    background: url("../img/Mobile/Section 6/patern.png") no-repeat;
+    background: url("../img/mobile/section-6/patern.png") no-repeat;
     background-size: cover;
   }
   main .sixth .container-sixth {
@@ -3886,11 +3898,11 @@ main .seventh .wrap-seventh .container .wrap-btn .btn-seventh img {
     background-color: #00BAC7;
   }
   main .seventh {
-    background: url("../img/Mobile/Section 7/PNG/patern.png") no-repeat;
+    background: url("../img/mobile/section-7/png/patern.png") no-repeat;
     background-size: cover;
   }
   main .seventh .wrap-seventh {
-    background: url("../img/Mobile/Section 7/PNG/illustration.png") no-repeat;
+    background: url("../img/mobile/section-7/png/illustration.png") no-repeat;
     background-size: contain;
     background-position-y: 257px;
   }
@@ -3956,7 +3968,7 @@ main .seventh .wrap-seventh .container .wrap-btn .btn-seventh img {
     text-align: center;
   }
   main .second {
-    background: url("../img/Mobile/Section 2/PNG/patern.png") no-repeat;
+    background: url("../img/mobile/section-2/png/patern.png") no-repeat;
     background-size: cover;
   }
   main .second .container {
@@ -4029,7 +4041,7 @@ main .seventh .wrap-seventh .container .wrap-btn .btn-seventh img {
     width: 64px;
   }
   main .third {
-    background: url("../img/Mobile/Section 3/patern.png") no-repeat;
+    background: url("../img/mobile/section-3/patern.png") no-repeat;
     background-size: cover;
   }
   main .third .container-third {
@@ -4061,7 +4073,7 @@ main .seventh .wrap-seventh .container .wrap-btn .btn-seventh img {
     font-size: 16px;
   }
   main .fourth {
-    background: url("../img/Mobile/Section 4/patern.png") no-repeat;
+    background: url("../img/mobile/section-4/patern.png") no-repeat;
     background-size: cover;
   }
   main .fourth .container-fourth {
@@ -4147,7 +4159,7 @@ main .seventh .wrap-seventh .container .wrap-btn .btn-seventh img {
     color: #18223A;
   }
   main .fourth .container-fourth .wrap-row .right .card {
-    background: url("../img/Desktop/Section 4/background-patern.png") no-repeat;
+    background: url("../img/desktop/section-4/background-patern.png") no-repeat;
     background-size: cover;
     border-radius: 30px;
     border: none;
@@ -4227,7 +4239,7 @@ main .seventh .wrap-seventh .container .wrap-btn .btn-seventh img {
     display: none;
   }
   main .fifth {
-    background: url("../img/Mobile/Section 5/PNG/patern.png") no-repeat;
+    background: url("../img/mobile/section-5/png/patern.png") no-repeat;
     background-size: cover;
   }
   main .fifth .container {
@@ -4253,7 +4265,7 @@ main .seventh .wrap-seventh .container .wrap-btn .btn-seventh img {
     width: 100%;
   }
   main .sixth {
-    background: url("../img/Mobile/Section 6/patern.png") no-repeat;
+    background: url("../img/mobile/section-6/patern.png") no-repeat;
     background-size: cover;
   }
   main .sixth .container-sixth {
@@ -4367,11 +4379,11 @@ main .seventh .wrap-seventh .container .wrap-btn .btn-seventh img {
     background-color: #00BAC7;
   }
   main .seventh {
-    background: url("../img/Mobile/Section 7/PNG/patern.png") no-repeat;
+    background: url("../img/mobile/section-7/png/patern.png") no-repeat;
     background-size: cover;
   }
   main .seventh .wrap-seventh {
-    background: url("../img/Mobile/Section 7/PNG/illustration.png") no-repeat;
+    background: url("../img/mobile/section-7/png/illustration.png") no-repeat;
     background-size: contain;
     background-position-y: 234.5px;
   }

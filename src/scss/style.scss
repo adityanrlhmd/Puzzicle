@@ -1028,16 +1028,39 @@ main {
                             border-radius: 20px;
 
                             .container {
-                                padding: 40px;
+                                padding: 0px;
 
                                 // padding-bottom: 10px;
-                                .d-flex {
-                                    img {
-                                        width: 22px;
-                                        height: 22px;
-                                        margin-right: 7px;
-                                    }
+                                .card-header {
+                                    background-color: rgba(255, 255, 255, 0);
+                                    border: none;
+                                    padding-top: 40px;
+                                    padding-left: 32px;
+                                    padding-right: 32px;
 
+                                    .d-flex {
+                                        margin: 0;
+                                        font-family: 'Baloo 2';
+                                        font-size: 16px;
+                                        font-style: normal;
+                                        font-weight: 400;
+                                        line-height: 28px;
+                                        letter-spacing: 0em;
+                                        text-align: left;
+                                        color: #7B8397;
+
+                                        img {
+                                            width: 22px;
+                                            height: 22px;
+                                            margin-right: 7px;
+                                        }
+                                    }
+                                }
+
+                                .card-body {
+                                    padding-left: 32px;
+                                    padding-right: 32px;
+                                    height: 115px;
                                     p {
                                         font-family: 'Baloo 2';
                                         font-size: 16px;
@@ -1050,18 +1073,12 @@ main {
                                     }
                                 }
 
-                                p {
-                                    font-family: 'Baloo 2';
-                                    font-size: 16px;
-                                    font-style: normal;
-                                    font-weight: 400;
-                                    line-height: 28px;
-                                    letter-spacing: 0em;
-                                    text-align: left;
-                                    color: #7B8397;
-                                }
-
                                 .people {
+                                    padding-bottom: 30px;
+                                    padding-left: 32px;
+                                    padding-right: 32px;
+                                    background-color: rgba(255, 255, 255, 0);
+                                    border: none;
                                     .d-flex {
                                         img {
                                             border-radius: 100%;
@@ -1642,15 +1659,32 @@ main {
                                 border-radius: 20px;
                                     
                                     .container {
-                                        padding: 40px;
+                                        padding: 10px;
                                         
-                                        .d-flex {
-                                            img {
-                                                width: 22px;
-                                                height: 22px;
-                                                margin-right: 7px;
+                                        .card-header {
+                                            // padding-top: 30px;
+                                            .d-flex {
+                                                img {
+                                                    width: 22px;
+                                                    height: 22px;
+                                                    margin-right: 7px;
+                                                }
+            
+                                                p {
+                                                    font-family: 'Baloo 2';
+                                                    font-size: 16px;
+                                                    font-style: normal;
+                                                    font-weight: 400;
+                                                    line-height: 28px;
+                                                    letter-spacing: 0em;
+                                                    text-align: left;
+                                                    color: #7B8397;
+                                                }
                                             }
-        
+                                        }
+                                        
+                                        .card-body {
+                                            height: 150px;
                                             p {
                                                 font-family: 'Baloo 2';
                                                 font-size: 16px;
@@ -1661,16 +1695,6 @@ main {
                                                 text-align: left;
                                                 color: #7B8397;
                                             }
-                                        }
-                                        p {
-                                            font-family: 'Baloo 2';
-                                            font-size: 16px;
-                                            font-style: normal;
-                                            font-weight: 400;
-                                            line-height: 28px;
-                                            letter-spacing: 0em;
-                                            text-align: left;
-                                            color: #7B8397;
                                         }
 
                                         .people {
@@ -2250,7 +2274,7 @@ main {
                                 border-radius: 20px;
 
                                 .container {
-                                    padding: 40px;
+                                    padding: 20px;
 
                                     .d-flex {
                                         img {
@@ -2779,15 +2803,25 @@ main {
                                 border-radius: 20px;
 
                                 .container {
-                                    padding: 40px;
+                                    padding: 0px;
 
-                                    .d-flex {
-                                        img {
-                                            width: 22px;
-                                            height: 22px;
-                                            margin-right: 7px;
+                                    .card-header {
+                                        padding-top: 40px;
+                                        padding-left: 30px;
+                                        padding-right: 30px;
+                                        .d-flex {
+                                            img {
+                                                width: 22px;
+                                                height: 22px;
+                                                margin-right: 7px;
+                                            }
                                         }
+                                    }
 
+                                    
+                                    .card-body {
+                                        padding-left: 30px;
+                                        padding-right: 30px;
                                         p {
                                             font-family: 'Baloo 2';
                                             font-size: 16px;
@@ -2800,19 +2834,9 @@ main {
                                         }
                                     }
 
-                                    
-                                    p {
-                                        font-family: 'Baloo 2';
-                                        font-size: 16px;
-                                        font-style: normal;
-                                        font-weight: 400;
-                                        line-height: 28px;
-                                        letter-spacing: 0em;
-                                        text-align: left;
-                                        color: #7B8397;
-                                    }
-
                                     .people {
+                                        padding-left: 30px;
+                                        padding-right: 30px;
                                         .d-flex {
                                             img {
                                                 border-radius: 100%;
@@ -3355,15 +3379,20 @@ main {
                                 border-radius: 20px;
 
                                 .container {
-                                    padding: 40px;
+                                    padding: 0px;
 
-                                    .d-flex {
-                                        img {
-                                            width: 22px;
-                                            height: 22px;
-                                            margin-right: 7px;
+                                    .card-header {
+                                        padding-top: 35px;
+                                        padding-left: 30px;
+                                        padding-right: 30px;
+                                        .d-flex {
                                         }
+                                    }
 
+                                    .card-body {
+                                        height: 100%;
+                                        padding-left: 30px;
+                                        padding-right: 30px;
                                         p {
                                             font-family: 'Baloo 2';
                                             font-size: 16px;
@@ -3376,18 +3405,9 @@ main {
                                         }
                                     }
 
-                                    p {
-                                        font-family: 'Baloo 2';
-                                        font-size: 16px;
-                                        font-style: normal;
-                                        font-weight: 400;
-                                        line-height: 28px;
-                                        letter-spacing: 0em;
-                                        text-align: left;
-                                        color: #7B8397;
-                                    }
-
                                     .people {
+                                        padding-left: 30px;
+                                        padding-right: 30px;
                                         .d-flex {
                                             img {
                                                 border-radius: 100%;
@@ -3968,17 +3988,19 @@ main {
                                 border-radius: 20px;
 
                                 .container {
-                                    padding: 40px;
+                                    padding: 0px;
 
-                                    .d-flex {
-                                        img {
-                                            width: 22px;
-                                            height: 22px;
-                                            margin-right: 7px;
+                                    .card-header {
+                                        .d-flex {
+                                            padding-top: 15px;
+                                            padding-left: 10px;
+                                            padding-right: 10px;
                                         }
+                                    }
 
+                                    .card-body {
+                                        height: 100%;
                                         p {
-                                            font-family: 'Baloo 2';
                                             font-size: 16px;
                                             font-style: normal;
                                             font-weight: 400;
@@ -3987,17 +4009,6 @@ main {
                                             text-align: left;
                                             color: #7B8397;
                                         }
-                                    }
-
-                                    p {
-                                        font-family: 'Baloo 2';
-                                        font-size: 16px;
-                                        font-style: normal;
-                                        font-weight: 400;
-                                        line-height: 28px;
-                                        letter-spacing: 0em;
-                                        text-align: left;
-                                        color: #7B8397;
                                     }
 
                                     .people {
@@ -4577,17 +4588,36 @@ main {
 
                             .card {
                                 border-radius: 20px;
+                                height: 100%;
 
                                 .container {
                                     padding: 30px;
 
-                                    .d-flex {
-                                        img {
-                                            width: 22px;
-                                            height: 22px;
-                                            margin-right: 7px;
+                                    .card-header {
+                                        padding-top: 15px;
+                                        padding-left: 10px;
+                                        padding-right: 10px;
+                                        .d-flex {
+                                            font-family: 'Baloo 2';
+                                            font-size: 16px;
+                                            font-style: normal;
+                                            font-weight: 400;
+                                            line-height: 28px;
+                                            letter-spacing: 0em;
+                                            text-align: left;
+                                            color: #7B8397;
+                                            img {
+                                                width: 22px;
+                                                height: 22px;
+                                                margin-right: 7px;
+                                            }
                                         }
-
+                                    }
+                                    
+                                    .card-body {
+                                        padding-left: 10px;
+                                        padding-right: 10px;
+                                        height: 100%;
                                         p {
                                             font-family: 'Baloo 2';
                                             font-size: 16px;
@@ -4599,19 +4629,11 @@ main {
                                             color: #7B8397;
                                         }
                                     }
-                                    
-                                    p {
-                                        font-family: 'Baloo 2';
-                                        font-size: 16px;
-                                        font-style: normal;
-                                        font-weight: 400;
-                                        line-height: 28px;
-                                        letter-spacing: 0em;
-                                        text-align: left;
-                                        color: #7B8397;
-                                    }
 
                                     .people {
+                                        padding-left: 10px;
+                                        padding-right: 10px;
+                                        padding-bottom: 15px;
                                         .d-flex {
                                             img {
                                                 border-radius: 100%;
@@ -5188,17 +5210,36 @@ main {
 
                             .card {
                                 border-radius: 20px;
+                                // height: 100%;
 
                                 .container {
                                     padding: 20px;
 
-                                    .d-flex {
-                                        img {
-                                            width: 22px;
-                                            height: 22px;
-                                            margin-right: 7px;
+                                    .card-header {
+                                        padding-top: 15px;
+                                        padding-left: 5px;
+                                        padding-right: 5px;
+                                        .d-flex {
+                                            font-family: 'Baloo 2';
+                                            font-size: 16px;
+                                            font-style: normal;
+                                            font-weight: 400;
+                                            line-height: 28px;
+                                            letter-spacing: 0em;
+                                            text-align: left;
+                                            color: #7B8397;
+                                            img {
+                                                width: 22px;
+                                                height: 22px;
+                                                margin-right: 7px;
+                                            }
                                         }
-
+                                    }
+                                    
+                                    .card-body{
+                                        padding-left: 5px;
+                                        padding-right: 5px;
+                                        height: 100%;
                                         p {
                                             font-family: 'Baloo 2';
                                             font-size: 16px;
@@ -5210,19 +5251,11 @@ main {
                                             color: #7B8397;
                                         }
                                     }
-                                    
-                                    p {
-                                        font-family: 'Baloo 2';
-                                        font-size: 16px;
-                                        font-style: normal;
-                                        font-weight: 400;
-                                        line-height: 28px;
-                                        letter-spacing: 0em;
-                                        text-align: left;
-                                        color: #7B8397;
-                                    }
 
                                     .people {
+                                        padding-left: 5px;
+                                        padding-right: 5px;
+                                        padding-bottom: 15px;
                                         .d-flex {
                                             img {
                                                 border-radius: 100%;
@@ -5339,7 +5372,7 @@ footer {
                 padding-top: 25px;
 
                 p {
-                    font-family: H'arabara Mais';
+                    font-family: 'Baloo 2';
                     font-size: 16px;
                     font-style: normal;
                     font-weight: 400;
@@ -5398,7 +5431,6 @@ footer {
                     padding-top: 25px;
 
                     p {
-                        font-family: H'arabara Mais';
                         font-size: 16px;
                         font-style: normal;
                         font-weight: 400;
@@ -5458,7 +5490,6 @@ footer {
                     padding-top: 25px;
 
                     p {
-                        font-family: H'arabara Mais';
                         font-size: 16px;
                         font-style: normal;
                         font-weight: 400;
@@ -5517,7 +5548,6 @@ footer {
                     padding-top: 25px;
 
                     p {
-                        font-family: 'Harabara Mais';
                         font-size: 16px;
                         font-style: normal;
                         font-weight: 400;
@@ -5578,7 +5608,6 @@ footer {
                     padding-top: 25px;
 
                     p {
-                        font-family: 'Harabara Mais';
                         font-size: 16px;
                         font-style: normal;
                         font-weight: 400;

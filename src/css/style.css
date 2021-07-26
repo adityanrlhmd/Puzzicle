@@ -852,16 +852,42 @@ main .sixth .container-sixth .wrap-slick .lazy .wrap-card .card {
 }
 
 main .sixth .container-sixth .wrap-slick .lazy .wrap-card .card .container {
-  padding: 40px;
+  padding: 0px;
 }
 
-main .sixth .container-sixth .wrap-slick .lazy .wrap-card .card .container .d-flex img {
+main .sixth .container-sixth .wrap-slick .lazy .wrap-card .card .container .card-header {
+  background-color: rgba(255, 255, 255, 0);
+  border: none;
+  padding-top: 40px;
+  padding-left: 32px;
+  padding-right: 32px;
+}
+
+main .sixth .container-sixth .wrap-slick .lazy .wrap-card .card .container .card-header .d-flex {
+  margin: 0;
+  font-family: 'Baloo 2';
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #7B8397;
+}
+
+main .sixth .container-sixth .wrap-slick .lazy .wrap-card .card .container .card-header .d-flex img {
   width: 22px;
   height: 22px;
   margin-right: 7px;
 }
 
-main .sixth .container-sixth .wrap-slick .lazy .wrap-card .card .container .d-flex p {
+main .sixth .container-sixth .wrap-slick .lazy .wrap-card .card .container .card-body {
+  padding-left: 32px;
+  padding-right: 32px;
+  height: 115px;
+}
+
+main .sixth .container-sixth .wrap-slick .lazy .wrap-card .card .container .card-body p {
   font-family: 'Baloo 2';
   font-size: 16px;
   font-style: normal;
@@ -872,15 +898,12 @@ main .sixth .container-sixth .wrap-slick .lazy .wrap-card .card .container .d-fl
   color: #7B8397;
 }
 
-main .sixth .container-sixth .wrap-slick .lazy .wrap-card .card .container p {
-  font-family: 'Baloo 2';
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 28px;
-  letter-spacing: 0em;
-  text-align: left;
-  color: #7B8397;
+main .sixth .container-sixth .wrap-slick .lazy .wrap-card .card .container .people {
+  padding-bottom: 30px;
+  padding-left: 32px;
+  padding-right: 32px;
+  background-color: rgba(255, 255, 255, 0);
+  border: none;
 }
 
 main .sixth .container-sixth .wrap-slick .lazy .wrap-card .card .container .people .d-flex img {
@@ -1322,14 +1345,14 @@ main .seventh .wrap-seventh .container .wrap-btn .btn-seventh img {
     border-radius: 20px;
   }
   main .sixth .container-sixth .wrap-slick .lazy .wrap-card .card .container {
-    padding: 40px;
+    padding: 10px;
   }
-  main .sixth .container-sixth .wrap-slick .lazy .wrap-card .card .container .d-flex img {
+  main .sixth .container-sixth .wrap-slick .lazy .wrap-card .card .container .card-header .d-flex img {
     width: 22px;
     height: 22px;
     margin-right: 7px;
   }
-  main .sixth .container-sixth .wrap-slick .lazy .wrap-card .card .container .d-flex p {
+  main .sixth .container-sixth .wrap-slick .lazy .wrap-card .card .container .card-header .d-flex p {
     font-family: 'Baloo 2';
     font-size: 16px;
     font-style: normal;
@@ -1339,7 +1362,10 @@ main .seventh .wrap-seventh .container .wrap-btn .btn-seventh img {
     text-align: left;
     color: #7B8397;
   }
-  main .sixth .container-sixth .wrap-slick .lazy .wrap-card .card .container p {
+  main .sixth .container-sixth .wrap-slick .lazy .wrap-card .card .container .card-body {
+    height: 150px;
+  }
+  main .sixth .container-sixth .wrap-slick .lazy .wrap-card .card .container .card-body p {
     font-family: 'Baloo 2';
     font-size: 16px;
     font-style: normal;
@@ -1775,7 +1801,7 @@ main .seventh .wrap-seventh .container .wrap-btn .btn-seventh img {
     border-radius: 20px;
   }
   main .sixth .container-sixth .wrap-slick .lazy .wrap-card .card .container {
-    padding: 40px;
+    padding: 20px;
   }
   main .sixth .container-sixth .wrap-slick .lazy .wrap-card .card .container .d-flex img {
     width: 22px;
@@ -2173,14 +2199,23 @@ main .seventh .wrap-seventh .container .wrap-btn .btn-seventh img {
     border-radius: 20px;
   }
   main .sixth .container-sixth .wrap-slick .lazy .wrap-card .card .container {
-    padding: 40px;
+    padding: 0px;
   }
-  main .sixth .container-sixth .wrap-slick .lazy .wrap-card .card .container .d-flex img {
+  main .sixth .container-sixth .wrap-slick .lazy .wrap-card .card .container .card-header {
+    padding-top: 40px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  main .sixth .container-sixth .wrap-slick .lazy .wrap-card .card .container .card-header .d-flex img {
     width: 22px;
     height: 22px;
     margin-right: 7px;
   }
-  main .sixth .container-sixth .wrap-slick .lazy .wrap-card .card .container .d-flex p {
+  main .sixth .container-sixth .wrap-slick .lazy .wrap-card .card .container .card-body {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  main .sixth .container-sixth .wrap-slick .lazy .wrap-card .card .container .card-body p {
     font-family: 'Baloo 2';
     font-size: 16px;
     font-style: normal;
@@ -2190,15 +2225,9 @@ main .seventh .wrap-seventh .container .wrap-btn .btn-seventh img {
     text-align: left;
     color: #7B8397;
   }
-  main .sixth .container-sixth .wrap-slick .lazy .wrap-card .card .container p {
-    font-family: 'Baloo 2';
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 28px;
-    letter-spacing: 0em;
-    text-align: left;
-    color: #7B8397;
+  main .sixth .container-sixth .wrap-slick .lazy .wrap-card .card .container .people {
+    padding-left: 30px;
+    padding-right: 30px;
   }
   main .sixth .container-sixth .wrap-slick .lazy .wrap-card .card .container .people .d-flex img {
     border-radius: 100%;
@@ -2616,14 +2645,19 @@ main .seventh .wrap-seventh .container .wrap-btn .btn-seventh img {
     border-radius: 20px;
   }
   main .sixth .container-sixth .wrap-slick .lazy .wrap-card .card .container {
-    padding: 40px;
+    padding: 0px;
   }
-  main .sixth .container-sixth .wrap-slick .lazy .wrap-card .card .container .d-flex img {
-    width: 22px;
-    height: 22px;
-    margin-right: 7px;
+  main .sixth .container-sixth .wrap-slick .lazy .wrap-card .card .container .card-header {
+    padding-top: 35px;
+    padding-left: 30px;
+    padding-right: 30px;
   }
-  main .sixth .container-sixth .wrap-slick .lazy .wrap-card .card .container .d-flex p {
+  main .sixth .container-sixth .wrap-slick .lazy .wrap-card .card .container .card-body {
+    height: 100%;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  main .sixth .container-sixth .wrap-slick .lazy .wrap-card .card .container .card-body p {
     font-family: 'Baloo 2';
     font-size: 16px;
     font-style: normal;
@@ -2633,15 +2667,9 @@ main .seventh .wrap-seventh .container .wrap-btn .btn-seventh img {
     text-align: left;
     color: #7B8397;
   }
-  main .sixth .container-sixth .wrap-slick .lazy .wrap-card .card .container p {
-    font-family: 'Baloo 2';
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 28px;
-    letter-spacing: 0em;
-    text-align: left;
-    color: #7B8397;
+  main .sixth .container-sixth .wrap-slick .lazy .wrap-card .card .container .people {
+    padding-left: 30px;
+    padding-right: 30px;
   }
   main .sixth .container-sixth .wrap-slick .lazy .wrap-card .card .container .people .d-flex img {
     border-radius: 100%;
@@ -3082,25 +3110,17 @@ main .seventh .wrap-seventh .container .wrap-btn .btn-seventh img {
     border-radius: 20px;
   }
   main .sixth .container-sixth .wrap-slick .lazy .wrap-card .card .container {
-    padding: 40px;
+    padding: 0px;
   }
-  main .sixth .container-sixth .wrap-slick .lazy .wrap-card .card .container .d-flex img {
-    width: 22px;
-    height: 22px;
-    margin-right: 7px;
+  main .sixth .container-sixth .wrap-slick .lazy .wrap-card .card .container .card-header .d-flex {
+    padding-top: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
   }
-  main .sixth .container-sixth .wrap-slick .lazy .wrap-card .card .container .d-flex p {
-    font-family: 'Baloo 2';
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 28px;
-    letter-spacing: 0em;
-    text-align: left;
-    color: #7B8397;
+  main .sixth .container-sixth .wrap-slick .lazy .wrap-card .card .container .card-body {
+    height: 100%;
   }
-  main .sixth .container-sixth .wrap-slick .lazy .wrap-card .card .container p {
-    font-family: 'Baloo 2';
+  main .sixth .container-sixth .wrap-slick .lazy .wrap-card .card .container .card-body p {
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
@@ -3546,16 +3566,37 @@ main .seventh .wrap-seventh .container .wrap-btn .btn-seventh img {
   }
   main .sixth .container-sixth .wrap-slick .lazy .wrap-card .card {
     border-radius: 20px;
+    height: 100%;
   }
   main .sixth .container-sixth .wrap-slick .lazy .wrap-card .card .container {
     padding: 30px;
   }
-  main .sixth .container-sixth .wrap-slick .lazy .wrap-card .card .container .d-flex img {
+  main .sixth .container-sixth .wrap-slick .lazy .wrap-card .card .container .card-header {
+    padding-top: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  main .sixth .container-sixth .wrap-slick .lazy .wrap-card .card .container .card-header .d-flex {
+    font-family: 'Baloo 2';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #7B8397;
+  }
+  main .sixth .container-sixth .wrap-slick .lazy .wrap-card .card .container .card-header .d-flex img {
     width: 22px;
     height: 22px;
     margin-right: 7px;
   }
-  main .sixth .container-sixth .wrap-slick .lazy .wrap-card .card .container .d-flex p {
+  main .sixth .container-sixth .wrap-slick .lazy .wrap-card .card .container .card-body {
+    padding-left: 10px;
+    padding-right: 10px;
+    height: 100%;
+  }
+  main .sixth .container-sixth .wrap-slick .lazy .wrap-card .card .container .card-body p {
     font-family: 'Baloo 2';
     font-size: 16px;
     font-style: normal;
@@ -3565,15 +3606,10 @@ main .seventh .wrap-seventh .container .wrap-btn .btn-seventh img {
     text-align: left;
     color: #7B8397;
   }
-  main .sixth .container-sixth .wrap-slick .lazy .wrap-card .card .container p {
-    font-family: 'Baloo 2';
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 28px;
-    letter-spacing: 0em;
-    text-align: left;
-    color: #7B8397;
+  main .sixth .container-sixth .wrap-slick .lazy .wrap-card .card .container .people {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 15px;
   }
   main .sixth .container-sixth .wrap-slick .lazy .wrap-card .card .container .people .d-flex img {
     border-radius: 100%;
@@ -4016,12 +4052,32 @@ main .seventh .wrap-seventh .container .wrap-btn .btn-seventh img {
   main .sixth .container-sixth .wrap-slick .lazy .wrap-card .card .container {
     padding: 20px;
   }
-  main .sixth .container-sixth .wrap-slick .lazy .wrap-card .card .container .d-flex img {
+  main .sixth .container-sixth .wrap-slick .lazy .wrap-card .card .container .card-header {
+    padding-top: 15px;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  main .sixth .container-sixth .wrap-slick .lazy .wrap-card .card .container .card-header .d-flex {
+    font-family: 'Baloo 2';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #7B8397;
+  }
+  main .sixth .container-sixth .wrap-slick .lazy .wrap-card .card .container .card-header .d-flex img {
     width: 22px;
     height: 22px;
     margin-right: 7px;
   }
-  main .sixth .container-sixth .wrap-slick .lazy .wrap-card .card .container .d-flex p {
+  main .sixth .container-sixth .wrap-slick .lazy .wrap-card .card .container .card-body {
+    padding-left: 5px;
+    padding-right: 5px;
+    height: 100%;
+  }
+  main .sixth .container-sixth .wrap-slick .lazy .wrap-card .card .container .card-body p {
     font-family: 'Baloo 2';
     font-size: 16px;
     font-style: normal;
@@ -4031,15 +4087,10 @@ main .seventh .wrap-seventh .container .wrap-btn .btn-seventh img {
     text-align: left;
     color: #7B8397;
   }
-  main .sixth .container-sixth .wrap-slick .lazy .wrap-card .card .container p {
-    font-family: 'Baloo 2';
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 28px;
-    letter-spacing: 0em;
-    text-align: left;
-    color: #7B8397;
+  main .sixth .container-sixth .wrap-slick .lazy .wrap-card .card .container .people {
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 15px;
   }
   main .sixth .container-sixth .wrap-slick .lazy .wrap-card .card .container .people .d-flex img {
     border-radius: 100%;
@@ -4127,7 +4178,7 @@ footer .container .row .right {
 }
 
 footer .container .row .right p {
-  font-family: H "arabara Mais";
+  font-family: 'Baloo 2';
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -4172,7 +4223,6 @@ footer .container .row .right .d-grid .d-flex img {
     padding-top: 25px;
   }
   footer .container .row .right p {
-    font-family: H "arabara Mais";
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
@@ -4216,7 +4266,6 @@ footer .container .row .right .d-grid .d-flex img {
     padding-top: 25px;
   }
   footer .container .row .right p {
-    font-family: H "arabara Mais";
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
@@ -4257,7 +4306,6 @@ footer .container .row .right .d-grid .d-flex img {
     padding-top: 25px;
   }
   footer .container .row .right p {
-    font-family: 'Harabara Mais';
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
@@ -4302,7 +4350,6 @@ footer .container .row .right .d-grid .d-flex img {
     padding-top: 25px;
   }
   footer .container .row .right p {
-    font-family: 'Harabara Mais';
     font-size: 16px;
     font-style: normal;
     font-weight: 400;

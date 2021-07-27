@@ -119,10 +119,19 @@ header {
                     font-weight: 700;
 
                     .lessons {
-                        background: url('../img/vector-45.png') no-repeat;
-                        background-size: 189px;
+                        // background: url('../img/vector-45.png') no-repeat;
+                        // background-size: 189px;
+                        width:189px;
                         padding-left: 12px;
                         padding-right: 12px;
+                        position:relative;
+                        display:inline-block;
+                        #circle {
+                            position: absolute;
+                            width:213px;
+                            left:-12px;
+                            top:-12px;
+                        }
                     }
                 }
 

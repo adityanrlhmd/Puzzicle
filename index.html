@@ -83,7 +83,7 @@
                     <h1>
                         Videos from <span><img class="khan" src="src/img/khan-academy.png" alt=""></span> Khan Academy
                         are now guided
-                        <span class="lessons">Lessons</span>
+                        <div class="lessons"><span id="circle"></span>Lessons</div>
                     </h1>
                     <span class="title-img"><img src="src/img/vector13.png" alt=""></span>
                 </div>
@@ -587,8 +587,9 @@
             };
             lottie.loadAnimation(params);
 		}
-        fetchAnimation('lottie','./src/js/puzzicle-header-dekstop.json');
-        fetchAnimation('lottie-2','./src/js/puzzicle-header-mobile.json');
+        fetchAnimation('lottie','./src/js/desktop/animation.json');
+        fetchAnimation('lottie-2','./src/js/mobile/animation.json');
+        fetchAnimation('circle','./src/js/circle.json');
     </script>
 
     <script src="src/js/swiped-events.min.js"></script>

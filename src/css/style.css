@@ -98,10 +98,18 @@ header .jumbotron .container .title h1 {
 }
 
 header .jumbotron .container .title h1 .lessons {
-  background: url("../img/vector-45.png") no-repeat;
-  background-size: 189px;
+  width:189px;
   padding-left: 12px;
   padding-right: 12px;
+  position: relative;
+  display: inline-block;
+}
+
+header .jumbotron .container .title h1 .lessons #circle {
+  position: absolute;
+  width:213px;
+  left:-12px;
+  top:-12px;
 }
 
 header .jumbotron .container .title .title-img {

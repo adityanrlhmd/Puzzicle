@@ -98,7 +98,7 @@ header .jumbotron .container .title h1 {
 }
 
 header .jumbotron .container .title h1 .lessons {
-  width:189px;
+  width: 189px;
   padding-left: 12px;
   padding-right: 12px;
   position: relative;
@@ -107,9 +107,9 @@ header .jumbotron .container .title h1 .lessons {
 
 header .jumbotron .container .title h1 .lessons #circle {
   position: absolute;
-  width:213px;
-  left:-12px;
-  top:-12px;
+  width: 213px;
+  left: -12px;
+  top: -12px;
 }
 
 header .jumbotron .container .title .title-img {
@@ -131,7 +131,8 @@ header .jumbotron .container .illustration-mobile {
   display: none;
 }
 
-header .jumbotron .illustration svg {
+header .jumbotron .illustration img {
+  background: none;
   width: 100%;
   overflow: hidden;
 }
@@ -173,9 +174,12 @@ header .jumbotron .illustration svg {
     width: 23px;
   }
   header .jumbotron .container .title h1 .lessons {
-    background-size: 130px;
-    padding-left: 12px;
-    padding-right: 12px;
+    width: 135px;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  header .jumbotron .container .title h1 .lessons #circle {
+    width: 160px;
   }
   header .jumbotron .container .title .title-img {
     display: none;
@@ -224,8 +228,12 @@ header .jumbotron .illustration svg {
     width: 23px;
   }
   header .jumbotron .container .title h1 .lessons {
-    padding-left: 12px;
-    padding-right: 12px;
+    width: 126px;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  header .jumbotron .container .title h1 .lessons #circle {
+    width: 150px;
   }
   header .jumbotron .container .title .title-img {
     display: none;
@@ -271,8 +279,11 @@ header .jumbotron .illustration svg {
     width: 23px;
   }
   header .jumbotron .container .title h1 .lessons {
-    padding-left: 12px;
-    padding-right: 12px;
+    padding-left: 0px;
+    padding-right: 50px;
+  }
+  header .jumbotron .container .title h1 .lessons #circle {
+    width: 160px;
   }
   header .jumbotron .container .title .title-img {
     display: none;
@@ -285,6 +296,41 @@ header .jumbotron .illustration svg {
   }
   header .jumbotron .illustration svg {
     display: none;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  header .jumbotron .container .title h1 .lessons {
+    width: 130px;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  header .jumbotron .container .title h1 .lessons #circle {
+    width: 160px;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  header .jumbotron .container .title h1 .lessons {
+    width: 130px;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  header .jumbotron .container .title h1 .lessons #circle {
+    width: 150px;
+    margin-left: 0px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  header .jumbotron .container .title h1 .lessons {
+    width: 123px;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  header .jumbotron .container .title h1 .lessons #circle {
+    width: 150px;
+    margin-left: 0px;
   }
 }
 

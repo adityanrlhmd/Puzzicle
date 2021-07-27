@@ -158,10 +158,8 @@ header {
         }
 
         .illustration {
-            // margin-top: -70px;
-            // margin-bottom: -50px;
-
-            svg {
+            img {
+                background: none;
                 width: 100%;
                 overflow: hidden;
             }
@@ -226,10 +224,12 @@ header {
                         }
 
                         .lessons {
-                            background-size: 130px;
-                            padding-left: 12px;
-                            padding-right: 12px;
-
+                            width: 135px;
+                            padding-left: 0px;
+                            padding-right: 0px;
+                            #circle {
+                                width: 160px;
+                            }
                         }
                     }
 
@@ -302,8 +302,12 @@ header {
                         }
 
                         .lessons {
-                            padding-left: 12px;
-                            padding-right: 12px;
+                            width: 126px;
+                            padding-left: 0px;
+                            padding-right: 0px;
+                            #circle {
+                                width: 150px;
+                            }
 
                         }
                     }
@@ -376,8 +380,11 @@ header {
                         }
 
                         .lessons {
-                            padding-left: 12px;
-                            padding-right: 12px;
+                            padding-left: 0px;
+                            padding-right: 50px;
+                            #circle {
+                                width: 160px;
+                            }
 
                         }
                     }
@@ -399,6 +406,71 @@ header {
             .illustration {
                 svg {
                     display: none;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 540px) {
+    header {
+        .jumbotron {
+            .container {
+                .title {
+                    h1 {
+                        .lessons {
+                            width: 130px;
+                            padding-left: 0px;
+                            padding-right: 0px;
+                            #circle {
+                                width: 160px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 414px) {
+    header {
+        .jumbotron {
+            .container {
+                .title {
+                    h1 {
+                        .lessons {
+                            width: 130px;
+                            padding-left: 0px;
+                            padding-right: 0px;
+                            #circle {
+                                width: 150px;
+                                margin-left: 0px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 375px) {
+    header {
+        .jumbotron {
+            .container {
+                .title {
+                    h1 {
+                        .lessons {
+                            width: 123px;
+                            padding-left: 0px;
+                            padding-right: 0px;
+                            #circle {
+                                width: 150px;
+                                margin-left: 0px;
+                            }
+                        }
+                    }
                 }
             }
         }

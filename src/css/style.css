@@ -432,13 +432,16 @@ main .first .container .title h2 {
 }
 
 main .first .container .wrap-row .row-top {
-  padding-left: 90px;
-  padding-right: 90px;
-  margin-bottom: 25px;
+  width: 900px;
+  margin: 0 auto;
 }
 
-main .first .container .wrap-row .row-top .col img {
-  width: 215px;
+main .first .container .wrap-row .row-top .col .btn-videos {
+  padding: 0px;
+}
+
+main .first .container .wrap-row .row-top .col .btn-videos img {
+  width: 100%;
 }
 
 main .first .container .wrap-row .row-top .col .modal .modal-dialog .modal-content .pop-up {
@@ -467,14 +470,22 @@ main .first .container .wrap-row .row-top .col .modal .modal-dialog .modal-conte
   color: #18223A;
 }
 
+main .first .container .wrap-row .row-top .col .modal .modal-dialog .modal-content .wrap-text .wrap-btn-google-pop-up .btn-google-pop-up img {
+  width: 175px;
+}
+
 main .first .container .wrap-row .row-bottom {
-  padding-left: 210px;
-  padding-right: 210px;
+  width: 700px;
+  margin: 0 auto;
   margin-bottom: 20px;
 }
 
-main .first .container .wrap-row .row-bottom .col img {
-  width: 215px;
+main .first .container .wrap-row .row-bottom .col .btn-videos {
+  padding: 0px;
+}
+
+main .first .container .wrap-row .row-bottom .col .btn-videos img {
+  width: 100%;
 }
 
 main .first .container .wrap-row .row-bottom .col .modal .modal-dialog .modal-content .pop-up {
@@ -501,6 +512,10 @@ main .first .container .wrap-row .row-bottom .col .modal .modal-dialog .modal-co
   letter-spacing: 0em;
   text-align: center;
   color: #18223A;
+}
+
+main .first .container .wrap-row .row-bottom .col .modal .modal-dialog .modal-content .wrap-text .wrap-btn-google-pop-up .btn-google-pop-up img {
+  width: 175px;
 }
 
 main .first .container .wrap-btn-google {
@@ -558,19 +573,28 @@ main .second .container .wrap-img img {
   width: 700px;
 }
 
+main .second .container .wrap-img .wrap-img-laptop {
+  position: relative;
+}
+
 main .second .container .wrap-img .laptop {
+  position: relative;
   margin-top: 50px;
   width: 100%;
 }
 
 main .second .container .wrap-img .laptop-mobile {
+  position: relative;
   display: none;
 }
 
 main .second .container .wrap-img .wrap-btn .btn {
   position: absolute;
-  margin-top: 280px;
-  margin-left: 490px;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: 99;
 }
 
 main .second .container .wrap-img .wrap-btn .btn:focus {
@@ -1209,20 +1233,12 @@ main .seventh .wrap-seventh .container .wrap-btn .btn-seventh img {
     letter-spacing: 0.5%;
   }
   main .first .container .wrap-row .row-top {
-    padding-left: 90px;
-    padding-right: 90px;
-    margin-bottom: 25px;
-  }
-  main .first .container .wrap-row .row-top .col img {
     width: 100%;
+    margin-bottom: 0px;
   }
   main .first .container .wrap-row .row-bottom {
-    padding-left: 188px;
-    padding-right: 188px;
+    width: 670px;
     margin-bottom: 25px;
-  }
-  main .first .container .wrap-row .row-bottom .col img {
-    width: 100%;
   }
   main .first .container .wrap-btn-google {
     margin-bottom: 40px;
@@ -1272,8 +1288,7 @@ main .seventh .wrap-seventh .container .wrap-btn .btn-seventh img {
   }
   main .second .container .wrap-img .wrap-btn .btn {
     position: absolute;
-    margin-top: 180px;
-    margin-left: 405px;
+    top: 40%;
   }
   main .second .container .wrap-img .wrap-btn .btn:focus {
     -webkit-box-shadow: none;
@@ -1660,20 +1675,11 @@ main .seventh .wrap-seventh .container .wrap-btn .btn-seventh img {
     letter-spacing: 0.5%;
   }
   main .first .container .wrap-row .row-top {
-    padding-left: 12px;
-    padding-right: 12px;
-    margin-bottom: 25px;
-  }
-  main .first .container .wrap-row .row-top .col img {
-    width: 100%;
+    margin-bottom: 0px;
   }
   main .first .container .wrap-row .row-bottom {
-    padding-left: 102px;
-    padding-right: 102px;
+    width: 670px;
     margin-bottom: 25px;
-  }
-  main .first .container .wrap-row .row-bottom .col img {
-    width: 100%;
   }
   main .first .container .wrap-btn-google {
     margin-bottom: 40px;
@@ -1682,7 +1688,7 @@ main .seventh .wrap-seventh .container .wrap-btn .btn-seventh img {
     padding: 0;
   }
   main .first .container .wrap-btn-google .btn-google img {
-    width: 175px;
+    width: 105px;
   }
   main .first .container .trademark {
     font-size: 16px;
@@ -1723,8 +1729,7 @@ main .seventh .wrap-seventh .container .wrap-btn .btn-seventh img {
   }
   main .second .container .wrap-img .wrap-btn .btn {
     position: absolute;
-    margin-top: 140px;
-    margin-left: 300.5px;
+    top: 40%;
   }
   main .second .container .wrap-img .wrap-btn .btn:focus {
     -webkit-box-shadow: none;
@@ -2103,6 +2108,49 @@ main .seventh .wrap-seventh .container .wrap-btn .btn-seventh img {
   }
 }
 
+@media screen and (max-width: 991px) {
+  main .first .container {
+    padding-top: 80px;
+    padding-bottom: 40px;
+  }
+  main .first .container .title {
+    padding-left: 100px;
+    padding-right: 100px;
+    margin-bottom: 30px;
+  }
+  main .first .container .title h2 {
+    font-size: 24px;
+    line-height: 33px;
+    letter-spacing: 0.5%;
+  }
+  main .first .container .wrap-row .row-top {
+    margin-bottom: 0px;
+  }
+  main .first .container .wrap-row .row-top .col .btn-videos img {
+    width: 100%;
+  }
+  main .first .container .wrap-row .row-bottom {
+    width: 510px;
+    margin-bottom: 25px;
+  }
+  main .first .container .wrap-row .row-bottom .col .btn-videos img {
+    width: 100%;
+  }
+  main .first .container .wrap-btn-google {
+    margin-bottom: 40px;
+  }
+  main .first .container .wrap-btn-google .btn-google {
+    padding: 0;
+  }
+  main .first .container .wrap-btn-google .btn-google img {
+    width: 105px;
+  }
+  main .first .container .trademark {
+    font-size: 16px;
+    text-align: center;
+  }
+}
+
 @media screen and (max-width: 760px) {
   main .fourth .container-fourth .wrap-row .wrap-vs {
     display: none;
@@ -2125,19 +2173,16 @@ main .seventh .wrap-seventh .container .wrap-btn .btn-seventh img {
     letter-spacing: 0.5%;
   }
   main .first .container .wrap-row .row-top {
-    padding-left: 12px;
-    padding-right: 12px;
-    margin-bottom: 25px;
+    margin-bottom: 0px;
   }
-  main .first .container .wrap-row .row-top .col img {
+  main .first .container .wrap-row .row-top .col .btn-videos img {
     width: 100%;
   }
   main .first .container .wrap-row .row-bottom {
-    padding-left: 12px;
-    padding-right: 12px;
+    width: 100%;
     margin-bottom: 25px;
   }
-  main .first .container .wrap-row .row-bottom .col img {
+  main .first .container .wrap-row .row-bottom .col .btn-videos img {
     width: 100%;
   }
   main .first .container .wrap-btn-google {
@@ -2192,8 +2237,6 @@ main .seventh .wrap-seventh .container .wrap-btn .btn-seventh img {
   }
   main .second .container .wrap-img .wrap-btn .btn {
     position: absolute;
-    margin-top: 60px;
-    margin-left: 150px;
   }
   main .second .container .wrap-img .wrap-btn .btn:focus {
     -webkit-box-shadow: none;
@@ -2527,8 +2570,6 @@ main .seventh .wrap-seventh .container .wrap-btn .btn-seventh img {
   }
   main .second .container .wrap-img .wrap-btn .btn {
     position: absolute;
-    margin-top: 90px;
-    margin-left: 210px;
   }
   main .second .container .wrap-img .wrap-btn .btn:focus {
     -webkit-box-shadow: none;
@@ -2789,8 +2830,7 @@ main .seventh .wrap-seventh .container .wrap-btn .btn-seventh img {
   }
   main .second .container .wrap-img .wrap-btn .btn {
     position: absolute;
-    margin-top: 50px;
-    margin-left: 150px;
+    top: 40%;
   }
   main .second .container .wrap-img .wrap-btn .btn:focus {
     -webkit-box-shadow: none;
@@ -3155,19 +3195,15 @@ main .seventh .wrap-seventh .container .wrap-btn .btn-seventh img {
     letter-spacing: 0.5%;
   }
   main .first .container .wrap-row .row-top {
-    padding-left: 12px;
-    padding-right: 12px;
-    margin-bottom: 25px;
+    margin-bottom: 0px;
   }
-  main .first .container .wrap-row .row-top .col img {
+  main .first .container .wrap-row .row-top .col .btn-videos img {
     width: 100%;
   }
   main .first .container .wrap-row .row-bottom {
-    padding-left: 12px;
-    padding-right: 12px;
     margin-bottom: 25px;
   }
-  main .first .container .wrap-row .row-bottom .col img {
+  main .first .container .wrap-row .row-bottom .col .btn-videos img {
     width: 100%;
   }
   main .first .container .wrap-btn-google {
@@ -3222,8 +3258,7 @@ main .seventh .wrap-seventh .container .wrap-btn .btn-seventh img {
   }
   main .second .container .wrap-img .wrap-btn .btn {
     position: absolute;
-    margin-top: 50px;
-    margin-left: 130px;
+    top: 40%;
   }
   main .second .container .wrap-img .wrap-btn .btn:focus {
     -webkit-box-shadow: none;
@@ -3728,19 +3763,15 @@ main .seventh .wrap-seventh .container .wrap-btn .btn-seventh img {
     letter-spacing: 0.5%;
   }
   main .first .container .wrap-row .row-top {
-    padding-left: 2.5px;
-    padding-right: 12px;
-    margin-bottom: 25px;
+    margin-bottom: 0px;
   }
-  main .first .container .wrap-row .row-top .col img {
+  main .first .container .wrap-row .row-top .col .btn-videos img {
     width: 100%;
   }
   main .first .container .wrap-row .row-bottom {
-    padding-left: 2.5px;
-    padding-right: 12px;
     margin-bottom: 25px;
   }
-  main .first .container .wrap-row .row-bottom .col img {
+  main .first .container .wrap-row .row-bottom .col .btn-videos img {
     width: 100%;
   }
   main .first .container .wrap-btn-google {
@@ -3795,8 +3826,6 @@ main .seventh .wrap-seventh .container .wrap-btn .btn-seventh img {
   }
   main .second .container .wrap-img .wrap-btn .btn {
     position: absolute;
-    margin-top: 35px;
-    margin-left: 105px;
   }
   main .second .container .wrap-img .wrap-btn .btn:focus {
     -webkit-box-shadow: none;
@@ -4209,19 +4238,15 @@ main .seventh .wrap-seventh .container .wrap-btn .btn-seventh img {
     letter-spacing: 0.5%;
   }
   main .first .container .wrap-row .row-top {
-    padding-left: 0px;
-    padding-right: 5px;
-    margin-bottom: 25px;
+    margin-bottom: 0px;
   }
-  main .first .container .wrap-row .row-top .col img {
+  main .first .container .wrap-row .row-top .col .btn-videos img {
     width: 100%;
   }
   main .first .container .wrap-row .row-bottom {
-    padding-left: 0px;
-    padding-right: 5px;
     margin-bottom: 25px;
   }
-  main .first .container .wrap-row .row-bottom .col img {
+  main .first .container .wrap-row .row-bottom .col .btn-videos img {
     width: 100%;
   }
   main .first .container .wrap-btn-google {
@@ -4276,8 +4301,6 @@ main .seventh .wrap-seventh .container .wrap-btn .btn-seventh img {
   }
   main .second .container .wrap-img .wrap-btn .btn {
     position: absolute;
-    margin-top: 25px;
-    margin-left: 85px;
   }
   main .second .container .wrap-img .wrap-btn .btn:focus {
     -webkit-box-shadow: none;

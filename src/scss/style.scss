@@ -608,13 +608,15 @@ main {
 
             .wrap-row {
                 .row-top {
-                    padding-left: 90px;
-                    padding-right: 90px;
-                    margin-bottom: 25px;
+                    width: 900px;
+                    margin: 0 auto;
 
                     .col {
-                        img {
-                            width: 215px;
+                        .btn-videos {
+                            padding: 0px;
+                            img {
+                                width: 100%;
+                            }
                         }
 
                         .modal {
@@ -644,6 +646,14 @@ main {
                                             text-align: center;
                                             color: #18223A;
                                         }
+
+                                        .wrap-btn-google-pop-up {
+                                            .btn-google-pop-up {
+                                                img {
+                                                    width: 175px;
+                                                }
+                                            }
+                                        }
                                     }
                                 }
                             }
@@ -652,13 +662,16 @@ main {
                 }
 
                 .row-bottom {
-                    padding-left: 210px;
-                    padding-right: 210px;
+                    width: 700px;
+                    margin: 0 auto;
                     margin-bottom: 20px;
 
                     .col {
-                        img {
-                            width: 215px;
+                        .btn-videos {
+                            padding: 0px;
+                            img {
+                                width: 100%;
+                            }
                         }
 
                         .modal {
@@ -687,6 +700,14 @@ main {
                                             letter-spacing: 0em;
                                             text-align: center;
                                             color: #18223A;
+                                        }
+
+                                        .wrap-btn-google-pop-up {
+                                            .btn-google-pop-up {
+                                                img {
+                                                    width: 175px;
+                                                }
+                                            }
                                         }
                                     }
                                 }
@@ -753,20 +774,28 @@ main {
                     width: 700px;
                 }
 
+                .wrap-img-laptop {
+                    position: relative;
+                }
+
                 .laptop {
+                    position: relative;
                     margin-top: 50px;
                     width: 100%;
                 }
 
                 .laptop-mobile {
+                    position: relative;
                     display: none;
                 }
 
                 .wrap-btn {
                     .btn {
                         position: absolute;
-                        margin-top: 280px;
-                        margin-left: 490px;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                        z-index: 99;
 
                         &:focus {
                             box-shadow: none;
@@ -1444,26 +1473,17 @@ main {
 
                 .wrap-row {
                     .row-top {
-                        padding-left: 90px;
-                        padding-right: 90px;
-                        margin-bottom: 25px;
-
+                        width: 100%;
+                        margin-bottom: 0px;
                         .col {
-                            img {
-                                width: 100%;
-                            }
                         }
                     }
 
                     .row-bottom {
-                        padding-left: 188px;
-                        padding-right: 188px;
+                        width: 670px;
                         margin-bottom: 25px;
 
                         .col {
-                            img {
-                                width: 100%;
-                            }
                         }
                     }
                 }
@@ -1537,8 +1557,7 @@ main {
                     .wrap-btn {
                         .btn {
                             position: absolute;
-                            margin-top: 180px;
-                            margin-left: 405px;
+                            top: 40%;
 
                             &:focus {
                                 box-shadow: none;
@@ -2069,26 +2088,17 @@ main {
 
                 .wrap-row {
                     .row-top {
-                        padding-left: 12px;
-                        padding-right: 12px;
-                        margin-bottom: 25px;
+                        margin-bottom: 0px;
 
                         .col {
-                            img {
-                                width: 100%;
-                            }
                         }
                     }
 
                     .row-bottom {
-                        padding-left: 102px;
-                        padding-right: 102px;
+                        width: 670px;
                         margin-bottom: 25px;
 
                         .col {
-                            img {
-                                width: 100%;
-                            }
                         }
                     }
                 }
@@ -2100,7 +2110,7 @@ main {
                         padding: 0;
 
                         img {
-                            width: 175px;
+                            width: 105px;
                         }
                     }
                 }
@@ -2162,8 +2172,7 @@ main {
                     .wrap-btn {
                         .btn {
                             position: absolute;
-                            margin-top: 140px;
-                            margin-left: 300.5px;
+                            top: 40%;
 
                             &:focus {
                                 box-shadow: none;
@@ -2664,6 +2673,76 @@ main {
     }
 }
 
+@media screen and (max-width: 991px) {
+    main {
+        .first {
+            .container {
+                padding-top: 80px;
+                padding-bottom: 40px;
+
+                .title {
+                    padding-left: 100px;
+                    padding-right: 100px;
+                    margin-bottom: 30px;
+
+                    h2 {
+                        font-size: 24px;
+                        line-height: 33px;
+                        letter-spacing: 0.5%;
+
+                    }
+                }
+
+                .wrap-row {
+                    .row-top {
+                        margin-bottom: 0px;
+
+                        .col {
+                            .btn-videos {
+                                img {
+                                    width: 100%;
+                                }
+
+                            }
+                        }
+                    }
+
+                    .row-bottom {
+                        width: 510px;
+                        margin-bottom: 25px;
+
+                        .col {
+                            .btn-videos {
+                                img {
+                                    width: 100%;
+                                }
+
+                            }
+                        }
+                    }
+                }
+
+                .wrap-btn-google {
+                    margin-bottom: 40px;
+
+                    .btn-google {
+                        padding: 0;
+
+                        img {
+                            width: 105px;
+                        }
+                    }
+                }
+
+                .trademark {
+                    font-size: 16px;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
+
 @media screen and (max-width: 760px) {
     main {
         .fourth {
@@ -2700,25 +2779,28 @@ main {
 
                 .wrap-row {
                     .row-top {
-                        padding-left: 12px;
-                        padding-right: 12px;
-                        margin-bottom: 25px;
+                        margin-bottom: 0px;
 
                         .col {
-                            img {
-                                width: 100%;
+                            .btn-videos {
+                                img {
+                                    width: 100%;
+                                }
+
                             }
                         }
                     }
 
                     .row-bottom {
-                        padding-left: 12px;
-                        padding-right: 12px;
+                        width: 100%;
                         margin-bottom: 25px;
 
                         .col {
-                            img {
-                                width: 100%;
+                            .btn-videos {
+                                img {
+                                    width: 100%;
+                                }
+
                             }
                         }
                     }
@@ -2791,10 +2873,6 @@ main {
                     .wrap-btn {
                         .btn {
                             position: absolute;
-                            margin-top: 60px;
-                            margin-left: 150px;
-                            // margin-top: 15%;
-                            // margin-left: 35%;
 
                             &:focus {
                                 box-shadow: none;
@@ -3224,10 +3302,6 @@ main {
                     .wrap-btn {
                         .btn {
                             position: absolute;
-                            margin-top: 90px;
-                            margin-left: 210px;
-                            // margin-top: 15%;
-                            // margin-left: 35%;
 
                             &:focus {
                                 box-shadow: none;
@@ -3564,10 +3638,7 @@ main {
                     .wrap-btn {
                         .btn {
                             position: absolute;
-                            margin-top: 50px;
-                            margin-left: 150px;
-                            // margin-top: 15%;
-                            // margin-left: 35%;
+                            top: 40%;
 
                             &:focus {
                                 box-shadow: none;
@@ -4036,25 +4107,27 @@ main {
 
                 .wrap-row {
                     .row-top {
-                        padding-left: 12px;
-                        padding-right: 12px;
-                        margin-bottom: 25px;
+                        margin-bottom: 0px;
 
                         .col {
-                            img {
-                                width: 100%;
+                            .btn-videos {
+                                img {
+                                    width: 100%;
+                                }
+
                             }
                         }
                     }
 
                     .row-bottom {
-                        padding-left: 12px;
-                        padding-right: 12px;
                         margin-bottom: 25px;
 
                         .col {
-                            img {
-                                width: 100%;
+                            .btn-videos {
+                                img {
+                                    width: 100%;
+                                }
+
                             }
                         }
                     }
@@ -4127,10 +4200,7 @@ main {
                     .wrap-btn {
                         .btn {
                             position: absolute;
-                            margin-top: 50px;
-                            margin-left: 130px;
-                            // margin-top: 15%;
-                            // margin-left: 35%;
+                            top: 40%;
 
                             &:focus {
                                 box-shadow: none;
@@ -4783,25 +4853,27 @@ main {
 
                 .wrap-row {
                     .row-top {
-                        padding-left: 2.5px;
-                        padding-right: 12px;
-                        margin-bottom: 25px;
+                        margin-bottom: 0px;
 
                         .col {
-                            img {
-                                width: 100%;
+                            .btn-videos {
+                                img {
+                                    width: 100%;
+                                }
+
                             }
                         }
                     }
 
                     .row-bottom {
-                        padding-left: 2.5px;
-                        padding-right: 12px;
                         margin-bottom: 25px;
 
                         .col {
-                            img {
-                                width: 100%;
+                            .btn-videos {
+                                img {
+                                    width: 100%;
+                                }
+
                             }
                         }
                     }
@@ -4874,8 +4946,6 @@ main {
                     .wrap-btn {
                         .btn {
                             position: absolute;
-                            margin-top: 35px;
-                            margin-left: 105px;
 
                             &:focus {
                                 box-shadow: none;
@@ -5404,25 +5474,27 @@ main {
 
                 .wrap-row {
                     .row-top {
-                        padding-left: 0px;
-                        padding-right: 5px;
-                        margin-bottom: 25px;
+                        margin-bottom: 0px;
 
                         .col {
-                            img {
-                                width: 100%;
+                            .btn-videos {
+                                img {
+                                    width: 100%;
+                                }
+
                             }
                         }
                     }
 
                     .row-bottom {
-                        padding-left: 0px;
-                        padding-right: 5px;
                         margin-bottom: 25px;
 
                         .col {
-                            img {
-                                width: 100%;
+                            .btn-videos {
+                                img {
+                                    width: 100%;
+                                }
+
                             }
                         }
                     }
@@ -5495,8 +5567,6 @@ main {
                     .wrap-btn {
                         .btn {
                             position: absolute;
-                            margin-top: 25px;
-                            margin-left: 85px;
 
                             &:focus {
                                 box-shadow: none;

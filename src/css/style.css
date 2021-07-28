@@ -8,6 +8,22 @@ header .wrap-nav nav .container .navbar-brand img {
   width: 112px;
 }
 
+header .wrap-nav nav .container .icon-close {
+  display: none;
+}
+
+header .wrap-nav nav .container .icon-menu {
+  display: block;
+}
+
+header .wrap-nav nav .container .icon-menu.active {
+  display: none;
+}
+
+header .wrap-nav nav .container .icon-close.active {
+  display: block;
+}
+
 header .wrap-nav nav .container .sidebar,
 header .wrap-nav nav .container .overlay {
   position: fixed;
@@ -21,7 +37,7 @@ header .wrap-nav nav .container .overlay {
   right: 0;
   height: 100%;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.75);
+  background-color: rgba(0, 0, 0, 0.678);
   visibility: hidden;
 }
 
@@ -30,8 +46,8 @@ header .wrap-nav nav .container .sidebar {
   background-size: cover;
   left: -100%;
   max-width: 300px;
-  -webkit-transition: all ease 0.25s;
-  transition: all ease 0.25s;
+  -webkit-transition: all ease-in-out 0.5s;
+  transition: all ease-in-out 0.5s;
 }
 
 header .wrap-nav nav .container .sidebar .navbar-nav .nav-item {
@@ -422,6 +438,32 @@ main .first .container .wrap-row .row-top .col img {
   width: 215px;
 }
 
+main .first .container .wrap-row .row-top .col .modal .modal-dialog .modal-content .pop-up {
+  width: 100%;
+}
+
+main .first .container .wrap-row .row-top .col .modal .modal-dialog .modal-content .wrap-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+main .first .container .wrap-row .row-top .col .modal .modal-dialog .modal-content .wrap-text p {
+  font-family: 'Baloo 2';
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #18223A;
+}
+
 main .first .container .wrap-row .row-bottom {
   padding-left: 210px;
   padding-right: 210px;
@@ -430,6 +472,32 @@ main .first .container .wrap-row .row-bottom {
 
 main .first .container .wrap-row .row-bottom .col img {
   width: 215px;
+}
+
+main .first .container .wrap-row .row-bottom .col .modal .modal-dialog .modal-content .pop-up {
+  width: 100%;
+}
+
+main .first .container .wrap-row .row-bottom .col .modal .modal-dialog .modal-content .wrap-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+main .first .container .wrap-row .row-bottom .col .modal .modal-dialog .modal-content .wrap-text p {
+  font-family: 'Baloo 2';
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #18223A;
 }
 
 main .first .container .wrap-btn-google {
@@ -2032,6 +2100,12 @@ main .seventh .wrap-seventh .container .wrap-btn .btn-seventh img {
   }
 }
 
+@media screen and (max-width: 760px) {
+  main .fourth .container-fourth .wrap-row .wrap-vs {
+    display: none;
+  }
+}
+
 @media screen and (max-width: 700px) {
   main .first .container {
     padding-top: 80px;
@@ -2358,6 +2432,7 @@ main .seventh .wrap-seventh .container .wrap-btn .btn-seventh img {
   main .sixth .container-sixth .wrap-slick .lazy .wrap-card .card .container .card-body {
     padding-left: 30px;
     padding-right: 30px;
+    height: 110px;
   }
   main .sixth .container-sixth .wrap-slick .lazy .wrap-card .card .container .card-body p {
     font-family: 'Baloo 2';
@@ -2983,7 +3058,7 @@ main .seventh .wrap-seventh .container .wrap-btn .btn-seventh img {
     padding-right: 30px;
   }
   main .sixth .container-sixth .wrap-slick .lazy .wrap-card .card .container .card-body {
-    height: 100%;
+    height: 135px;
     padding-left: 30px;
     padding-right: 30px;
   }
@@ -3447,9 +3522,6 @@ main .seventh .wrap-seventh .container .wrap-btn .btn-seventh img {
     padding-left: 10px;
     padding-right: 10px;
   }
-  main .sixth .container-sixth .wrap-slick .lazy .wrap-card .card .container .card-body {
-    height: 100%;
-  }
   main .sixth .container-sixth .wrap-slick .lazy .wrap-card .card .container .card-body p {
     font-size: 16px;
     font-style: normal;
@@ -3516,6 +3588,124 @@ main .seventh .wrap-seventh .container .wrap-btn .btn-seventh img {
   }
   main .seventh .wrap-seventh .container .wrap-btn .btn-seventh img {
     width: 180px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  main .sixth {
+    background: url("../img/mobile/section-6/patern.png") no-repeat;
+    background-size: cover;
+  }
+  main .sixth .container-sixth {
+    padding-top: 75px;
+    padding-bottom: 40px;
+  }
+  main .sixth .container-sixth .title {
+    margin-bottom: 30px;
+  }
+  main .sixth .container-sixth .title h2 {
+    font-size: 24px;
+    line-height: 36px;
+    letter-spacing: 0.5%;
+  }
+  main .sixth .container-sixth .title h2 span img {
+    width: 24px;
+  }
+  main .sixth .container-sixth .wrap-slick {
+    margin-bottom: 35px;
+  }
+  main .sixth .container-sixth .wrap-slick .lazy {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  main .sixth .container-sixth .wrap-slick .lazy .control-c {
+    width: 45px;
+    height: 45px;
+  }
+  main .sixth .container-sixth .wrap-slick .lazy .wrap-card {
+    margin-right: 15px;
+    margin-left: 15px;
+  }
+  main .sixth .container-sixth .wrap-slick .lazy .wrap-card .card {
+    border-radius: 20px;
+    height: 100%;
+  }
+  main .sixth .container-sixth .wrap-slick .lazy .wrap-card .card .container {
+    padding: 30px;
+  }
+  main .sixth .container-sixth .wrap-slick .lazy .wrap-card .card .container .card-header {
+    padding-top: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  main .sixth .container-sixth .wrap-slick .lazy .wrap-card .card .container .card-header .d-flex {
+    font-family: 'Baloo 2';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #7B8397;
+  }
+  main .sixth .container-sixth .wrap-slick .lazy .wrap-card .card .container .card-header .d-flex img {
+    width: 22px;
+    height: 22px;
+    margin-right: 7px;
+  }
+  main .sixth .container-sixth .wrap-slick .lazy .wrap-card .card .container .card-body {
+    padding-left: 10px;
+    padding-right: 10px;
+    height: 165px;
+  }
+  main .sixth .container-sixth .wrap-slick .lazy .wrap-card .card .container .card-body p {
+    font-family: 'Baloo 2';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #7B8397;
+  }
+  main .sixth .container-sixth .wrap-slick .lazy .wrap-card .card .container .people {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 15px;
+  }
+  main .sixth .container-sixth .wrap-slick .lazy .wrap-card .card .container .people .d-flex img {
+    border-radius: 100%;
+    width: 45px;
+    height: 45px;
+    margin-right: 10px;
+  }
+  main .sixth .container-sixth .wrap-slick .lazy .wrap-card .card .container .people .d-flex .name h6 {
+    font-family: 'Baloo 2';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 17px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #18223A;
+  }
+  main .sixth .container-sixth .wrap-slick .lazy .wrap-card .card .container .people .d-flex .name p {
+    font-family: 'Baloo 2';
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #7B8397;
+  }
+  main .sixth .container-sixth .wrap-btn .btn-feedback {
+    padding: 10px 30px;
+    border-radius: 10px;
+    color: white;
+    font-weight: 700;
+    font-family: 15px;
+    background-color: #00BAC7;
   }
 }
 
@@ -3924,7 +4114,6 @@ main .seventh .wrap-seventh .container .wrap-btn .btn-seventh img {
   main .sixth .container-sixth .wrap-slick .lazy .wrap-card .card .container .card-body {
     padding-left: 10px;
     padding-right: 10px;
-    height: 100%;
   }
   main .sixth .container-sixth .wrap-slick .lazy .wrap-card .card .container .card-body p {
     font-family: 'Baloo 2';
@@ -4388,6 +4577,7 @@ main .seventh .wrap-seventh .container .wrap-btn .btn-seventh img {
     padding-right: 5px;
   }
   main .sixth .container-sixth .wrap-slick .lazy .wrap-card .card .container .card-header .d-flex {
+    padding: 0;
     font-family: 'Baloo 2';
     font-size: 16px;
     font-style: normal;
@@ -4405,7 +4595,7 @@ main .seventh .wrap-seventh .container .wrap-btn .btn-seventh img {
   main .sixth .container-sixth .wrap-slick .lazy .wrap-card .card .container .card-body {
     padding-left: 5px;
     padding-right: 5px;
-    height: 100%;
+    height: 250px;
   }
   main .sixth .container-sixth .wrap-slick .lazy .wrap-card .card .container .card-body p {
     font-family: 'Baloo 2';

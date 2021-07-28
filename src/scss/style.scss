@@ -18,10 +18,12 @@ header {
 
                 .icon-close {
                     display: none;
+                    transition: all ease-in-out 0.5s;
                 }
 
                 .icon-menu {
-                    display: block;
+                    // display: block;
+                    transition: all ease-in-out 0.5s;
                 }
 
                 .icon-menu.active {

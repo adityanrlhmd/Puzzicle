@@ -10,10 +10,13 @@ header .wrap-nav nav .container .navbar-brand img {
 
 header .wrap-nav nav .container .icon-close {
   display: none;
+  -webkit-transition: all ease-in-out 0.5s;
+  transition: all ease-in-out 0.5s;
 }
 
 header .wrap-nav nav .container .icon-menu {
-  display: block;
+  -webkit-transition: all ease-in-out 0.5s;
+  transition: all ease-in-out 0.5s;
 }
 
 header .wrap-nav nav .container .icon-menu.active {

@@ -444,6 +444,12 @@ main .first .container .wrap-row .row-top .col .btn-videos img {
   width: 100%;
 }
 
+main .first .container .wrap-row .row-top .col .modal .button-close {
+  position: absolute;
+  top: 0%;
+  right: 0%;
+}
+
 main .first .container .wrap-row .row-top .col .modal .modal-dialog .modal-content .pop-up {
   width: 100%;
 }
@@ -486,6 +492,12 @@ main .first .container .wrap-row .row-bottom .col .btn-videos {
 
 main .first .container .wrap-row .row-bottom .col .btn-videos img {
   width: 100%;
+}
+
+main .first .container .wrap-row .row-bottom .col .modal .button-close {
+  position: absolute;
+  top: 0%;
+  right: 0%;
 }
 
 main .first .container .wrap-row .row-bottom .col .modal .modal-dialog .modal-content .pop-up {
@@ -590,7 +602,7 @@ main .second .container .wrap-img .laptop-mobile {
 
 main .second .container .wrap-img .wrap-btn .btn {
   position: absolute;
-  top: 50%;
+  top: 45%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
@@ -606,6 +618,16 @@ main .second .container .wrap-img .wrap-btn .btn .play {
   width: 114px;
 }
 
+main .second .container .wrap-img .wrap-btn .modal .button-close {
+  position: absolute;
+  top: 4%;
+  left: 98%;
+}
+
+main .second .container .wrap-img .wrap-btn .modal .button-close span img {
+  width: 40px;
+}
+
 main .second .container .wrap-img .wrap-btn .modal .modal-dialog {
   width: 100%;
 }
@@ -618,6 +640,10 @@ main .second .container .wrap-img .wrap-btn .modal .modal-dialog .modal-content 
 main .second .container .wrap-img .wrap-btn .modal .modal-dialog .modal-content .pop-up {
   border-radius: 20px;
   width: 100%;
+}
+
+main .second .container .wrap-img .wrap-btn .modal .modal-dialog .modal-content .wrap-btn {
+  direction: none;
 }
 
 main .second .container .wrap-img .wrap-btn .modal .modal-dialog .modal-content .wrap-btn .btn-pop-up {
@@ -1296,6 +1322,14 @@ main .seventh .wrap-seventh .container .wrap-btn .btn-seventh img {
   }
   main .second .container .wrap-img .wrap-btn .btn .play {
     width: 114px;
+  }
+  main .second .container .wrap-img .wrap-btn .modal .button-close {
+    position: absolute;
+    top: 4%;
+    left: 93%;
+  }
+  main .second .container .wrap-img .wrap-btn .modal .button-close span img {
+    width: 40px;
   }
   main .second .container .wrap-img .wrap-btn .modal .modal-dialog {
     width: 100%;

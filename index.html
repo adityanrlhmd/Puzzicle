@@ -124,6 +124,9 @@
                             </button>
                             <div class="modal fade" id="youtube" tabindex="-1" aria-labelledby="youtubeLabel"
                                 aria-hidden="true">
+                                <button class="btn button-close shadow-none" type="button" data-bs-dismiss="modal">
+                                    <span><img width="40" src="src/img/close.svg" alt=""></span>
+                                </button>
                                 <div class="modal-dialog modal-lg modal-dialog-centered">
                                     <div class="modal-content">
                                         <img class="pop-up" src="src/img/bg-pop-up.jpeg" alt="">
@@ -144,7 +147,10 @@
                                 <img src="src/img/desktop/section-1/khan-academy.png" alt="">
                             </button>
                             <div class="modal fade" id="khan" tabindex="-1" aria-labelledby="khanLabel"
-                                aria-hidden="true">
+                                aria-hidden="true">                                
+                                <button class="btn button-close shadow-none" type="button" data-bs-dismiss="modal">
+                                    <span><img width="40" src="src/img/close.svg" alt=""></span>
+                                </button>
                                 <div class="modal-dialog modal-lg modal-dialog-centered">
                                     <div class="modal-content">
                                         <img class="pop-up" src="src/img/bg-pop-up.jpeg" alt="">
@@ -165,7 +171,10 @@
                                 <img src="src/img/desktop/section-1/national-geographic.png" alt="">
                             </button>
                             <div class="modal fade" id="national" tabindex="-1" aria-labelledby="nationalLabel"
-                                aria-hidden="true">
+                                aria-hidden="true">                                
+                                <button class="btn button-close shadow-none" type="button" data-bs-dismiss="modal">
+                                    <span><img width="40" src="src/img/close.svg" alt=""></span>
+                                </button>
                                 <div class="modal-dialog modal-lg modal-dialog-centered">
                                     <div class="modal-content">
                                         <img class="pop-up" src="src/img/bg-pop-up.jpeg" alt="">
@@ -186,7 +195,10 @@
                                 <img src="src/img/desktop/section-1/numberphile.png" alt="">
                             </button>
                             <div class="modal fade" id="numberphile" tabindex="-1" aria-labelledby="numberphileLabel"
-                                aria-hidden="true">
+                                aria-hidden="true">                                
+                                <button class="btn button-close shadow-none" type="button" data-bs-dismiss="modal">
+                                    <span><img width="40" src="src/img/close.svg" alt=""></span>
+                                </button>
                                 <div class="modal-dialog modal-lg modal-dialog-centered">
                                     <div class="modal-content">
                                         <img class="pop-up" src="src/img/bg-pop-up.jpeg" alt="">
@@ -209,7 +221,10 @@
                                 <img src="src/img/desktop/section-1/ted.png" alt="">
                             </button>
                             <div class="modal fade" id="ted" tabindex="-1" aria-labelledby="numberphileLabel"
-                                aria-hidden="true">
+                                aria-hidden="true">                                
+                                <button class="btn button-close shadow-none" type="button" data-bs-dismiss="modal">
+                                    <span><img width="40" src="src/img/close.svg" alt=""></span>
+                                </button>
                                 <div class="modal-dialog modal-lg modal-dialog-centered">
                                     <div class="modal-content">
                                         <img class="pop-up" src="src/img/bg-pop-up.jpeg" alt="">
@@ -230,7 +245,10 @@
                                 <img src="src/img/desktop/section-1/crash-course.png" alt="">
                             </button>
                             <div class="modal fade" id="crash" tabindex="-1" aria-labelledby="numberphileLabel"
-                                aria-hidden="true">
+                                aria-hidden="true">                                
+                                <button class="btn button-close shadow-none" type="button" data-bs-dismiss="modal">
+                                    <span><img width="40" src="src/img/close.svg" alt=""></span>
+                                </button>
                                 <div class="modal-dialog modal-lg modal-dialog-centered">
                                     <div class="modal-content">
                                         <img class="pop-up" src="src/img/bg-pop-up.jpeg" alt="">
@@ -251,7 +269,10 @@
                                 <img src="src/img/desktop/section-1/edutopia.png" alt="">
                             </button>
                             <div class="modal fade" id="edutopia" tabindex="-1" aria-labelledby="numberphileLabel"
-                                aria-hidden="true">
+                                aria-hidden="true">                                
+                                <button class="btn button-close shadow-none" type="button" data-bs-dismiss="modal">
+                                    <span><img width="40" src="src/img/close.svg" alt=""></span>
+                                </button>
                                 <div class="modal-dialog modal-lg modal-dialog-centered">
                                     <div class="modal-content">
                                         <img class="pop-up" src="src/img/bg-pop-up.jpeg" alt="">
@@ -297,7 +318,10 @@
                                     <img class="play" src="src/img/desktop/section-2/play-button.png" alt="">
                                 </button>
                                 <div class="modal fade" id="playButton" tabindex="-1" aria-labelledby="playButtonLabel"
-                                    aria-hidden="true">
+                                    aria-hidden="true">                                
+                                    <button class="btn button-close shadow-none" type="button" data-bs-dismiss="modal">
+                                        <span><img width="40" src="src/img/close.svg" alt=""></span>
+                                    </button>
                                     <div class="modal-dialog modal-lg modal-dialog-centered">
                                         <div class="modal-content">
                                             <div class="wrap-video" style="position: relative; padding-bottom: 57.50798722044729%; height: 0;">
@@ -728,6 +752,12 @@
 
     <script src="src/js/swiped-events.min.js"></script>
     <script src="src/js/script.js"></script>
+
+    <script>
+        $("#playButton").on('hidden.bs.modal', function (e) {
+        $("#playButton iframe").attr("src", $("#playButton iframe").attr("src"));
+    });
+    </script>
 
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>

@@ -620,8 +620,15 @@ main {
                         }
 
                         .modal {
+                            .button-close {
+                                position: absolute;
+                                top: 0%;
+                                right: 0%;
+                            }
+
                             .modal-dialog {
                                 .modal-content {
+
                                     .pop-up {
                                         width: 100%;
                                     }
@@ -675,6 +682,11 @@ main {
                         }
 
                         .modal {
+                            .button-close {
+                                position: absolute;
+                                top: 0%;
+                                right: 0%;
+                            }
                             .modal-dialog {
                                 .modal-content {
                                     .pop-up {
@@ -792,7 +804,7 @@ main {
                 .wrap-btn {
                     .btn {
                         position: absolute;
-                        top: 50%;
+                        top: 45%;
                         left: 50%;
                         transform: translate(-50%, -50%);
                         z-index: 99;
@@ -807,6 +819,17 @@ main {
                     }
 
                     .modal {
+                        .button-close {
+                            position: absolute;
+                            top: 4%;
+                            left: 98%;
+                            span {
+                                img {
+                                    width: 40px;
+                                }
+                            }
+                        }
+
                         .modal-dialog {
                             width: 100%;
 
@@ -820,6 +843,7 @@ main {
                                 }
 
                                 .wrap-btn {
+                                    direction: none;
                                     .btn-pop-up {
                                         position: absolute;
                                         bottom: 180px;
@@ -1569,6 +1593,16 @@ main {
                         }
 
                         .modal {
+                            .button-close {
+                                position: absolute;
+                                top: 4%;
+                                left: 93%;
+                                span {
+                                    img {
+                                        width: 40px;
+                                    }
+                                }
+                            }
                             .modal-dialog {
                                 width: 100%;
 

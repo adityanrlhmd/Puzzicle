@@ -980,6 +980,28 @@ main .fourth .container-fourth .wrap-row .center .card .card-body .container .wr
   color: black;
 }
 
+main .fourth .container-fourth .wrap-row .center .wrap-vs-center {
+  display: none;
+  background: #F9AE0F;
+  border-radius: 100%;
+  width: 60px;
+  height: 60px;
+  padding-top: 17px;
+  padding-left: 17px;
+}
+
+main .fourth .container-fourth .wrap-row .center .wrap-vs-center h3 {
+  margin: 0;
+  font-family: 'Baloo 2';
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 27px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #5C3F00;
+}
+
 main .fourth .container-fourth .wrap-row .right {
   padding: 0;
 }
@@ -2260,6 +2282,15 @@ main .seventh .wrap-seventh .container .wrap-btn .btn-seventh img {
 }
 
 @media screen and (max-width: 767px) {
+  main .fourth .container-fourth .wrap-row .center {
+    display: block;
+  }
+  main .fourth .container-fourth .wrap-row .center .card {
+    display: none;
+  }
+  main .fourth .container-fourth .wrap-row .center .wrap-vs-center {
+    display: block;
+  }
   main .fourth .container-fourth .wrap-row .wrap-vs {
     display: none;
   }

@@ -1210,6 +1210,28 @@ main {
                             }
                         }
                     }
+
+                    .wrap-vs-center {
+                        display: none;
+                        background: #F9AE0F;
+                        border-radius: 100%;
+                        width: 60px;
+                        height: 60px;
+                        padding-top: 17px;
+                        padding-left: 17px;
+    
+                        h3 {
+                            margin: 0;
+                            font-family: 'Baloo 2';
+                            font-size: 22px;
+                            font-style: normal;
+                            font-weight: 600;
+                            line-height: 27px;
+                            letter-spacing: 0em;
+                            text-align: left;
+                            color: #5C3F00;
+                        }
+                    }
                 }
 
                 .right {
@@ -2501,6 +2523,8 @@ main {
 
                     .center {
                         display: none;
+                        .card {
+                        }
                     }
 
                     .right {
@@ -2878,6 +2902,17 @@ main {
         .fourth {
             .container-fourth {
                 .wrap-row {
+                    .center {
+                        display: block;
+                        .card {
+                            display: none;
+                        }
+
+                        .wrap-vs-center {
+                            display: block;
+                        }
+                    }
+
                     .wrap-vs {
                         display: none;
                     }

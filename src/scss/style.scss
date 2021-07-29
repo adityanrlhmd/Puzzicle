@@ -2873,6 +2873,20 @@ main {
     }
 }
 
+@media screen and (max-width: 767px) {
+    main {
+        .fourth {
+            .container-fourth {
+                .wrap-row {
+                    .wrap-vs {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}
+
 @media screen and (max-width: 760px) {
     main {
         .fourth {

@@ -1,4 +1,11 @@
-@import url("https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;700&display=swap");
+html {
+  scroll-behavior: smooth;
+}
+
+body .modal-backdrop {
+  z-index: 98;
+}
+
 header {
   background: url("../img/desktop/header/png/pattern.png") no-repeat;
   background-size: cover;
@@ -32,7 +39,7 @@ header .wrap-nav nav .container .overlay {
   position: fixed;
   top: 0;
   bottom: 0;
-  z-index: 999;
+  z-index: 99;
 }
 
 header .wrap-nav nav .container .overlay {
@@ -87,6 +94,42 @@ header .wrap-nav nav .container .navbar-collapse .navbar-nav .nav-item .nav-link
 
 header .wrap-nav nav .container .navbar-collapse .navbar-nav .nav-item .nav-link img {
   width: 190px;
+}
+
+header .wrap-nav nav .container .modal .button-close {
+  position: absolute;
+  top: 0%;
+  right: 0%;
+}
+
+header .wrap-nav nav .container .modal .modal-dialog .modal-content .pop-up {
+  width: 100%;
+}
+
+header .wrap-nav nav .container .modal .modal-dialog .modal-content .wrap-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+header .wrap-nav nav .container .modal .modal-dialog .modal-content .wrap-text p {
+  font-family: 'Baloo 2';
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #18223A;
+}
+
+header .wrap-nav nav .container .modal .modal-dialog .modal-content .wrap-text .wrap-btn-google-pop-up .btn-google-pop-up img {
+  width: 175px;
 }
 
 header .wrap-nav .main-navigation.active .sidebar {
@@ -282,6 +325,13 @@ header .jumbotron .illustration img {
   header .wrap-nav nav .container .sidebar .navbar-nav .nav-link {
     padding-left: 30px;
     padding-right: 30px;
+  }
+  header .wrap-nav nav .container .modal .modal-dialog .modal-content .wrap-text p {
+    font-size: 16px;
+    margin: 0px;
+  }
+  header .wrap-nav nav .container .modal .modal-dialog .modal-content .wrap-text .wrap-btn-google-pop-up .btn-google-pop-up img {
+    width: 120px;
   }
   header .jumbotron .container {
     margin-left: 0;
@@ -606,7 +656,7 @@ main .second .container .wrap-img .wrap-btn .btn {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  z-index: 99;
+  z-index: 9;
 }
 
 main .second .container .wrap-img .wrap-btn .btn:focus {
@@ -2212,12 +2262,26 @@ main .seventh .wrap-seventh .container .wrap-btn .btn-seventh img {
   main .first .container .wrap-row .row-top .col .btn-videos img {
     width: 100%;
   }
+  main .first .container .wrap-row .row-top .col .modal .modal-dialog .modal-content .wrap-text p {
+    font-size: 16px;
+    margin: 0px;
+  }
+  main .first .container .wrap-row .row-top .col .modal .modal-dialog .modal-content .wrap-text .wrap-btn-google-pop-up .btn-google-pop-up img {
+    width: 120px;
+  }
   main .first .container .wrap-row .row-bottom {
     width: 100%;
     margin-bottom: 25px;
   }
   main .first .container .wrap-row .row-bottom .col .btn-videos img {
     width: 100%;
+  }
+  main .first .container .wrap-row .row-bottom .col .modal .modal-dialog .modal-content .wrap-text p {
+    font-size: 16px;
+    margin: 0px;
+  }
+  main .first .container .wrap-row .row-bottom .col .modal .modal-dialog .modal-content .wrap-text .wrap-btn-google-pop-up .btn-google-pop-up img {
+    width: 120px;
   }
   main .first .container .wrap-btn-google {
     margin-bottom: 40px;

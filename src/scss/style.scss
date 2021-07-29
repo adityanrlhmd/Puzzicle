@@ -1,4 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;700&display=swap');
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    .modal-backdrop {
+        z-index: 98;
+    }
+}
 
 header {
     background: url('../img/desktop/header/png/pattern.png') no-repeat;
@@ -39,7 +47,7 @@ header {
                     position: fixed;
                     top: 0;
                     bottom: 0;
-                    z-index: 999;
+                    z-index: 99;
                 }
 
 
@@ -97,6 +105,53 @@ header {
 
                                 img {
                                     width: 190px;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .modal {
+                    .button-close {
+                        position: absolute;
+                        top: 0%;
+                        right: 0%;
+                    }
+
+                    .modal-dialog {
+                        .modal-content {
+
+                            .pop-up {
+                                width: 100%;
+                            }
+
+                            .wrap-text {
+                                position: absolute;
+                                top: 50%;
+                                left: 50%;
+                                transform: translate(-50%, -50%);
+                                -webkit-transform: translate(-50%, -50%);
+                                -moz-transform: translate(-50%, -50%);
+                                -o-transform: translate(-50%, -50%);
+                                -ms-transform: translate(-50%, -50%);
+
+                                p {
+                                    font-family: 'Baloo 2';
+                                    font-size: 20px;
+                                    font-style: normal;
+                                    font-weight: 400;
+                                    line-height: 24px;
+                                    letter-spacing: 0em;
+                                    text-align: center;
+                                    color: #18223A;
+                                }
+
+                                .wrap-btn-google-pop-up {
+                                    .btn-google-pop-up {
+                                        img {
+                                            width: 175px;
+                                        }
+                                    }
                                 }
                             }
                         }
@@ -373,6 +428,26 @@ header {
                             .nav-link {
                                 padding-left: 30px;
                                 padding-right: 30px;
+                            }
+                        }
+                    }
+
+                    .modal {
+                        .modal-dialog {
+                            .modal-content {
+                                .wrap-text {
+                                    p {
+                                        font-size: 16px;
+                                        margin: 0px;
+                                    }
+                                    .wrap-btn-google-pop-up {
+                                        .btn-google-pop-up {
+                                            img {
+                                                width: 120px;
+                                            }
+                                        }
+                                    }
+                                }
                             }
                         }
                     }
@@ -807,7 +882,7 @@ main {
                         top: 45%;
                         left: 50%;
                         transform: translate(-50%, -50%);
-                        z-index: 99;
+                        z-index: 9;
 
                         &:focus {
                             box-shadow: none;
@@ -2820,7 +2895,26 @@ main {
                                 img {
                                     width: 100%;
                                 }
+                            }
 
+                            .modal {
+                                .modal-dialog {
+                                    .modal-content {
+                                        .wrap-text {
+                                            p {
+                                                font-size: 16px;
+                                                margin: 0px;
+                                            }
+                                            .wrap-btn-google-pop-up {
+                                                .btn-google-pop-up {
+                                                    img {
+                                                        width: 120px;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
                             }
                         }
                     }
@@ -2834,8 +2928,27 @@ main {
                                 img {
                                     width: 100%;
                                 }
-
                             }
+
+                            .modal {
+                                .modal-dialog {
+                                    .modal-content {
+                                        .wrap-text {
+                                            p {
+                                                font-size: 16px;
+                                                margin: 0px;
+                                            }
+                                            .wrap-btn-google-pop-up {
+                                                .btn-google-pop-up {
+                                                    img {
+                                                        width: 120px;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }                            
                         }
                     }
                 }

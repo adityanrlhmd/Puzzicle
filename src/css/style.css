@@ -102,6 +102,10 @@ header .wrap-nav nav .container .modal .button-close {
   right: 0%;
 }
 
+header .wrap-nav nav .container .modal .button-close span svg {
+  color: black;
+}
+
 header .wrap-nav nav .container .modal .modal-dialog .modal-content .pop-up {
   width: 100%;
 }

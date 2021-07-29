@@ -116,11 +116,15 @@ header {
                         position: absolute;
                         top: 0%;
                         right: 0%;
+                        span {
+                            svg {
+                                color: black;
+                            }
+                        }
                     }
 
                     .modal-dialog {
                         .modal-content {
-
                             .pop-up {
                                 width: 100%;
                             }

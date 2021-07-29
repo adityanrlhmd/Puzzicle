@@ -98,12 +98,14 @@ header .wrap-nav nav .container .navbar-collapse .navbar-nav .nav-item .nav-link
 
 header .wrap-nav nav .container .modal .button-close {
   position: absolute;
-  top: 0%;
-  right: 0%;
+  top: -45px;
+  right: -15px;
+  left: unset;
 }
 
-header .wrap-nav nav .container .modal .button-close span svg {
-  color: black;
+header .wrap-nav nav .container .modal .button-close span img {
+  -webkit-filter: invert(1);
+          filter: invert(1);
 }
 
 header .wrap-nav nav .container .modal .modal-dialog .modal-content .pop-up {
@@ -500,8 +502,14 @@ main .first .container .wrap-row .row-top .col .btn-videos img {
 
 main .first .container .wrap-row .row-top .col .modal .button-close {
   position: absolute;
-  top: 0%;
-  right: 0%;
+  top: -45px;
+  right: -15px;
+  left: unset;
+}
+
+main .first .container .wrap-row .row-top .col .modal .button-close span img {
+  -webkit-filter: invert(1);
+          filter: invert(1);
 }
 
 main .first .container .wrap-row .row-top .col .modal .modal-dialog .modal-content .pop-up {
@@ -550,8 +558,14 @@ main .first .container .wrap-row .row-bottom .col .btn-videos img {
 
 main .first .container .wrap-row .row-bottom .col .modal .button-close {
   position: absolute;
-  top: 0%;
-  right: 0%;
+  top: -45px;
+  right: -15px;
+  left: unset;
+}
+
+main .first .container .wrap-row .row-bottom .col .modal .button-close span img {
+  -webkit-filter: invert(1);
+          filter: invert(1);
 }
 
 main .first .container .wrap-row .row-bottom .col .modal .modal-dialog .modal-content .pop-up {
@@ -674,12 +688,15 @@ main .second .container .wrap-img .wrap-btn .btn .play {
 
 main .second .container .wrap-img .wrap-btn .modal .button-close {
   position: absolute;
-  top: 4%;
-  left: 98%;
+  top: -25px;
+  right: -40px;
+  left: unset;
 }
 
 main .second .container .wrap-img .wrap-btn .modal .button-close span img {
-  width: 40px;
+  width: 35px;
+  -webkit-filter: invert(1);
+          filter: invert(1);
 }
 
 main .second .container .wrap-img .wrap-btn .modal .modal-dialog {
@@ -1379,11 +1396,14 @@ main .seventh .wrap-seventh .container .wrap-btn .btn-seventh img {
   }
   main .second .container .wrap-img .wrap-btn .modal .button-close {
     position: absolute;
-    top: 4%;
-    left: 93%;
+    top: -25px;
+    right: -40px;
+    left: unset;
   }
   main .second .container .wrap-img .wrap-btn .modal .button-close span img {
-    width: 40px;
+    width: 30px;
+    -webkit-filter: invert(1);
+            filter: invert(1);
   }
   main .second .container .wrap-img .wrap-btn .modal .modal-dialog {
     width: 100%;

@@ -114,11 +114,12 @@ header {
                 .modal {
                     .button-close {
                         position: absolute;
-                        top: 0%;
-                        right: 0%;
+                        top: -45px;
+                        right: -15px;
+                        left: unset;
                         span {
-                            svg {
-                                color: black;
+                            img {
+                                filter: invert(1);
                             }
                         }
                     }
@@ -701,8 +702,14 @@ main {
                         .modal {
                             .button-close {
                                 position: absolute;
-                                top: 0%;
-                                right: 0%;
+                                top: -45px;
+                                right: -15px;
+                                left: unset;
+                                span {
+                                    img {
+                                        filter: invert(1);
+                                    }
+                                }
                             }
 
                             .modal-dialog {
@@ -763,8 +770,14 @@ main {
                         .modal {
                             .button-close {
                                 position: absolute;
-                                top: 0%;
-                                right: 0%;
+                                top: -45px;
+                                right: -15px;
+                                left: unset;
+                                span {
+                                    img {
+                                        filter: invert(1);
+                                    }
+                                }
                             }
                             .modal-dialog {
                                 .modal-content {
@@ -900,11 +913,13 @@ main {
                     .modal {
                         .button-close {
                             position: absolute;
-                            top: 4%;
-                            left: 98%;
+                            top: -25px;
+                            right: -40px;
+                            left: unset;
                             span {
                                 img {
-                                    width: 40px;
+                                    width: 35px;
+                                    filter: invert(1);
                                 }
                             }
                         }
@@ -1674,11 +1689,13 @@ main {
                         .modal {
                             .button-close {
                                 position: absolute;
-                                top: 4%;
-                                left: 93%;
+                                top: -25px;
+                                right: -40px;
+                                left: unset;
                                 span {
                                     img {
-                                        width: 40px;
+                                        width: 30px;
+                                        filter: invert(1);
                                     }
                                 }
                             }

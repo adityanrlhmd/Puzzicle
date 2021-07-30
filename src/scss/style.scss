@@ -175,7 +175,7 @@ header {
     }
 
     .jumbotron {
-        padding-top: 40px;
+        padding-top: 0px;
 
         .container {
             // padding-top: 40px;
@@ -214,8 +214,11 @@ header {
 
                 .title-img {
                     position: absolute;
-                    top: 100px;
-                    right: 310px;
+                    top: 70px;
+                    right: 330px;
+                    img {
+                        width: 50px;
+                    }
                 }
             }
 
@@ -235,10 +238,21 @@ header {
         }
 
         .illustration {
+            margin-top: -130px;
             img {
                 background: none;
                 width: 100%;
                 overflow: hidden;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    header {
+        .jumbotron {
+            .illustration {
+                margin-top: -100px;
             }
         }
     }
@@ -410,6 +424,7 @@ header {
             }
 
             .illustration {
+                margin-top: 0px;
                 svg {
                     display: none;
                 }
